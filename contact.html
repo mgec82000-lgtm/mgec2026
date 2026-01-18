@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact – Montauban 2026</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar"><div class="container"><div class="nav">
+  <div class="brand"><div class="brandLogo"></div><div class="brandTitle"><small>#MONTAUBAN2026</small>MONTAUBAN<br><span style="color:var(--purple)">De gauche, écologiste et citoyenne</span></div></div>
+  <div class="menu">
+    <a href="index.html">ACCUEIL</a><a href="agenda.html">AGENDA</a><a href="candidats.html">CANDIDATS</a><a href="programme.html">PROGRAMME</a><a href="medias.html">MÉDIAS</a><a class="active" href="contact.html">CONTACT</a>
+  </div>
+</div></div></div>
+
+<section class="section">
+  <div class="container">
+    <h1 class="h1">Rejoignez-nous</h1>
+    <p class="sub">Ensemble, construisons la ville de demain.</p>
+
+    <div class="grid2">
+      <div class="card" style="background:#fff">
+        <div class="badge">EMAIL</div>
+        <p class="sub" style="margin-top:10px"><b>gauche-ecolo-citoyenne@montauban26.fr</b></p>
+        <div style="height:10px"></div>
+        <div class="badge">VILLE</div>
+        <p class="sub" style="margin-top:10px">Montauban, Tarn-et-Garonne</p>
+        <div style="height:10px"></div>
+        <div class="badge">RÉSEAUX</div>
+        <p class="sub" style="margin-top:10px">Facebook / Instagram</p>
+      </div>
+
+      <div class="card">
+        <h2 style="margin:0 0 10px">Envoyez-nous un message</h2>
+        <form onsubmit="return fakeSubmit(event)">
+          <label>Nom et prénom</label>
+          <input required placeholder="Votre nom" />
+          <label>Email</label>
+          <input required type="email" placeholder="votre@email.com" />
+          <label>Message</label>
+          <textarea required placeholder="Votre message..."></textarea>
+          <div class="small">
+            <input type="checkbox" required> J’accepte d’être recontacté dans le cadre de la campagne.
+          </div>
+          <div style="height:12px"></div>
+          <button class="btn red" type="submit">✉️ ENVOYER</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="footer"><div class="container">© 2026 – Montauban 2026</div></div>
+<script src="script.js"></script>
+</body>
+</html>
