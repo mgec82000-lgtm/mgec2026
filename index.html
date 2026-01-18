@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campagne Municipale 2026 – Montauban</title>
+  <meta name="description" content="Site officiel de la campagne municipale 2026 à Montauban. Programme, actualités, équipe et contact." />
+
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#0f1b33;
+      --txt:#eaf1ff;
+      --muted:#b9c7e6;
+      --accent:#32d583;     /* vert */
+      --accent2:#2e90fa;    /* bleu */
+      --line:rgba(255,255,255,.12);
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --radius:22px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--txt);
+      background:
+        radial-gradient(900px 450px at 20% -10%, rgba(46,144,250,.25), transparent 60%),
+        radial-gradient(700px 380px at 85% 0%, rgba(50,213,131,.25), transparent 55%),
+        radial-gradient(900px 450px at 50% 110%, rgba(46,144,250,.16), transparent 65%),
+        var(--bg);
+      line-height:1.55;
+    }
+    a{color:inherit; text-decoration:none}
+    .container{max-width:1120px; margin:0 auto; padding:0 18px}
+    /* Topbar */
+    .topbar{
+      position:sticky; top:0; z-index:10;
+      backdrop-filter: blur(10px);
+      background: rgba(11,18,32,.72);
+      border-bottom:1px solid var(--line);
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:14px 0;
+      gap:14px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px;
+      font-weight:800; letter-spacing:.3px;
+    }
+    .logo{
+      width:38px; height:38px; border-radius:12px;
+      background: linear-gradient(135deg, var(--accent2), var(--accent));
+      box-shadow: var(--shadow);
+    }
+    .links{display:flex; gap:16px; flex-wrap:wrap; align-items:center}
+    .links a{
+      padding:10px 12px;
+      border-radius:12px;
+      color:var(--muted);
+      transition:.15s;
+    }
+    .links a:hover{background:rgba(255,255,255,.06); color:var(--txt)}
+    .cta{
+      display:flex; gap:10px; align-items:center; flex-wrap:wrap;
+    }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      gap:10px;
+      padding:10px 14px;
+      border-radius:14px;
+      font-weight:700;
+      border:1px solid transparent;
+      cursor:pointer;
+      transition:.15s;
+      user-select:none;
+      white-space:nowrap;
+    }
+    .btn.primary{
+      background: linear-gradient(135deg, var(--accent2), var(--accent));
+      color:#062043;
+      box-shadow: var(--shadow);
+    }
+    .btn.primary:hover{transform:translateY(-1px)}
+    .btn.ghost{
+      background: rgba(255,255,255,.06);
+      border-color: rgba(255,255,255,.10);
+      color:var(--txt);
+    }
+    .btn.ghost:hover{background:rgba(255,255,255,.09)}
+    /* Hero */
+    .hero{
+      padding:52px 0 22px;
+    }
+    .heroGrid{
+      display:grid; gap:18px;
+      grid-template-columns: 1.2fr .8fr;
+      align-items:stretch;
+    }
+    @media (max-width: 900px){
+      .heroGrid{grid-template-columns:1fr}
+      .links{display:none}
+    }
+    .heroCard{
+      background: linear-gradient(180deg, rgba(15,27,51,.92), rgba(15,27,51,.70));
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding:28px;
+      position:relative;
+      overflow:hidden;
+    }
+    .heroCard:before{
+      content:"";
+      position:absolute; inset:-120px -160px auto auto;
+      width:360px; height:360px;
+      background: radial-gradient(circle at 30% 30%, rgba(50,213,131,.26), transparent 65%);
+      transform: rotate(18deg);
+    }
+    .kicker{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:8px 12px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background:rgba(255,255,255,.06);
+      color:var(--muted);
+      font-weight:650;
+      font-size:14px;
+    }
+    .title{
+      margin:14px 0 10px;
+      font-size:46px;
+      line-height:1.05;
+      letter-spacing:-.6px;
+    }
+    @media (max-width: 500px){.title{font-size:38px}}
+    .subtitle{
+      margin:0 0 16px;
+      color:var(--muted);
+      font-size:17px;
+      max-width: 60ch;
+    }
+    .heroActions{display:flex; gap:12px; flex-wrap:wrap; margin-top:10px}
+    .stats{
+      display:grid; gap:12px;
+      grid-template-columns: 1fr;
+    }
+    .stat{
+      background: rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.10);
+      border-radius: var(--radius);
+      padding:18px;
+    }
+    .stat b{font-size:20px}
+    .stat p{margin:6px 0 0; color:var(--muted)}
+    /* Sections */
+    section{padding:26px 0}
+    .sectionTitle{
+      display:flex; align-items:end; justify-content:space-between; gap:10px; flex-wrap:wrap;
+      margin-bottom:14px;
+    }
+    .sectionTitle h2{margin:0; font-size:26px}
+    .sectionTitle span{color:var(--muted); font-weight:650}
+    .cards{
+      display:grid; gap:14px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 900px){.cards{grid-template-columns:1fr}}
+    .card{
+      background: rgba(15,27,51,.72);
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      padding:18px;
+      box-shadow: 0 10px 24px rgba(0,0,0,.20);
+    }
+    .card h3{margin:6px 0 8px; font-size:18px}
+    .card p{margin:0; color:var(--muted)}
+    .pill{
+      display:inline-flex; align-items:center;
+      padding:6px 10px;
+      border-radius:999px;
+      font-weight:800;
+      font-size:12px;
+      letter-spacing:.4px;
+      background: rgba(46,144,250,.18);
+      border:1px solid rgba(46,144,250,.22);
+      color:#d9ebff;
+      text-transform:uppercase;
+    }
+    .pill.green{
+      background: rgba(50,213,131,.16);
+      border-color: rgba(50,213,131,.22);
+      color:#d9ffe9;
+    }
+
+    /* Timeline / actus */
+    .timeline{display:grid; gap:12px}
+    .post{
+      display:flex; gap:14px; align-items:flex-start;
+      padding:16px;
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.10);
+    }
+    .date{
+      min-width:78px;
+      text-align:center;
+      border-radius:16px;
+      padding:10px 10px;
+      background: rgba(0,0,0,.18);
+      border:1px solid rgba(255,255,255,.10);
+    }
+    .date b{display:block; font-size:18px}
+    .date small{color:var(--muted); font-weight:750}
+    .post h4{margin:2px 0 6px}
+    .post p{margin:0; color:var(--muted)}
+    /* Contact */
+    .grid2{
+      display:grid; gap:14px;
+      grid-template-columns: 1fr 1fr;
+      align-items:stretch;
+    }
+    @media (max-width: 900px){.grid2{grid-template-columns:1fr}}
+    label{display:block; font-weight:700; margin:10px 0 6px}
+    input, textarea{
+      width:100%;
+      padding:12px 14px;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(0,0,0,.18);
+      color:var(--txt);
+      outline:none;
+    }
+    textarea{min-height:110px; resize:vertical}
+    .help{
+      color:var(--muted); font-size:13px; margin-top:10px
+    }
+    .footer{
+      padding:26px 0 40px;
+      color:var(--muted);
+      border-top: 1px solid var(--line);
+      margin-top: 18px;
+      font-size:13px;
+    }
+    .footer a{color:#d9ebff; text-decoration:underline}
+    .note{
+      border-radius: var(--radius);
+      padding:14px;
+      border:1px dashed rgba(255,255,255,.18);
+      background: rgba(255,255,255,.05);
+      color:var(--muted);
+      font-size:13px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <div class="topbar">
+    <div class="container">
+      <div class="nav">
+        <div class="brand">
+          <div class="logo" aria-hidden="true"></div>
+          <div>
+            <div style="font-size:14px;color:var(--muted);font-weight:800;letter-spacing:.35px;">Montauban</div>
+            <div style="font-size:16px;">Municipales 2026</div>
+          </div>
+        </div>
+
+        <div class="links" aria-label="navigation">
+          <a href="#programme">Programme</a>
+          <a href="#actu">Actualités</a>
+          <a href="#equipe">Équipe</a>
+          <a href="#contact">Contact</a>
+          <a href="#legal">Mentions</a>
+        </div>
+
+        <div class="cta">
+          <a class="btn ghost" href="#contact">Devenir bénévole</a>
+          <a class="btn primary" href="#programme">Lire le programme</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <div class="heroGrid">
+        <div class="heroCard">
+          <div class="kicker">🌿 Pour une ville plus juste, plus verte, plus sûre</div>
+          <h1 class="title">Campagne municipale 2026<br/>à Montauban</h1>
+          <p class="subtitle">
+            Bienvenue sur le site officiel de campagne. Ici tu trouveras nos propositions concrètes,
+            les dates des rencontres, et un moyen simple de nous contacter.
+          </p>
+          <div class="heroActions">
+            <a class="btn primary" href="#contact">📩 Nous contacter</a>
+            <a class="btn ghost" href="#actu">🗓️ Voir les actus</a>
+          </div>
+          <div style="height:14px"></div>
+          <div class="note">
+            📌 Astuce : tu peux modifier tous les textes facilement plus tard.
+            On ajoutera aussi tes photos et ton logo.
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <b>🤝 Une campagne proche des habitants</b>
+            <p>Rencontres de quartier, écoute, solutions pratiques.</p>
+          </div>
+          <div class="stat">
+            <b>🏗️ Du concret, pas du bla-bla</b>
+            <p>Des actions réalisables, chiffrées et planifiées.</p>
+          </div>
+          <div class="stat">
+            <b>🌍 Transition écologique intelligente</b>
+            <p>Économies d’énergie, mobilité, nature en ville.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- PROGRAMME -->
+  <section id="programme">
+    <div class="container">
+      <div class="sectionTitle">
+        <h2>Programme – nos priorités</h2>
+        <span>4 axes simples & efficaces</span>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <span class="pill">Pouvoir d’achat</span>
+          <h3>Une ville qui protège</h3>
+          <p>Tarification plus juste, aide aux familles, services publics accessibles, simplification.</p>
+        </div>
+        <div class="card">
+          <span class="pill green">Écologie</span>
+          <h3>Une ville plus verte</h3>
+          <p>Arbres, ombrage, économies d’énergie, rénovation, lutte contre les îlots de chaleur.</p>
+        </div>
+        <div class="card">
+          <span class="pill">Sécurité</span>
+          <h3>Tranquillité au quotidien</h3>
+          <p>Prévention, éclairage, propreté, dialogue : sécurité + respect + efficacité.</p>
+        </div>
+
+        <div class="card">
+          <span class="pill">Mobilité</span>
+          <h3>Circulation plus fluide</h3>
+          <p>Parkings intelligents, bus améliorés, vélos, cheminements sûrs pour tous.</p>
+        </div>
+        <div class="card">
+          <span class="pill green">Jeunesse</span>
+          <h3>Écoles & avenir</h3>
+          <p>Activités, sport, accompagnement, prévention du harcèlement, orientation.</p>
+        </div>
+        <div class="card">
+          <span class="pill">Économie</span>
+          <h3>Commerces & emploi</h3>
+          <p>Centre-ville vivant, soutien aux artisans, circuits courts, partenariats locaux.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACTUS -->
+  <section id="actu">
+    <div class="container">
+      <div class="sectionTitle">
+        <h2>Actualités & agenda</h2>
+        <span>à mettre à jour au fil de la campagne</span>
+      </div>
+
+      <div class="timeline">
+        <div class="post">
+          <div class="date"><b>05</b><small>JAN</small></div>
+          <div>
+            <h4>📍 Lancement de la tournée des quartiers</h4>
+            <p>Rencontres avec les habitants : écoute des besoins et propositions. (Tu pourras changer ce texte)</p>
+          </div>
+        </div>
+        <div class="post">
+          <div class="date"><b>18</b><small>JAN</small></div>
+          <div>
+            <h4>🗣️ Réunion publique – centre-ville</h4>
+            <p>Présentation des axes du programme + questions/réponses.</p>
+          </div>
+        </div>
+        <div class="post">
+          <div class="date"><b>02</b><small>FEB</small></div>
+          <div>
+            <h4>🌿 Action citoyenne : opération propreté</h4>
+            <p>Une ville propre, c’est une ville respectée. Ensemble, on agit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUIPE -->
+  <section id="equipe">
+    <div class="container">
+      <div class="sectionTitle">
+        <h2>L’équipe</h2>
+        <span>une dynamique locale</span>
+      </div>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>👤 Tête de liste</h3>
+          <p>
+            <b>(Ton nom ici)</b><br/>
+            Une phrase courte : expérience, valeurs, engagement pour Montauban.
+          </p>
+          <div style="height:10px"></div>
+          <div class="note">
+            Tu peux ajouter ta photo plus tard (on mettra une section “photo + bio”).
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>🤲 Nos soutiens</h3>
+          <p>
+            Habitants, artisans, enseignants, jeunes, retraités : un collectif qui avance ensemble.
+          </p>
+          <div style="height:10px"></div>
+          <p class="help">
+            (Ici tu pourras mettre les noms/portraits et les rôles : communication, terrain, programme…)
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="sectionTitle">
+        <h2>Contact</h2>
+        <span>écris-nous en 30 secondes</span>
+      </div>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>📩 Formulaire</h3>
+          <p class="help">
+            Important : sur GitHub Pages, le formulaire ne peut pas envoyer automatiquement d’email.
+            Pour l’instant, il sert à afficher un message. Ensuite on le connectera à une solution gratuite.
+          </p>
+
+          <form onsubmit="return fakeSubmit(event)">
+            <label>Nom</label>
+            <input required placeholder="Votre nom" />
+
+            <label>Email</label>
+            <input required type="email" placeholder="votre@email.com" />
+
+            <label>Message</label>
+            <textarea required placeholder="Votre message..."></textarea>
+
+            <div class="help">
+              <input type="checkbox" required />
+              J’accepte que mes données soient utilisées uniquement pour être recontacté dans le cadre de la campagne (RGPD).
+            </div>
+
+            <div style="height:12px"></div>
+            <button class="btn primary" type="submit">Envoyer</button>
+          </form>
+        </div>
+
+        <div class="card">
+          <h3>📍 Infos</h3>
+          <p><b>Ville :</b> Montauban (82000)</p>
+          <p><b>Email :</b> (ton email ici)</p>
+          <p><b>Réseaux :</b> (Facebook / Instagram / TikTok)</p>
+
+          <div style="height:14px"></div>
+          <div class="note">
+            ✅ Prochaine étape : on va mettre ton vrai email et tes réseaux,
+            puis ajouter un bouton “Faire un don” si tu veux (dans le cadre légal).
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEGAL -->
+  <section id="legal">
+    <div class="container">
+      <div class="sectionTitle">
+        <h2>Mentions légales & RGPD</h2>
+        <span>à personnaliser</span>
+      </div>
+
+      <div class="card">
+        <p><b>Éditeur du site :</b> (Nom / association / liste) – Montauban</p>
+        <p><b>Directeur de publication :</b> (Nom)</p>
+        <p><b>Contact :</b> (Email)</p>
+        <p><b>Hébergement :</b> GitHub Pages (GitHub, Inc.)</p>
+
+        <hr style="border:0;border-top:1px solid var(--line);margin:14px 0">
+
+        <p><b>Données personnelles :</b></p>
+        <p class="help">
+          Les informations transmises via le formulaire (nom, email, message) sont utilisées uniquement
+          pour répondre à votre demande et dans le cadre de la campagne municipale 2026.
+          Vous pouvez demander la suppression de vos données à tout moment en contactant l’éditeur.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    <div class="container">
+      <div style="display:flex; gap:10px; flex-wrap:wrap; justify-content:space-between; align-items:center;">
+        <div>© 2026 – Campagne municipale Montauban • Tous droits réservés</div>
+        <div>Construit avec ❤️ sur GitHub Pages</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function fakeSubmit(e){
+      e.preventDefault();
+      alert("✅ Message enregistré ! (Étape suivante : connecter le formulaire pour recevoir les messages par email)");
+      return false;
+    }
+  </script>
+
+</body>
+</html>
