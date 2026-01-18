@@ -51,8 +51,11 @@ a{color:inherit; text-decoration:none}
 }
 .brandLogo{
   width:46px;height:46px;border-radius:14px;
-  background: linear-gradient(135deg, var(--yellow), var(--green));
+  background: #fff url("assets/logo-carre.jpg") center/cover no-repeat;
+  border:1px solid var(--line);
   box-shadow: var(--shadow);
+}
+
 }
 .brandTitle{
   line-height:1.05;
