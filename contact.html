@@ -38,8 +38,8 @@
 <section class="section">
   <div class="container">
 
-    <h1 class="h1">Rejoignez-nous</h1>
-    <p class="sub">Ensemble, construisons la ville de demain.</p>
+    <h1 class="h1">Contact & Engagement</h1>
+    <p class="sub">Écrivez-nous ou rejoignez l’équipe de campagne. Nous vous recontactons rapidement.</p>
 
     <div class="grid2">
 
@@ -47,7 +47,11 @@
       <div class="card" style="background:#fff">
         <div class="badge">EMAIL</div>
         <p class="sub" style="margin-top:10px">
-          <b>gauche-ecolo-citoyenne@montauban26.fr</b>
+          <b>
+            <a href="mailto:gauche-ecolo-citoyenne@montauban26.fr" style="text-decoration:underline;">
+              gauche-ecolo-citoyenne@montauban26.fr
+            </a>
+          </b>
         </p>
 
         <div style="height:10px"></div>
@@ -71,7 +75,7 @@
 
         <div style="height:8px"></div>
         <p class="small">
-          📌 Vous pouvez aussi nous écrire via le formulaire à droite.
+          📌 Vous pouvez aussi proposer une action / un événement via ce formulaire.
         </p>
       </div>
 
@@ -79,15 +83,24 @@
       <div class="card">
         <h2 style="margin:0 0 10px">Envoyez-nous un message</h2>
 
-        <form onsubmit="return fakeSubmit(event)">
+        <!-- ✅ FORMULAIRE CONNECTÉ EMAIL -->
+        <!-- Remplacer VOTRE_ID_FORMSPREE par l’ID fourni par Formspree -->
+        <form action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST">
+
           <label>Nom et prénom</label>
-          <input required placeholder="Votre nom" />
+          <input name="nom" required placeholder="Votre nom" />
 
           <label>Email</label>
-          <input required type="email" placeholder="votre@email.com" />
+          <input name="email" required type="email" placeholder="votre@email.com" />
+
+          <label>Objet</label>
+          <input name="objet" required placeholder="Ex : Question / Soutien / Proposition..." />
 
           <label>Message</label>
-          <textarea required placeholder="Votre message..."></textarea>
+          <textarea name="message" required placeholder="Votre message..."></textarea>
+
+          <!-- Optionnel : redirection après envoi -->
+          <!-- <input type="hidden" name="_next" value="https://mgec82000-lgtm.github.io/mgec2026/contact.html"> -->
 
           <div class="small">
             <input type="checkbox" required>
@@ -97,12 +110,11 @@
           <div style="height:12px"></div>
 
           <button class="btn red" type="submit">✉️ ENVOYER</button>
-        </form>
 
-        <p class="small" style="margin-top:12px;">
-          ⚠️ Sur GitHub Pages, le formulaire est en mode “démo” (il affiche un message).  
-          Si tu veux, je te le connecte pour recevoir les messages sur un email.
-        </p>
+          <p class="small" style="margin-top:12px;">
+            ✅ Message envoyé directement à l’équipe de campagne.
+          </p>
+        </form>
       </div>
 
     </div>
@@ -111,42 +123,46 @@
     <div class="card" style="margin-top:18px;">
       <h2 style="margin-top:0;">🤝 Devenir bénévole</h2>
       <p class="muted" style="margin-top:-8px;">
-        Vous voulez aider sur le terrain (tractage, affichage, porte-à-porte, événements) ? Laissez-nous vos infos.
+        Tractage, affichage, porte-à-porte, événements… Chaque aide compte !
       </p>
 
-      <form onsubmit="return fakeSubmit(event)" style="margin-top:10px;">
+      <!-- ✅ FORMULAIRE BENEVOLE CONNECTÉ EMAIL -->
+      <form action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST" style="margin-top:10px;">
+
+        <input type="hidden" name="type" value="Bénévole" />
+
         <div class="grid2">
           <div>
             <label>Prénom</label>
-            <input required placeholder="Votre prénom" />
+            <input name="prenom" required placeholder="Votre prénom" />
           </div>
           <div>
             <label>Téléphone</label>
-            <input required placeholder="06..." />
+            <input name="telephone" required placeholder="06..." />
           </div>
         </div>
 
         <label>Quartier (facultatif)</label>
-        <input placeholder="Ex : Centre-ville, Villebourbon, Sapiac..." />
+        <input name="quartier" placeholder="Ex : Centre-ville, Villebourbon, Sapiac..." />
 
         <label>Disponibilités</label>
         <div class="small" style="margin:6px 0 10px;">
           <label style="display:inline-flex; gap:8px; align-items:center; margin-right:14px; font-weight:800;">
-            <input type="checkbox"> Semaine
+            <input type="checkbox" name="disponibilites[]" value="Semaine"> Semaine
           </label>
           <label style="display:inline-flex; gap:8px; align-items:center; margin-right:14px; font-weight:800;">
-            <input type="checkbox"> Week-end
+            <input type="checkbox" name="disponibilites[]" value="Week-end"> Week-end
           </label>
           <label style="display:inline-flex; gap:8px; align-items:center; margin-right:14px; font-weight:800;">
-            <input type="checkbox"> Matin
+            <input type="checkbox" name="disponibilites[]" value="Matin"> Matin
           </label>
           <label style="display:inline-flex; gap:8px; align-items:center; margin-right:14px; font-weight:800;">
-            <input type="checkbox"> Après-midi
+            <input type="checkbox" name="disponibilites[]" value="Après-midi"> Après-midi
           </label>
         </div>
 
         <label>Comment voulez-vous aider ?</label>
-        <textarea placeholder="Tractage, porte-à-porte, communication, logistique, événements..."></textarea>
+        <textarea name="aide" placeholder="Tractage, porte-à-porte, communication, logistique, événements..."></textarea>
 
         <div class="small">
           <input type="checkbox" required>
@@ -155,11 +171,11 @@
 
         <div style="height:12px"></div>
         <button class="btn red" type="submit">✅ JE VEUX AIDER</button>
-      </form>
 
-      <p class="small" style="margin-top:12px;">
-        📌 Prochaine étape si tu veux : on connecte ce formulaire à un vrai email (gratuit) pour recevoir les inscriptions bénévoles.
-      </p>
+        <p class="small" style="margin-top:12px;">
+          ✅ Merci ! Un membre de l’équipe vous recontactera rapidement.
+        </p>
+      </form>
     </div>
 
   </div>
@@ -170,6 +186,5 @@
   <div class="container">© 2026 – Montauban 2026</div>
 </div>
 
-<script src="script.js"></script>
 </body>
 </html>
