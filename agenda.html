@@ -6,35 +6,74 @@
   <title>Agenda – Montauban 2026</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<div class="topbar"><div class="container"><div class="nav">
-  <div class="brand"><div class="brandLogo"></div><div class="brandTitle"><small>#MONTAUBAN2026</small>MONTAUBAN<br><span style="color:var(--purple)">De gauche, écologiste et citoyenne</span></div></div>
-  <div class="menu">
-    <a href="index.html">ACCUEIL</a><a class="active" href="agenda.html">AGENDA</a><a href="candidats.html">CANDIDATS</a><a href="programme.html">PROGRAMME</a><a href="medias.html">MÉDIAS</a><a href="contact.html">CONTACT</a>
-  </div>
-</div></div></div>
 
-<section class="section">
+<!-- MENU -->
+<div class="topbar">
   <div class="container">
-    <h1 class="h1">Agenda de campagne</h1>
-    <p class="sub">Retrouvez-nous lors de nos prochaines rencontres et actions.</p>
-
-    <div class="grid2">
-      <div class="card">
-        <div class="badge">PROCHAINS RDV</div>
-        <p class="sub" style="margin-top:10px">• Réunion publique – (date) – (lieu)<br>• Porte-à-porte – (date) – (quartier)<br>• Stand marché – (date) – (lieu)</p>
-        <p class="small">➡️ Si tu veux “exactement” comme Joynit, on peut aussi intégrer un agenda externe (Google Agenda par exemple).</p>
+    <div class="nav">
+      <div class="brand">
+        <div class="brandLogo"></div>
+        <div class="brandTitle">
+          <small>#MONTAUBAN2026</small>
+          MONTAUBAN<br>
+          <span style="color:var(--purple)">De gauche, écologiste et citoyenne</span>
+        </div>
       </div>
 
-      <div class="card" style="background:#fff">
-        <div style="height:260px;border-radius:18px;border:1px dashed var(--line);display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:900;">
-          (zone agenda / calendrier)
-        </div>
+      <div class="menu">
+        <a href="index.html">ACCUEIL</a>
+        <a class="active" href="agenda.html">AGENDA</a>
+        <a href="candidats.html">CANDIDATS</a>
+        <a href="programme.html">PROGRAMME</a>
+        <a href="medias.html">MÉDIAS</a>
+        <a href="contact.html">CONTACT</a>
       </div>
     </div>
   </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <h1 class="h1">Agenda</h1>
+    <p class="sub">Retrouvez tous nos événements, réunions et actions sur le terrain.</p>
+
+    <div class="card" style="margin-bottom:16px;">
+      <h2 style="margin-top:0;">🗓️ Calendrier Joynit</h2>
+      <p class="muted" style="margin-top:-8px;">
+        Si le calendrier ne s’affiche pas ci-dessous (blocage du site Joynit), utilisez le bouton “Ouvrir l’agenda”.
+      </p>
+
+      <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:12px;">
+        <a class="btn red" href="https://app.joynit.io/community/Ab8jF1KqjQuj/calendar" target="_blank" rel="noopener">
+          🔗 Ouvrir l’agenda Joynit
+        </a>
+        <a class="btn outline" href="contact.html">
+          🤝 Proposer un événement
+        </a>
+      </div>
+    </div>
+
+    <div class="card" style="padding:0; overflow:hidden;">
+      <iframe
+        src="https://app.joynit.io/community/Ab8jF1KqjQuj/calendar"
+        title="Agenda Joynit – Montauban 2026"
+        style="width:100%; height:780px; border:0;"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <p class="small" style="margin-top:12px;">
+      ✅ Astuce : si tu veux un agenda 100% intégré sans blocage, on peut aussi utiliser un Google Agenda public.
+    </p>
+  </div>
 </section>
 
-<div class="footer"><div class="container">© 2026 – Montauban 2026</div></div>
+<div class="footer">
+  <div class="container">© 2026 – Montauban 2026</div>
+</div>
+
 </body>
 </html>
