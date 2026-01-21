@@ -19,14 +19,21 @@
         </div>
       </div>
 
-      <div class="menu">
-        <a class="active" href="index.html">ACCUEIL</a>
-        <a href="agenda.html">AGENDA</a>
-        <a href="candidats.html">CANDIDATS</a>
-        <a href="programme.html">PROGRAMME</a>
-        <a href="medias.html">MÉDIAS</a>
-        <a href="contact.html">CONTACT</a>
-      </div>
+      <!-- BOUTON HAMBURGER (mobile) -->
+<button class="burger" aria-label="Ouvrir le menu" onclick="toggleMenu()">
+  ☰
+</button>
+
+<!-- MENU -->
+<div class="menu" id="mobileMenu">
+  <a class="active" href="index.html" onclick="closeMenu()">ACCUEIL</a>
+  <a href="agenda.html" onclick="closeMenu()">AGENDA</a>
+  <a href="candidats.html" onclick="closeMenu()">CANDIDATS</a>
+  <a href="programme.html" onclick="closeMenu()">PROGRAMME</a>
+  <a href="medias.html" onclick="closeMenu()">MÉDIAS</a>
+  <a href="contact.html" onclick="closeMenu()">CONTACT</a>
+</div>
+
     </div>
   </div>
 </div>
