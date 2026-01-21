@@ -9,7 +9,6 @@
 
 <body>
 
-<!-- MENU -->
 <div class="topbar">
   <div class="container">
     <div class="nav">
@@ -22,26 +21,23 @@
         </div>
       </div>
 
-     <!-- BOUTON HAMBURGER (mobile) -->
-<button class="burger" aria-label="Ouvrir le menu" onclick="toggleMenu()">
-  ☰
-</button>
+      <!-- BOUTON HAMBURGER (mobile) -->
+      <button class="burger" id="burgerBtn" aria-label="Ouvrir le menu" onclick="toggleMenu()">☰</button>
 
-<!-- MENU -->
-<div class="menu" id="mobileMenu">
-  <a class="active" href="index.html" onclick="closeMenu()">ACCUEIL</a>
-  <a href="agenda.html" onclick="closeMenu()">AGENDA</a>
-  <a href="candidats.html" onclick="closeMenu()">CANDIDATS</a>
-  <a href="programme.html" onclick="closeMenu()">PROGRAMME</a>
-  <a href="medias.html" onclick="closeMenu()">MÉDIAS</a>
-  <a href="contact.html" onclick="closeMenu()">CONTACT</a>
-</div>
+      <!-- MENU -->
+      <div class="menu" id="mobileMenu">
+        <a href="index.html">ACCUEIL</a>
+        <a href="agenda.html">AGENDA</a>
+        <a href="candidats.html">CANDIDATS</a>
+        <a href="programme.html">PROGRAMME</a>
+        <a class="active" href="medias.html">MÉDIAS</a>
+        <a href="contact.html">CONTACT</a>
+      </div>
 
     </div>
   </div>
 </div>
 
-<!-- CONTENU -->
 <section class="section">
   <div class="container">
 
@@ -51,7 +47,7 @@
     <!-- RESEAUX -->
     <div class="card" style="margin-bottom:18px;">
       <h2 style="margin-top:0;">📣 Réseaux sociaux</h2>
-      <p class="muted" style="margin-top:-8px;">Retrouvez-nous et partagez nos publications :</p>
+      <p class="sub" style="margin-top:-8px;">Retrouvez-nous et partagez nos publications :</p>
 
       <div class="social">
         <a href="https://www.facebook.com/montauban2026" target="_blank" rel="noopener" title="Facebook">f</a>
@@ -67,7 +63,7 @@
 
     <!-- VIDEOS -->
     <h2 style="margin:0 0 8px;">🎥 Nos vidéos</h2>
-    <p class="sub">Vous pouvez m’envoyer 3 liens, je les intégrerai directement ici (TikTok / Instagram / YouTube).</p>
+    <p class="sub">Envoie-moi 3 liens (TikTok / Instagram / YouTube), je les intègre proprement ici.</p>
 
     <div class="mediaGrid">
       <div class="mediaBox">Vidéo 1 (lien à intégrer)</div>
@@ -75,10 +71,22 @@
       <div class="mediaBox">Vidéo 3 (lien à intégrer)</div>
     </div>
 
+    <!-- PRESSE / RADIO -->
+    <div class="card" style="margin-top:18px;">
+      <h2 style="margin-top:0;">📻 Presse / Radio</h2>
+      <p class="sub" style="margin-top:-8px;">Retombées presse, interventions et liens officiels.</p>
+
+      <a class="btn outline" href="https://www.radiototem.net/preview/eP4azJViNH/published" target="_blank" rel="noopener">
+        ▶️ Écouter / voir sur Radio Totem
+      </a>
+
+      <p class="small" style="margin-top:10px;">🔗 Source : Radio Totem</p>
+    </div>
+
     <!-- DOCUMENTS -->
     <div class="card" style="margin-top:18px;">
       <h2 style="margin-top:0;">📄 Documents à télécharger</h2>
-      <p class="muted" style="margin-top:-8px;">
+      <p class="sub" style="margin-top:-8px;">
         Retrouvez ici nos tracts et documents officiels de campagne.
       </p>
 
@@ -101,10 +109,10 @@
   </div>
 </section>
 
-<!-- FOOTER -->
 <div class="footer">
   <div class="container">© 2026 – Montauban 2026</div>
 </div>
 
+<script src="script.js"></script>
 </body>
 </html>
