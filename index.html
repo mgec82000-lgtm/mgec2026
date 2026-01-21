@@ -6,6 +6,7 @@
   <title>Montauban 2026 – De gauche, écologiste et citoyenne</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <div class="topbar">
@@ -15,24 +16,23 @@
         <div class="brandLogo"></div>
         <div class="brandTitle">
           <small>#MONTAUBAN2026</small>
-          MONTAUBAN<br><span style="color:var(--purple)">De gauche, écologiste et citoyenne</span>
+          MONTAUBAN<br>
+          <span style="color:var(--purple)">De gauche, écologiste et citoyenne</span>
         </div>
       </div>
 
       <!-- BOUTON HAMBURGER (mobile) -->
-<button class="burger" aria-label="Ouvrir le menu" onclick="toggleMenu()">
-  ☰
-</button>
+      <button class="burger" id="burgerBtn" aria-label="Ouvrir le menu" onclick="toggleMenu()">☰</button>
 
-<!-- MENU -->
-<div class="menu" id="mobileMenu">
-  <a class="active" href="index.html" onclick="closeMenu()">ACCUEIL</a>
-  <a href="agenda.html" onclick="closeMenu()">AGENDA</a>
-  <a href="candidats.html" onclick="closeMenu()">CANDIDATS</a>
-  <a href="programme.html" onclick="closeMenu()">PROGRAMME</a>
-  <a href="medias.html" onclick="closeMenu()">MÉDIAS</a>
-  <a href="contact.html" onclick="closeMenu()">CONTACT</a>
-</div>
+      <!-- MENU -->
+      <div class="menu" id="mobileMenu">
+        <a class="active" href="index.html">ACCUEIL</a>
+        <a href="agenda.html">AGENDA</a>
+        <a href="candidats.html">CANDIDATS</a>
+        <a href="programme.html">PROGRAMME</a>
+        <a href="medias.html">MÉDIAS</a>
+        <a href="contact.html">CONTACT</a>
+      </div>
 
     </div>
   </div>
@@ -41,100 +41,99 @@
 <header class="hero">
   <div class="container">
     <div class="heroGrid">
+
       <div class="card">
         <div style="text-align:center; padding:14px 6px;">
-  <img src="assets/logo-rectangle.jpg" alt="Montauban 2026"
-  style="max-width:100%; height:auto; border-radius:18px; box-shadow: var(--shadow); border:1px solid var(--line);" />
-</div>
+          <img src="assets/logo-rectangle.jpg" alt="Montauban 2026"
+               style="max-width:100%; height:auto; border-radius:18px; box-shadow: var(--shadow); border:1px solid var(--line);" />
+        </div>
 
         <p class="heroText" style="margin:0;font-weight:900;color:var(--purple);">
           Ensemble, construisons une ville plus juste, plus verte et plus démocratique
         </p>
+
         <h1 class="heroTitle">Montauban 2026</h1>
+
         <p class="heroText">
           Un projet citoyen, écologique et social. Des propositions concrètes, une équipe engagée,
           et une campagne au contact des habitants.
         </p>
 
         <div class="actions">
-          <a class="btn red" href="assets/Programme MGEC_V2.pdf" target="_blank" rel="noopener">
-  📄 NOTRE PROGRAMME
+          <!-- ⚠️ espace encodé %20 -->
+          <a class="btn red" href="assets/Programme%20MGEC_V2.pdf" target="_blank" rel="noopener">
+            📄 NOTRE PROGRAMME
           </a>
           <a class="btn outline" href="contact.html">🤝 REJOIGNEZ-NOUS</a>
         </div>
 
-       <div class="social">
- <a href="https://www.facebook.com/montauban2026" target="_blank" rel="noopener" title="Facebook">f</a>
- <a href="https://www.instagram.com/montauban2026?igsh=ZjQzbTY4MjhvbzJy&utm_source=qr" target="_blank" rel="noopener" title="Instagram">◎</a>
-
-</div>
-
-      </div>
-
-     <div class="card">
-  <h2 style="margin-top:0">Nos priorités</h2>
-  <p class="muted" style="margin-top:-6px">
-    6 engagements concrets pour transformer Montauban.
-  </p>
-
-  <div class="prioritiesGrid">
-    <div class="prio">
-      <div class="prioIcon">🛡️</div>
-      <div>
-        <h3>Sécurité & tranquillité</h3>
-        <p>Présence, prévention, éclairage, actions de proximité.</p>
-      </div>
-    </div>
-
-    <div class="prio">
-      <div class="prioIcon">🌿</div>
-      <div>
-        <h3>Écologie utile</h3>
-        <p>Arbres, îlots de fraîcheur, énergie, sobriété.</p>
-      </div>
-    </div>
-
-    <div class="prio">
-      <div class="prioIcon">🧹</div>
-      <div>
-        <h3>Propreté & cadre de vie</h3>
-        <p>Plan propreté renforcé, quartiers mieux suivis.</p>
-      </div>
-    </div>
-
-    <div class="prio">
-      <div class="prioIcon">🚌</div>
-      <div>
-        <h3>Mobilité</h3>
-        <p>Bus, vélo, sécurité piétonne, stationnement réfléchi.</p>
-      </div>
-    </div>
-
-    <div class="prio">
-      <div class="prioIcon">🏪</div>
-      <div>
-        <h3>Économie & commerces</h3>
-        <p>Centre-ville vivant, soutien aux artisans et TPE.</p>
-      </div>
-    </div>
-
-    <div class="prio">
-      <div class="prioIcon">🗳️</div>
-      <div>
-        <h3>Démocratie citoyenne</h3>
-        <p>Budget participatif, décisions plus transparentes.</p>
-      </div>
-    </div>
-  </div>
-
-  <a class="btn outline" href="programme.html" style="margin-top:12px; display:inline-flex;">
-    📄 Lire le programme complet
-  </a>
-</div>
-
-          <div class="small" style="margin-top:10px;">✅ Prochaine étape : on ajoute exactement le logo de la photo.</div>
+        <div class="social">
+          <a href="https://www.facebook.com/montauban2026" target="_blank" rel="noopener" title="Facebook">f</a>
+          <a href="https://www.instagram.com/montauban2026?igsh=ZjQzbTY4MjhvbzJy&utm_source=qr" target="_blank" rel="noopener" title="Instagram">◎</a>
         </div>
       </div>
+
+      <div class="card">
+        <h2 style="margin-top:0">Nos priorités</h2>
+        <p class="sub" style="margin-top:-6px">
+          6 engagements concrets pour transformer Montauban.
+        </p>
+
+        <div class="prioritiesGrid">
+          <div class="prio">
+            <div class="prioIcon">🛡️</div>
+            <div>
+              <h3>Sécurité & tranquillité</h3>
+              <p>Présence, prévention, éclairage, actions de proximité.</p>
+            </div>
+          </div>
+
+          <div class="prio">
+            <div class="prioIcon">🌿</div>
+            <div>
+              <h3>Écologie utile</h3>
+              <p>Arbres, îlots de fraîcheur, énergie, sobriété.</p>
+            </div>
+          </div>
+
+          <div class="prio">
+            <div class="prioIcon">🧹</div>
+            <div>
+              <h3>Propreté & cadre de vie</h3>
+              <p>Plan propreté renforcé, quartiers mieux suivis.</p>
+            </div>
+          </div>
+
+          <div class="prio">
+            <div class="prioIcon">🚌</div>
+            <div>
+              <h3>Mobilité</h3>
+              <p>Bus, vélo, sécurité piétonne, stationnement réfléchi.</p>
+            </div>
+          </div>
+
+          <div class="prio">
+            <div class="prioIcon">🏪</div>
+            <div>
+              <h3>Économie & commerces</h3>
+              <p>Centre-ville vivant, soutien aux artisans et TPE.</p>
+            </div>
+          </div>
+
+          <div class="prio">
+            <div class="prioIcon">🗳️</div>
+            <div>
+              <h3>Démocratie citoyenne</h3>
+              <p>Budget participatif, décisions plus transparentes.</p>
+            </div>
+          </div>
+        </div>
+
+        <a class="btn outline" href="programme.html" style="margin-top:12px; display:inline-flex;">
+          📄 Lire le programme complet
+        </a>
+      </div>
+
     </div>
   </div>
 </header>
