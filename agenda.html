@@ -9,7 +9,6 @@
 
 <body>
 
-<!-- MENU -->
 <div class="topbar">
   <div class="container">
     <div class="nav">
@@ -23,19 +22,17 @@
       </div>
 
       <!-- BOUTON HAMBURGER (mobile) -->
-<button class="burger" aria-label="Ouvrir le menu" onclick="toggleMenu()">
-  ☰
-</button>
+      <button class="burger" id="burgerBtn" aria-label="Ouvrir le menu" onclick="toggleMenu()">☰</button>
 
-<!-- MENU -->
-<div class="menu" id="mobileMenu">
-  <a class="active" href="index.html" onclick="closeMenu()">ACCUEIL</a>
-  <a href="agenda.html" onclick="closeMenu()">AGENDA</a>
-  <a href="candidats.html" onclick="closeMenu()">CANDIDATS</a>
-  <a href="programme.html" onclick="closeMenu()">PROGRAMME</a>
-  <a href="medias.html" onclick="closeMenu()">MÉDIAS</a>
-  <a href="contact.html" onclick="closeMenu()">CONTACT</a>
-</div>
+      <!-- MENU -->
+      <div class="menu" id="mobileMenu">
+        <a href="index.html">ACCUEIL</a>
+        <a class="active" href="agenda.html">AGENDA</a>
+        <a href="candidats.html">CANDIDATS</a>
+        <a href="programme.html">PROGRAMME</a>
+        <a href="medias.html">MÉDIAS</a>
+        <a href="contact.html">CONTACT</a>
+      </div>
 
     </div>
   </div>
@@ -48,8 +45,8 @@
 
     <div class="card" style="margin-bottom:16px;">
       <h2 style="margin-top:0;">🗓️ Calendrier Joynit</h2>
-      <p class="muted" style="margin-top:-8px;">
-        Si le calendrier ne s’affiche pas ci-dessous (blocage du site Joynit), utilisez le bouton “Ouvrir l’agenda”.
+      <p class="sub" style="margin-top:-8px;">
+        Si le calendrier ne s’affiche pas ci-dessous (blocage Joynit), utilisez le bouton “Ouvrir l’agenda”.
       </p>
 
       <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:12px;">
@@ -82,5 +79,6 @@
   <div class="container">© 2026 – Montauban 2026</div>
 </div>
 
+<script src="script.js"></script>
 </body>
 </html>
