@@ -55,8 +55,6 @@ a{color:inherit; text-decoration:none}
   border:1px solid var(--line);
   box-shadow: var(--shadow);
 }
-
-}
 .brandTitle{
   line-height:1.05;
 }
