@@ -9,7 +9,6 @@
 
 <body>
 
-<!-- MENU -->
 <div class="topbar">
   <div class="container">
     <div class="nav">
@@ -23,25 +22,22 @@
       </div>
 
       <!-- BOUTON HAMBURGER (mobile) -->
-<button class="burger" aria-label="Ouvrir le menu" onclick="toggleMenu()">
-  ☰
-</button>
+      <button class="burger" id="burgerBtn" aria-label="Ouvrir le menu" onclick="toggleMenu()">☰</button>
 
-<!-- MENU -->
-<div class="menu" id="mobileMenu">
-  <a class="active" href="index.html" onclick="closeMenu()">ACCUEIL</a>
-  <a href="agenda.html" onclick="closeMenu()">AGENDA</a>
-  <a href="candidats.html" onclick="closeMenu()">CANDIDATS</a>
-  <a href="programme.html" onclick="closeMenu()">PROGRAMME</a>
-  <a href="medias.html" onclick="closeMenu()">MÉDIAS</a>
-  <a href="contact.html" onclick="closeMenu()">CONTACT</a>
-</div>
+      <!-- MENU -->
+      <div class="menu" id="mobileMenu">
+        <a href="index.html">ACCUEIL</a>
+        <a href="agenda.html">AGENDA</a>
+        <a href="candidats.html">CANDIDATS</a>
+        <a href="programme.html">PROGRAMME</a>
+        <a href="medias.html">MÉDIAS</a>
+        <a class="active" href="contact.html">CONTACT</a>
+      </div>
 
     </div>
   </div>
 </div>
 
-<!-- CONTENU -->
 <section class="section">
   <div class="container">
 
@@ -81,17 +77,16 @@
         </p>
 
         <div style="height:8px"></div>
-        <p class="small">
-          📌 Vous pouvez aussi proposer une action / un événement via ce formulaire.
-        </p>
+        <p class="small">📌 Vous pouvez aussi proposer une action / un événement via ce formulaire.</p>
       </div>
 
       <!-- FORMULAIRE CONTACT -->
       <div class="card">
         <h2 style="margin:0 0 10px">Envoyez-nous un message</h2>
 
-        <!-- ✅ FORMULAIRE CONNECTÉ EMAIL -->
-        <!-- Remplacer VOTRE_ID_FORMSPREE par l’ID fourni par Formspree -->
+        <!-- IMPORTANT :
+             Sur GitHub Pages, l'envoi d'email nécessite un service (Formspree).
+             Remplace VOTRE_ID_FORMSPREE par ton vrai ID Formspree (ex: xrbgabcd). -->
         <form action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST">
 
           <label>Nom et prénom</label>
@@ -106,20 +101,16 @@
           <label>Message</label>
           <textarea name="message" required placeholder="Votre message..."></textarea>
 
-          <!-- Optionnel : redirection après envoi -->
-          <!-- <input type="hidden" name="_next" value="https://mgec82000-lgtm.github.io/mgec2026/contact.html"> -->
-
           <div class="small">
             <input type="checkbox" required>
             J’accepte d’être recontacté dans le cadre de la campagne.
           </div>
 
           <div style="height:12px"></div>
-
           <button class="btn red" type="submit">✉️ ENVOYER</button>
 
           <p class="small" style="margin-top:12px;">
-            ✅ Message envoyé directement à l’équipe de campagne.
+            ✅ Merci ! Votre message a bien été transmis à l’équipe.
           </p>
         </form>
       </div>
@@ -129,13 +120,11 @@
     <!-- BENEVOLE -->
     <div class="card" style="margin-top:18px;">
       <h2 style="margin-top:0;">🤝 Devenir bénévole</h2>
-      <p class="muted" style="margin-top:-8px;">
+      <p class="sub" style="margin-top:-8px;">
         Tractage, affichage, porte-à-porte, événements… Chaque aide compte !
       </p>
 
-      <!-- ✅ FORMULAIRE BENEVOLE CONNECTÉ EMAIL -->
       <form action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST" style="margin-top:10px;">
-
         <input type="hidden" name="type" value="Bénévole" />
 
         <div class="grid2">
@@ -188,10 +177,10 @@
   </div>
 </section>
 
-<!-- FOOTER -->
 <div class="footer">
   <div class="container">© 2026 – Montauban 2026</div>
 </div>
 
+<script src="script.js"></script>
 </body>
 </html>
