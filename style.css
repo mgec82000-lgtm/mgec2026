@@ -297,3 +297,67 @@ textarea{min-height:120px; resize:vertical}
     grid-template-columns:1fr 1fr;
   }
 }
+/* ==========================
+   MENU HAMBURGER (MOBILE)
+   ========================== */
+
+/* bouton burger caché sur PC */
+.burger{
+  display:none;
+  border:1px solid var(--line);
+  background:#fff;
+  border-radius:14px;
+  padding:10px 14px;
+  font-size:20px;
+  font-weight:900;
+  cursor:pointer;
+  box-shadow: var(--shadow);
+}
+
+/* mobile */
+@media (max-width: 820px){
+
+  /* le bouton burger apparaît */
+  .burger{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  /* on cache le menu horizontal */
+  .menu{
+    display:none;
+    width:100%;
+    margin-top:12px;
+
+    flex-direction:column;
+    gap:10px;
+
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:18px;
+    padding:12px;
+
+    box-shadow: var(--shadow);
+  }
+
+  /* menu ouvert */
+  .menu.open{
+    display:flex;
+  }
+
+  /* liens dans le menu */
+  .menu a{
+    display:block;
+    text-align:left;
+    padding:14px 14px;
+    border-radius:14px;
+    font-weight:900;
+  }
+
+  /* topbar plus compacte */
+  .nav{
+    flex-wrap:wrap;
+    gap:10px;
+  }
+}
