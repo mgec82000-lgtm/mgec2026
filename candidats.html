@@ -13,14 +13,15 @@
   <div class="container">
     <div class="nav">
 
-      <div class="brand">
+      <!-- ✅ BRAND CLIQUABLE -->
+      <a class="brand" href="index.html" style="text-decoration:none;">
         <div class="brandLogo"></div>
         <div class="brandTitle">
           <small>#MONTAUBAN2026</small>
           MONTAUBAN<br>
           <span style="color:var(--purple)">De gauche, écologiste et citoyenne</span>
         </div>
-      </div>
+      </a>
 
       <!-- BOUTON HAMBURGER (mobile) -->
       <button class="burger" id="burgerBtn" aria-label="Ouvrir le menu" onclick="toggleMenu()">☰</button>
@@ -41,32 +42,60 @@
 
 <section class="section">
   <div class="container">
+
     <h1 class="h1">Nos candidats</h1>
-    <p class="sub">Une équipe engagée et représentative de la diversité montaubanaise.</p>
+    <p class="sub">Une équipe engagée, et représentative de la diversité montaubanaise.</p>
+
+    <div class="card" style="background:#fff; margin-bottom:16px;">
+      <div class="badge">👥 NOTRE LISTE</div>
+      <p class="sub" style="margin-top:10px;">
+        Ici, on affiche <b>les noms + professions</b> pour montrer la pluralité (salariés, indépendants, étudiants, retraités…).
+      </p>
+      <p class="small" style="margin-top:8px;">
+        ✅ Tu peux m’envoyer la liste en vrac (Nom Prénom – Profession), je te la mets en page.
+      </p>
+    </div>
 
     <div class="candidates">
 
+      <!-- Exemple 1 -->
       <div class="candidate">
         <span class="badge">Tête de liste</span>
-        <h3 style="margin:10px 0 4px">Nom Prénom</h3>
-        <p class="sub" style="margin:0">Description courte</p>
+        <h3 style="margin:10px 0 4px;">Nom Prénom</h3>
+        <p class="sub" style="margin:0;"><b>Profession :</b> À compléter</p>
+        <p class="small" style="margin-top:8px;">
+          Petite phrase de présentation (facultatif).
+        </p>
       </div>
 
+      <!-- Exemple 2 -->
       <div class="candidate">
         <span class="badge">2ᵉ de liste</span>
-        <h3 style="margin:10px 0 4px">Nom Prénom</h3>
-        <p class="sub" style="margin:0">Description</p>
+        <h3 style="margin:10px 0 4px;">Nom Prénom</h3>
+        <p class="sub" style="margin:0;"><b>Profession :</b> À compléter</p>
+        <p class="small" style="margin-top:8px;">
+          Petite phrase de présentation (facultatif).
+        </p>
       </div>
 
+      <!-- Exemple 3 -->
       <div class="candidate">
         <span class="badge">3ᵉ de liste</span>
-        <h3 style="margin:10px 0 4px">Nom Prénom</h3>
-        <p class="sub" style="margin:0">Description</p>
+        <h3 style="margin:10px 0 4px;">Nom Prénom</h3>
+        <p class="sub" style="margin:0;"><b>Profession :</b> À compléter</p>
+        <p class="small" style="margin-top:8px;">
+          Petite phrase de présentation (facultatif).
+        </p>
       </div>
+
+      <!-- ✅ Tu dupliques ce bloc pour ajouter les autres candidats -->
 
     </div>
 
-    <p class="small">
+    <p class="small" style="margin-top:12px;">
+      📌 Pour ajouter rapidement les 49 : envoie-moi la liste (nom + profession) et je te renvoie la page complète prête.
+    </p>
+
   </div>
 </section>
 
