@@ -12,14 +12,16 @@
 <div class="topbar">
   <div class="container">
     <div class="nav">
-      <div class="brand">
+
+      <!-- ✅ BRAND CLIQUABLE -->
+      <a class="brand" href="index.html" style="text-decoration:none;">
         <div class="brandLogo"></div>
         <div class="brandTitle">
           <small>#MONTAUBAN2026</small>
           MONTAUBAN<br>
           <span style="color:var(--purple)">De gauche, écologiste et citoyenne</span>
         </div>
-      </div>
+      </a>
 
       <!-- BOUTON HAMBURGER (mobile) -->
       <button class="burger" id="burgerBtn" aria-label="Ouvrir le menu" onclick="toggleMenu()">☰</button>
@@ -46,7 +48,7 @@
 
     <div class="grid2">
 
-      <!-- INFOS + RESEAUX -->
+      <!-- INFOS -->
       <div class="card" style="background:#fff">
         <div class="badge">EMAIL</div>
         <p class="sub" style="margin-top:10px">
@@ -65,7 +67,6 @@
         <div style="height:10px"></div>
 
         <div class="badge">RÉSEAUX</div>
-
         <div class="social" style="margin-top:10px;">
           <a href="https://www.facebook.com/montauban2026" target="_blank" rel="noopener" title="Facebook">f</a>
           <a href="https://www.instagram.com/montauban2026?igsh=ZjQzbTY4MjhvbzJy&utm_source=qr" target="_blank" rel="noopener" title="Instagram">◎</a>
@@ -76,24 +77,34 @@
           <a href="https://www.instagram.com/montauban2026?igsh=ZjQzbTY4MjhvbzJy&utm_source=qr" target="_blank" rel="noopener">→ Instagram officiel</a>
         </p>
 
-        <div style="height:8px"></div>
-        <p class="small">📌 Vous pouvez aussi proposer une action / un événement via ce formulaire.</p>
+        <p class="small">
+          📌 Vous pouvez aussi proposer une action / un événement via le formulaire.
+        </p>
       </div>
 
       <!-- FORMULAIRE CONTACT -->
       <div class="card">
         <h2 style="margin:0 0 10px">Envoyez-nous un message</h2>
 
-        <!-- IMPORTANT :
-             Sur GitHub Pages, l'envoi d'email nécessite un service (Formspree).
-             Remplace VOTRE_ID_FORMSPREE par ton vrai ID Formspree (ex: xrbgabcd). -->
+        <p class="small" style="margin-top:0;">
+          ✅ Ce formulaire envoie un email à l’équipe via <b>Formspree</b> (compatible GitHub Pages).
+        </p>
+
+        <!-- ⚠️ IMPORTANT :
+             Remplace VOTRE_ID_FORMSPREE par ton vrai ID Formspree (ex: xrbgabcd)
+             Pour recevoir les messages sur gauche-ecolo-citoyenne@montauban26.fr
+        -->
         <form action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST">
+
+          <!-- Options Formspree utiles -->
+          <input type="hidden" name="_subject" value="[Montauban 2026] Nouveau message depuis le site" />
 
           <label>Nom et prénom</label>
           <input name="nom" required placeholder="Votre nom" />
 
           <label>Email</label>
           <input name="email" required type="email" placeholder="votre@email.com" />
+          <input type="hidden" name="_replyto" value="" />
 
           <label>Objet</label>
           <input name="objet" required placeholder="Ex : Question / Soutien / Proposition..." />
@@ -109,8 +120,8 @@
           <div style="height:12px"></div>
           <button class="btn red" type="submit">✉️ ENVOYER</button>
 
-          <p class="small" style="margin-top:12px;">
-            ✅ Merci ! Votre message a bien été transmis à l’équipe.
+          <p class="small" style="margin-top:10px;">
+            📌 Si rien n’arrive par email : c’est que l’ID Formspree n’est pas encore renseigné.
           </p>
         </form>
       </div>
@@ -125,6 +136,7 @@
       </p>
 
       <form action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST" style="margin-top:10px;">
+        <input type="hidden" name="_subject" value="[Montauban 2026] Nouveau bénévole (site)" />
         <input type="hidden" name="type" value="Bénévole" />
 
         <div class="grid2">
@@ -168,10 +180,15 @@
         <div style="height:12px"></div>
         <button class="btn red" type="submit">✅ JE VEUX AIDER</button>
 
-        <p class="small" style="margin-top:12px;">
+        <p class="small" style="margin-top:10px;">
           ✅ Merci ! Un membre de l’équipe vous recontactera rapidement.
         </p>
       </form>
+
+      <p class="small" style="margin-top:12px;">
+        📌 Prochaine étape : on connecte Formspree à l’adresse <b>gauche-ecolo-citoyenne@montauban26.fr</b>
+        pour recevoir toutes les inscriptions bénévoles.
+      </p>
     </div>
 
   </div>
