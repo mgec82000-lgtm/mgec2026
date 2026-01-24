@@ -13,7 +13,7 @@
   <div class="container">
     <div class="nav">
 
-      <!-- BRAND CLIQUABLE -->
+      <!-- ✅ BRAND CLIQUABLE (logo + titre) -->
       <a class="brand" href="index.html" style="text-decoration:none;">
         <div class="brandLogo"></div>
         <div class="brandTitle">
@@ -23,8 +23,8 @@
         </div>
       </a>
 
-      <!-- BURGER -->
-      <button class="burger" aria-label="Ouvrir le menu" onclick="toggleMenu()">☰</button>
+      <!-- BOUTON HAMBURGER (mobile) -->
+      <button class="burger" id="burgerBtn" aria-label="Ouvrir le menu" onclick="toggleMenu()">☰</button>
 
       <!-- MENU -->
       <div class="menu" id="mobileMenu">
@@ -44,104 +44,101 @@
   <div class="container">
     <div class="heroGrid">
 
-      <!-- COLONNE GAUCHE -->
       <div class="card">
-
         <div style="text-align:center; padding:14px 6px;">
-          <img src="assets/logo-rectangle.jpg"
-               alt="Montauban 2026"
-               style="max-width:100%; height:auto; border-radius:18px; border:1px solid var(--line); box-shadow:var(--shadow);" />
+          <img src="assets/logo-rectangle.jpg" alt="Montauban 2026"
+               style="max-width:100%; height:auto; border-radius:18px; box-shadow: var(--shadow); border:1px solid var(--line);" />
         </div>
 
-        <p class="heroText" style="font-weight:900;color:var(--purple); margin:0;">
+        <p class="heroText" style="margin:0;font-weight:900;color:var(--purple);">
           Ensemble, construisons une ville plus juste, plus verte et plus démocratique
         </p>
 
         <h1 class="heroTitle">Montauban 2026</h1>
 
         <p class="heroText">
-          Un projet citoyen, écologique et social. Des propositions concrètes,
-          une équipe engagée et une campagne au contact des habitants.
+          Un projet citoyen, écologique et social. Des propositions concrètes, une équipe engagée,
+          et une campagne au contact des habitants.
         </p>
 
         <div class="actions">
           <a class="btn red" href="assets/Programme%20MGEC_V2.pdf" target="_blank" rel="noopener">
             📄 NOTRE PROGRAMME
           </a>
-          <a class="btn outline" href="contact.html">
-            🤝 REJOIGNEZ-NOUS
-          </a>
+          <a class="btn outline" href="contact.html">🤝 REJOIGNEZ-NOUS</a>
         </div>
 
-        <!-- RÉSEAUX SOCIAUX COULEURS -->
-        <div class="social" style="margin-top:16px;">
+        <!-- ✅ Réseaux : LOGOS COULEURS -->
+        <div class="social" aria-label="Réseaux sociaux">
 
-          <!-- Facebook -->
+          <!-- Facebook (bleu) -->
           <a href="https://www.facebook.com/montauban2026"
-             target="_blank" rel="noopener" title="Facebook">
-            <svg width="22" height="22" viewBox="0 0 24 24">
+             target="_blank" rel="noopener"
+             aria-label="Facebook" title="Facebook">
+            <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
               <path fill="#1877F2"
-                d="M22 12a10 10 0 1 0-11.56 9.87v-6.99H7.9V12h2.54V9.8
-                c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26
-                c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.88h-2.34v6.99
-                A10 10 0 0 0 22 12z"/>
+                d="M22 12a10 10 0 1 0-11.56 9.87v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89
+                1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.88h-2.34v6.99A10 10 0 0 0 22 12z" />
             </svg>
           </a>
 
-          <!-- Instagram -->
+          <!-- Instagram (dégradé) -->
           <a href="https://www.instagram.com/montauban2026?igsh=ZjQzbTY4MjhvbzJy&utm_source=qr"
-             target="_blank" rel="noopener" title="Instagram">
-            <svg width="22" height="22" viewBox="0 0 24 24">
+             target="_blank" rel="noopener"
+             aria-label="Instagram" title="Instagram">
+            <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
               <defs>
-                <linearGradient id="igGradientHome" x1="0" y1="0" x2="1" y2="1">
+                <linearGradient id="igGradient" x1="0" y1="0" x2="1" y2="1">
                   <stop offset="0%" stop-color="#f58529"/>
                   <stop offset="35%" stop-color="#dd2a7b"/>
                   <stop offset="70%" stop-color="#8134af"/>
                   <stop offset="100%" stop-color="#515bd4"/>
                 </linearGradient>
               </defs>
-              <path fill="url(#igGradientHome)"
-                d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7
-                a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5z"/>
+              <path fill="url(#igGradient)"
+                d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 4.5A5.5 5.5 0 1 1 6.5 14 5.5 5.5 0 0 1 12 8.5zm0 2A3.5 3.5 0 1 0 15.5 14 3.5 3.5 0 0 0 12 10.5zM18 6.6a1 1 0 1 1-1 1 1 1 0 0 1 1-1z" />
             </svg>
           </a>
 
-          <!-- TikTok -->
-          <a href="https://www.tiktok.com/@montauban.de.gauc?_r=1&_t=ZN-93LK3MII4xi"
-             target="_blank" rel="noopener" title="TikTok">
-            <svg width="22" height="22" viewBox="0 0 24 24">
-              <path fill="#25F4EE"
-                d="M15.7 3c.6 3.3 2.6 5.3 5.8 5.8v2.8
-                c-2.1.1-3.9-.6-5.8-1.9v6.3
-                c0 3.8-3.1 6.9-6.9 6.9S2 19.8 2 16
-                c0-3.7 3-6.7 6.7-6.9v3.2
-                c-1.9.2-3.4 1.8-3.3 3.8
-                .1 2.1 1.9 3.7 4 3.6
-                2-.1 3.6-1.7 3.6-3.8V3h2.7z"/>
-              <path fill="#FE2C55"
-                d="M16.3 3c.6 3.3 2.6 5.3 5.8 5.8v2.8
-                c-2.1.1-3.9-.6-5.8-1.9v6.3
-                c0 3.8-3.1 6.9-6.9 6.9
-                S2.6 19.8 2.6 16c0-3.7
-                3-6.7 6.7-6.9v3.2"/>
-            </svg>
-          </a>
-
-          <!-- X / Twitter -->
-          <a href="#" target="_blank" rel="noopener" title="X (Twitter)">
-            <svg width="22" height="22" viewBox="0 0 24 24">
+          <!-- TikTok (cyan + rose) -->
+          <a href="#"
+             target="_blank" rel="noopener"
+             aria-label="TikTok" title="TikTok">
+            <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+              <!-- ombre cyan -->
+              <path fill="#25F4EE" opacity="0.95"
+                d="M15.7 3c.6 3.3 2.6 5.3 5.8 5.8v2.8c-2.1.1-3.9-.6-5.8-1.9v6.3c0 3.8-3.1 6.9-6.9 6.9S2 19.8 2 16
+                c0-3.7 3-6.7 6.7-6.9v3.2c-1.9.2-3.4 1.8-3.3 3.8.1 2.1 1.9 3.7 4 3.6 2-.1 3.6-1.7 3.6-3.8V3h2.7z" />
+              <!-- ombre rose -->
+              <path fill="#FE2C55" opacity="0.95"
+                d="M16.3 3c.6 3.3 2.6 5.3 5.8 5.8v2.8c-2.1.1-3.9-.6-5.8-1.9v6.3c0 3.8-3.1 6.9-6.9 6.9S2.6 19.8 2.6 16
+                c0-3.7 3-6.7 6.7-6.9v3.2c-1.9.2-3.4 1.8-3.3 3.8.1 2.1 1.9 3.7 4 3.6 2-.1 3.6-1.7 3.6-3.8V3h2.7z"
+                transform="translate(-0.6,0.2)" />
+              <!-- noir par-dessus -->
               <path fill="#111111"
-                d="M18.9 2H22l-6.8 7.8L23.3 22h-6.7
-                l-5.3-6.9L5.3 22H2l7.4-8.5L1 2h6.8
-                l4.8 6.2L18.9 2z"/>
+                d="M16.5 3c.6 3.5 2.7 5.6 6 6.1v3.1c-2.2.1-4.1-.6-6-2v6.6c0 4-3.2 7.2-7.2 7.2S2 20.8 2 16.8
+                c0-3.9 3.1-7 7-7.2v3.4c-2.1.2-3.7 2-3.6 4.1.1 2.2 2 3.9 4.2 3.8 2.1-.1 3.8-1.8 3.8-4V3h3.1z" />
+            </svg>
+          </a>
+
+          <!-- X (noir) -->
+          <a href="#"
+             target="_blank" rel="noopener"
+             aria-label="X (Twitter)" title="X (Twitter)">
+            <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="#111111"
+                d="M18.9 2H22l-6.8 7.8L23.3 22h-6.7l-5.3-6.9L5.3 22H2l7.4-8.5L1 2h6.8l4.8 6.2L18.9 2zm-1.2 18h1.8L7.3 3.9H5.4L17.7 20z"/>
             </svg>
           </a>
 
         </div>
 
+        <p class="small" style="margin-top:10px;">
+          👉 Donne-moi les liens TikTok + X, je te les mets directement.
+        </p>
+
       </div>
 
-      <!-- COLONNE DROITE -->
       <div class="card">
         <h2 style="margin-top:0">Nos priorités</h2>
         <p class="sub" style="margin-top:-6px">
@@ -149,15 +146,56 @@
         </p>
 
         <div class="prioritiesGrid">
-          <div class="prio"><div class="prioIcon">🛡️</div><div><h3>Sécurité</h3><p>Prévention et présence.</p></div></div>
-          <div class="prio"><div class="prioIcon">🌿</div><div><h3>Écologie</h3><p>Moins de chaleur, plus d’arbres.</p></div></div>
-          <div class="prio"><div class="prioIcon">🧹</div><div><h3>Propreté</h3><p>Quartiers mieux suivis.</p></div></div>
-          <div class="prio"><div class="prioIcon">🚌</div><div><h3>Mobilité</h3><p>Bus, vélo, piétons.</p></div></div>
-          <div class="prio"><div class="prioIcon">🏪</div><div><h3>Économie</h3><p>Soutien aux commerces.</p></div></div>
-          <div class="prio"><div class="prioIcon">🗳️</div><div><h3>Démocratie</h3><p>Participation citoyenne.</p></div></div>
+          <div class="prio">
+            <div class="prioIcon">🛡️</div>
+            <div>
+              <h3>Sécurité & tranquillité</h3>
+              <p>Présence, prévention, éclairage, actions de proximité.</p>
+            </div>
+          </div>
+
+          <div class="prio">
+            <div class="prioIcon">🌿</div>
+            <div>
+              <h3>Écologie utile</h3>
+              <p>Arbres, îlots de fraîcheur, énergie, sobriété.</p>
+            </div>
+          </div>
+
+          <div class="prio">
+            <div class="prioIcon">🧹</div>
+            <div>
+              <h3>Propreté & cadre de vie</h3>
+              <p>Plan propreté renforcé, quartiers mieux suivis.</p>
+            </div>
+          </div>
+
+          <div class="prio">
+            <div class="prioIcon">🚌</div>
+            <div>
+              <h3>Mobilité</h3>
+              <p>Bus, vélo, sécurité piétonne, stationnement réfléchi.</p>
+            </div>
+          </div>
+
+          <div class="prio">
+            <div class="prioIcon">🏪</div>
+            <div>
+              <h3>Économie & commerces</h3>
+              <p>Centre-ville vivant, soutien aux artisans et TPE.</p>
+            </div>
+          </div>
+
+          <div class="prio">
+            <div class="prioIcon">🗳️</div>
+            <div>
+              <h3>Démocratie citoyenne</h3>
+              <p>Budget participatif, décisions plus transparentes.</p>
+            </div>
+          </div>
         </div>
 
-        <a class="btn outline" href="programme.html" style="margin-top:12px;">
+        <a class="btn outline" href="programme.html" style="margin-top:12px; display:inline-flex;">
           📄 Lire le programme complet
         </a>
       </div>
@@ -167,9 +205,11 @@
 </header>
 
 <div class="footer">
-  <div class="container">© 2026 – Montauban 2026 • Site de campagne</div>
+  <div class="container">
+    © 2026 – Montauban 2026 • Site de campagne
+  </div>
 </div>
 
 <script src="script.js"></script>
 </body>
-                                      </html>
+            </html>
