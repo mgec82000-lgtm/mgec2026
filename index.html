@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Montauban 2026 – De gauche, écologiste et citoyenne</title>
+  <title>Médias – Montauban 2026</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,7 +13,7 @@
   <div class="container">
     <div class="nav">
 
-      <!-- ✅ BRAND CLIQUABLE (logo + titre) -->
+      <!-- ✅ BRAND CLIQUABLE -->
       <a class="brand" href="index.html" style="text-decoration:none;">
         <div class="brandLogo"></div>
         <div class="brandTitle">
@@ -28,11 +28,11 @@
 
       <!-- MENU -->
       <div class="menu" id="mobileMenu">
-        <a class="active" href="index.html">ACCUEIL</a>
+        <a href="index.html">ACCUEIL</a>
         <a href="agenda.html">AGENDA</a>
         <a href="candidats.html">CANDIDATS</a>
         <a href="programme.html">PROGRAMME</a>
-        <a href="medias.html">MÉDIAS</a>
+        <a class="active" href="medias.html">MÉDIAS</a>
         <a href="contact.html">CONTACT</a>
       </div>
 
@@ -40,174 +40,151 @@
   </div>
 </div>
 
-<header class="hero">
+<section class="section">
   <div class="container">
-    <div class="heroGrid">
 
-      <div class="card">
-        <div style="text-align:center; padding:14px 6px;">
-          <img src="assets/logo-rectangle.jpg" alt="Montauban 2026"
-               style="max-width:100%; height:auto; border-radius:18px; box-shadow: var(--shadow); border:1px solid var(--line);" />
-        </div>
+    <h1 class="h1">Médias</h1>
+    <p class="sub">Suivez notre campagne en images et téléchargez nos documents officiels.</p>
 
-        <p class="heroText" style="margin:0;font-weight:900;color:var(--purple);">
-          Ensemble, construisons une ville plus juste, plus verte et plus démocratique
-        </p>
+    <!-- RÉSEAUX -->
+    <div class="card" style="margin-bottom:18px;">
+      <h2 style="margin-top:0;">📣 Réseaux sociaux</h2>
+      <p class="sub" style="margin-top:-8px;">Retrouvez-nous et partagez nos publications :</p>
 
-        <h1 class="heroTitle">Montauban 2026</h1>
+      <!-- ✅ LOGOS COULEURS -->
+      <div class="social" aria-label="Réseaux sociaux">
 
-        <p class="heroText">
-          Un projet citoyen, écologique et social. Des propositions concrètes, une équipe engagée,
-          et une campagne au contact des habitants.
-        </p>
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/montauban2026"
+           target="_blank" rel="noopener"
+           aria-label="Facebook" title="Facebook">
+          <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="#1877F2"
+              d="M22 12a10 10 0 1 0-11.56 9.87v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89
+              1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.88h-2.34v6.99A10 10 0 0 0 22 12z" />
+          </svg>
+        </a>
 
-        <div class="actions">
-          <a class="btn red" href="assets/Programme%20MGEC_V2.pdf" target="_blank" rel="noopener">
-            📄 NOTRE PROGRAMME
-          </a>
-          <a class="btn outline" href="contact.html">🤝 REJOIGNEZ-NOUS</a>
-        </div>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/montauban2026?igsh=ZjQzbTY4MjhvbzJy&utm_source=qr"
+           target="_blank" rel="noopener"
+           aria-label="Instagram" title="Instagram">
+          <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+            <defs>
+              <linearGradient id="igGradientMedias" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#f58529"/>
+                <stop offset="35%" stop-color="#dd2a7b"/>
+                <stop offset="70%" stop-color="#8134af"/>
+                <stop offset="100%" stop-color="#515bd4"/>
+              </linearGradient>
+            </defs>
+            <path fill="url(#igGradientMedias)"
+              d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 4.5A5.5 5.5 0 1 1 6.5 14 5.5 5.5 0 0 1 12 8.5zm0 2A3.5 3.5 0 1 0 15.5 14 3.5 3.5 0 0 0 12 10.5zM18 6.6a1 1 0 1 1-1 1 1 1 0 0 1 1-1z" />
+          </svg>
+        </a>
 
-        <!-- ✅ Réseaux : LOGOS COULEURS -->
-        <div class="social" aria-label="Réseaux sociaux">
+        <!-- TikTok ✅ (lien intégré) -->
+        <a href="https://www.tiktok.com/@montauban.de.gauc?_r=1&_t=ZN-93LK3MII4xi"
+           target="_blank" rel="noopener"
+           aria-label="TikTok" title="TikTok">
+          <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="#25F4EE" opacity="0.95"
+              d="M15.7 3c.6 3.3 2.6 5.3 5.8 5.8v2.8c-2.1.1-3.9-.6-5.8-1.9v6.3c0 3.8-3.1 6.9-6.9 6.9S2 19.8 2 16
+              c0-3.7 3-6.7 6.7-6.9v3.2c-1.9.2-3.4 1.8-3.3 3.8.1 2.1 1.9 3.7 4 3.6 2-.1 3.6-1.7 3.6-3.8V3h2.7z" />
+            <path fill="#FE2C55" opacity="0.95"
+              d="M16.3 3c.6 3.3 2.6 5.3 5.8 5.8v2.8c-2.1.1-3.9-.6-5.8-1.9v6.3c0 3.8-3.1 6.9-6.9 6.9S2.6 19.8 2.6 16
+              c0-3.7 3-6.7 6.7-6.9v3.2c-1.9.2-3.4 1.8-3.3 3.8.1 2.1 1.9 3.7 4 3.6 2-.1 3.6-1.7 3.6-3.8V3h2.7z"
+              transform="translate(-0.6,0.2)" />
+            <path fill="#111111"
+              d="M16.5 3c.6 3.5 2.7 5.6 6 6.1v3.1c-2.2.1-4.1-.6-6-2v6.6c0 4-3.2 7.2-7.2 7.2S2 20.8 2 16.8
+              c0-3.9 3.1-7 7-7.2v3.4c-2.1.2-3.7 2-3.6 4.1.1 2.2 2 3.9 4.2 3.8 2.1-.1 3.8-1.8 3.8-4V3h3.1z" />
+          </svg>
+        </a>
 
-          <!-- Facebook (bleu) -->
-          <a href="https://www.facebook.com/montauban2026"
-             target="_blank" rel="noopener"
-             aria-label="Facebook" title="Facebook">
-            <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
-              <path fill="#1877F2"
-                d="M22 12a10 10 0 1 0-11.56 9.87v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89
-                1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.88h-2.34v6.99A10 10 0 0 0 22 12z" />
-            </svg>
-          </a>
-
-          <!-- Instagram (dégradé) -->
-          <a href="https://www.instagram.com/montauban2026?igsh=ZjQzbTY4MjhvbzJy&utm_source=qr"
-             target="_blank" rel="noopener"
-             aria-label="Instagram" title="Instagram">
-            <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
-              <defs>
-                <linearGradient id="igGradient" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0%" stop-color="#f58529"/>
-                  <stop offset="35%" stop-color="#dd2a7b"/>
-                  <stop offset="70%" stop-color="#8134af"/>
-                  <stop offset="100%" stop-color="#515bd4"/>
-                </linearGradient>
-              </defs>
-              <path fill="url(#igGradient)"
-                d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 4.5A5.5 5.5 0 1 1 6.5 14 5.5 5.5 0 0 1 12 8.5zm0 2A3.5 3.5 0 1 0 15.5 14 3.5 3.5 0 0 0 12 10.5zM18 6.6a1 1 0 1 1-1 1 1 1 0 0 1 1-1z" />
-            </svg>
-          </a>
-
-          <!-- TikTok (cyan + rose) -->
-          <a href="#"
-             target="_blank" rel="noopener"
-             aria-label="TikTok" title="TikTok">
-            <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
-              <!-- ombre cyan -->
-              <path fill="#25F4EE" opacity="0.95"
-                d="M15.7 3c.6 3.3 2.6 5.3 5.8 5.8v2.8c-2.1.1-3.9-.6-5.8-1.9v6.3c0 3.8-3.1 6.9-6.9 6.9S2 19.8 2 16
-                c0-3.7 3-6.7 6.7-6.9v3.2c-1.9.2-3.4 1.8-3.3 3.8.1 2.1 1.9 3.7 4 3.6 2-.1 3.6-1.7 3.6-3.8V3h2.7z" />
-              <!-- ombre rose -->
-              <path fill="#FE2C55" opacity="0.95"
-                d="M16.3 3c.6 3.3 2.6 5.3 5.8 5.8v2.8c-2.1.1-3.9-.6-5.8-1.9v6.3c0 3.8-3.1 6.9-6.9 6.9S2.6 19.8 2.6 16
-                c0-3.7 3-6.7 6.7-6.9v3.2c-1.9.2-3.4 1.8-3.3 3.8.1 2.1 1.9 3.7 4 3.6 2-.1 3.6-1.7 3.6-3.8V3h2.7z"
-                transform="translate(-0.6,0.2)" />
-              <!-- noir par-dessus -->
-              <path fill="#111111"
-                d="M16.5 3c.6 3.5 2.7 5.6 6 6.1v3.1c-2.2.1-4.1-.6-6-2v6.6c0 4-3.2 7.2-7.2 7.2S2 20.8 2 16.8
-                c0-3.9 3.1-7 7-7.2v3.4c-2.1.2-3.7 2-3.6 4.1.1 2.2 2 3.9 4.2 3.8 2.1-.1 3.8-1.8 3.8-4V3h3.1z" />
-            </svg>
-          </a>
-
-          <!-- X (noir) -->
-          <a href="#"
-             target="_blank" rel="noopener"
-             aria-label="X (Twitter)" title="X (Twitter)">
-            <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
-              <path fill="#111111"
-                d="M18.9 2H22l-6.8 7.8L23.3 22h-6.7l-5.3-6.9L5.3 22H2l7.4-8.5L1 2h6.8l4.8 6.2L18.9 2zm-1.2 18h1.8L7.3 3.9H5.4L17.7 20z"/>
-            </svg>
-          </a>
-
-        </div>
-
-        <p class="small" style="margin-top:10px;">
-          👉 Donne-moi les liens TikTok + X, je te les mets directement.
-        </p>
+        <!-- X / Twitter (en attente) -->
+        <a href="#"
+           target="_blank" rel="noopener"
+           aria-label="X (Twitter)" title="X (Twitter)">
+          <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="#111111"
+              d="M18.9 2H22l-6.8 7.8L23.3 22h-6.7l-5.3-6.9L5.3 22H2l7.4-8.5L1 2h6.8l4.8 6.2L18.9 2zm-1.2 18h1.8L7.3 3.9H5.4L17.7 20z"/>
+          </svg>
+        </a>
 
       </div>
 
-      <div class="card">
-        <h2 style="margin-top:0">Nos priorités</h2>
-        <p class="sub" style="margin-top:-6px">
-          6 engagements concrets pour transformer Montauban.
-        </p>
+      <div class="small" style="margin-top:10px;">
+        <a href="https://www.facebook.com/montauban2026" target="_blank" rel="noopener">→ Facebook officiel</a>
+        &nbsp;&nbsp;•&nbsp;&nbsp;
+        <a href="https://www.instagram.com/montauban2026?igsh=ZjQzbTY4MjhvbzJy&utm_source=qr" target="_blank" rel="noopener">→ Instagram officiel</a>
+        &nbsp;&nbsp;•&nbsp;&nbsp;
+        <a href="https://www.tiktok.com/@montauban.de.gauc?_r=1&_t=ZN-93LK3MII4xi" target="_blank" rel="noopener">→ TikTok</a>
+        &nbsp;&nbsp;•&nbsp;&nbsp;
+        <a href="#" target="_blank" rel="noopener">→ X (Twitter)</a>
+      </div>
 
-        <div class="prioritiesGrid">
-          <div class="prio">
-            <div class="prioIcon">🛡️</div>
-            <div>
-              <h3>Sécurité & tranquillité</h3>
-              <p>Présence, prévention, éclairage, actions de proximité.</p>
-            </div>
-          </div>
+      <p class="small" style="margin-top:10px;">
+        ✅ TikTok est intégré. Quand tu as le lien X, je te le mets.
+      </p>
+    </div>
 
-          <div class="prio">
-            <div class="prioIcon">🌿</div>
-            <div>
-              <h3>Écologie utile</h3>
-              <p>Arbres, îlots de fraîcheur, énergie, sobriété.</p>
-            </div>
-          </div>
+    <!-- VIDÉOS -->
+    <h2 style="margin:0 0 8px;">🎥 Nos vidéos</h2>
 
-          <div class="prio">
-            <div class="prioIcon">🧹</div>
-            <div>
-              <h3>Propreté & cadre de vie</h3>
-              <p>Plan propreté renforcé, quartiers mieux suivis.</p>
-            </div>
-          </div>
+    <div class="mediaGrid">
+      <div class="mediaBox">Vidéo 1 (lien à intégrer)</div>
+      <div class="mediaBox">Vidéo 2 (lien à intégrer)</div>
+      <div class="mediaBox">Vidéo 3 (lien à intégrer)</div>
+    </div>
 
-          <div class="prio">
-            <div class="prioIcon">🚌</div>
-            <div>
-              <h3>Mobilité</h3>
-              <p>Bus, vélo, sécurité piétonne, stationnement réfléchi.</p>
-            </div>
-          </div>
+    <!-- PRESSE / RADIO -->
+    <div class="card" style="margin-top:18px;">
+      <h2 style="margin-top:0;">📻 Presse / Radio</h2>
+      <p class="sub" style="margin-top:-8px;">Retombées presse, interventions et liens officiels.</p>
 
-          <div class="prio">
-            <div class="prioIcon">🏪</div>
-            <div>
-              <h3>Économie & commerces</h3>
-              <p>Centre-ville vivant, soutien aux artisans et TPE.</p>
-            </div>
-          </div>
+      <!-- IMAGE CLIQUABLE -->
+      <a href="https://www.radiototem.net/preview/eP4azJViNH/published"
+         target="_blank" rel="noopener"
+         style="display:block; margin-top:12px;">
+        <img src="assets/radiototem.webp"
+             alt="Publication Radio Totem – Montauban 2026"
+             style="width:100%; height:auto; border-radius:18px; border:1px solid var(--line); box-shadow: var(--shadow);" />
+      </a>
 
-          <div class="prio">
-            <div class="prioIcon">🗳️</div>
-            <div>
-              <h3>Démocratie citoyenne</h3>
-              <p>Budget participatif, décisions plus transparentes.</p>
-            </div>
-          </div>
-        </div>
+      <p class="small" style="margin-top:10px;">
+        🔗 Source : Radio Totem
+      </p>
 
-        <a class="btn outline" href="programme.html" style="margin-top:12px; display:inline-flex;">
-          📄 Lire le programme complet
+      <a class="btn outline"
+         href="https://www.radiototem.net/preview/eP4azJViNH/published"
+         target="_blank" rel="noopener">
+        ▶️ Ouvrir la publication
+      </a>
+    </div>
+
+    <!-- DOCUMENTS -->
+    <div class="card" style="margin-top:18px;">
+      <h2 style="margin-top:0;">📄 Documents à télécharger</h2>
+      <p class="sub" style="margin-top:-8px;">
+        Retrouvez ici nos tracts et documents officiels de campagne.
+      </p>
+
+      <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:14px;">
+        <a class="btn red" href="assets/Programme%20MGEC_V2.pdf" target="_blank" rel="noopener">
+          📘 Programme complet (PDF)
+        </a>
+
+        <a class="btn outline" href="assets/tract-janvier-2026.pdf" target="_blank" rel="noopener">
+          📰 Tract Janvier (PDF)
         </a>
       </div>
-
     </div>
+
   </div>
-</header>
+</section>
 
 <div class="footer">
-  <div class="container">
-    © 2026 – Montauban 2026 • Site de campagne
-  </div>
+  <div class="container">© 2026 – Montauban 2026</div>
 </div>
 
 <script src="script.js"></script>
