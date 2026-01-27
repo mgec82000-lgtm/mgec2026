@@ -46,6 +46,14 @@
     <h1 class="h1">Contact & Engagement</h1>
     <p class="sub">Écrivez-nous ou rejoignez l’équipe de campagne. Nous vous recontactons rapidement.</p>
 
+    <!-- ✅ Message de confirmation (affiché seulement si ?sent=1) -->
+    <div id="sentBox" class="card" style="display:none; border-left:6px solid var(--green); background:#fff; margin-bottom:16px;">
+      <h2 style="margin:0 0 6px;">✅ Merci !</h2>
+      <p class="sub" style="margin:0;">
+        Votre message a bien été envoyé à l’équipe. Nous vous recontactons dès que possible.
+      </p>
+    </div>
+
     <div class="grid2">
 
       <!-- INFOS -->
@@ -53,8 +61,8 @@
         <div class="badge">EMAIL</div>
         <p class="sub" style="margin-top:10px">
           <b>
-            <a href="mailto:gauche-ecolo-citoyenne@montauban26.fr" style="text-decoration:underline;">
-              gauche-ecolo-citoyenne@montauban26.fr
+            <a href="mailto:mgec82000@gmail.com" style="text-decoration:underline;">
+              mgec82000@gmail.com
             </a>
           </b>
         </p>
@@ -86,24 +94,20 @@
       <div class="card">
         <h2 style="margin:0 0 10px">Envoyez-nous un message</h2>
 
-        <p class="small" style="margin-top:0;">
-        </p>
+        <p class="small" style="margin-top:0;"></p>
 
-        <!-- ⚠️ IMPORTANT :
-             Remplace VOTRE_ID_FORMSPREE par ton vrai ID Formspree (ex: xrbgabcd)
-             Pour recevoir les messages sur gauche-ecolo-citoyenne@montauban26.fr
-        -->
-        <form action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST">
+        <!-- ✅ Formspree OK -->
+        <form action="https://formspree.io/f/mbdoblde" method="POST">
 
-          <!-- Options Formspree utiles -->
+          <!-- ✅ Sujet + redirection -->
           <input type="hidden" name="_subject" value="[Montauban 2026] Nouveau message depuis le site" />
+          <input type="hidden" name="_next" value="contact.html?sent=1" />
 
           <label>Nom et prénom</label>
           <input name="nom" required placeholder="Votre nom" />
 
           <label>Email</label>
           <input name="email" required type="email" placeholder="votre@email.com" />
-          <input type="hidden" name="_replyto" value="" />
 
           <label>Objet</label>
           <input name="objet" required placeholder="Ex : Question / Soutien / Proposition..." />
@@ -112,15 +116,16 @@
           <textarea name="message" required placeholder="Votre message..."></textarea>
 
           <div class="small">
-            <input type="checkbox" required>
-            J’accepte d’être recontacté dans le cadre de la campagne.
+            <label style="display:inline-flex; gap:8px; align-items:center; font-weight:800;">
+              <input type="checkbox" name="consentement" required>
+              J’accepte d’être recontacté dans le cadre de la campagne.
+            </label>
           </div>
 
           <div style="height:12px"></div>
           <button class="btn red" type="submit">✉️ ENVOYER</button>
 
-          <p class="small" style="margin-top:10px;">
-          </p>
+          <p class="small" style="margin-top:10px;"></p>
         </form>
       </div>
 
@@ -133,9 +138,11 @@
         Tractage, affichage, porte-à-porte, événements… Chaque aide compte !
       </p>
 
-      <form action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST" style="margin-top:10px;">
+      <!-- ✅ Formspree OK -->
+      <form action="https://formspree.io/f/mbdoblde" method="POST" style="margin-top:10px;">
         <input type="hidden" name="_subject" value="[Montauban 2026] Nouveau bénévole (site)" />
         <input type="hidden" name="type" value="Bénévole" />
+        <input type="hidden" name="_next" value="contact.html?sent=1" />
 
         <div class="grid2">
           <div>
@@ -171,20 +178,19 @@
         <textarea name="aide" placeholder="Tractage, porte-à-porte, communication, logistique, événements..."></textarea>
 
         <div class="small">
-          <input type="checkbox" required>
-          J’accepte d’être recontacté dans le cadre de la campagne.
+          <label style="display:inline-flex; gap:8px; align-items:center; font-weight:800;">
+            <input type="checkbox" name="consentement" required>
+            J’accepte d’être recontacté dans le cadre de la campagne.
+          </label>
         </div>
 
         <div style="height:12px"></div>
         <button class="btn red" type="submit">✅ JE VEUX AIDER</button>
 
-        <p class="small" style="margin-top:10px;">
-          ✅ Merci ! Un membre de l’équipe vous recontactera rapidement.
-        </p>
+        <p class="small" style="margin-top:10px;"></p>
       </form>
 
-      <p class="small" style="margin-top:12px;">
-      </p>
+      <p class="small" style="margin-top:12px;"></p>
     </div>
 
   </div>
@@ -195,5 +201,18 @@
 </div>
 
 <script src="script.js"></script>
+
+<!-- ✅ affiche "merci" seulement après redirection -->
+<script>
+  (function () {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("sent") === "1") {
+      const box = document.getElementById("sentBox");
+      if (box) box.style.display = "block";
+      window.history.replaceState({}, document.title, window.location.pathname);
+    }
+  })();
+</script>
+
 </body>
-</html>
+            </html>
