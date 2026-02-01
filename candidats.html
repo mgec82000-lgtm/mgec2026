@@ -42,56 +42,68 @@
 
 <section class="section">
   <div class="container">
-
     <h1 class="h1">Nos candidats</h1>
-    <p class="sub">Une équipe engagée, et représentative de la diversité montaubanaise.</p>
+    <p class="sub">Une équipe engagée et représentative de la diversité montaubanaise.</p>
 
-    <div class="card" style="background:#fff; margin-bottom:16px;">
-      <div class="badge">👥 NOTRE LISTE</div>
-      <p class="sub" style="margin-top:10px;">
-      </p>
-      <p class="small" style="margin-top:8px;">
-      </p>
+    <!-- ✅ Astuce : duplique une "candidateCard" pour ajouter une personne -->
+    <div class="candidatesGrid">
+
+      <!-- Candidat 1 -->
+      <article class="candidateCard">
+        <img class="candidatePhoto" src="assets/candidats/candidat-01.webp" alt="Nom Prénom">
+        <div class="candidateBody">
+          <div class="badge">Tête de liste</div>
+          <h3 class="candidateName">Nom Prénom</h3>
+          <p class="candidateRole">Profession / rôle (ex : Enseignante, engagée sur l’éducation et la jeunesse)</p>
+          <div class="candidateTags">
+            <span class="tag">Éducation</span>
+            <span class="tag">Justice sociale</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Candidat 2 -->
+      <article class="candidateCard">
+        <img class="candidatePhoto" src="assets/candidats/candidat-02.webp" alt="Nom Prénom">
+        <div class="candidateBody">
+          <div class="badge">2ᵉ de liste</div>
+          <h3 class="candidateName">Nom Prénom</h3>
+          <p class="candidateRole">Profession / rôle (ex : Artisan, engagé sur le commerce et l’emploi local)</p>
+          <div class="candidateTags">
+            <span class="tag">Économie</span>
+            <span class="tag">Centre-ville</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Candidat 3 -->
+      <article class="candidateCard">
+        <img class="candidatePhoto" src="assets/candidats/candidat-03.webp" alt="Nom Prénom">
+        <div class="candidateBody">
+          <div class="badge">3ᵉ de liste</div>
+          <h3 class="candidateName">Nom Prénom</h3>
+          <p class="candidateRole">Profession / rôle (ex : Infirmier, engagé sur la santé et la solidarité)</p>
+          <div class="candidateTags">
+            <span class="tag">Santé</span>
+            <span class="tag">Solidarité</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ✅ Ajoute autant de cartes que tu veux -->
+      <!-- Copie/colle un bloc "article candidateCard" et change photo/nom/profession -->
+
     </div>
 
-    <div class="candidates">
+    <div style="height:16px"></div>
 
-      <!-- Exemple 1 -->
-      <div class="candidate">
-        <span class="badge">Tête de liste</span>
-        <h3 style="margin:10px 0 4px;">Nom Prénom</h3>
-        <p class="sub" style="margin:0;"><b>Profession :</b> À compléter</p>
-        <p class="small" style="margin-top:8px;">
-          Petite phrase de présentation (facultatif).
-        </p>
-      </div>
-
-      <!-- Exemple 2 -->
-      <div class="candidate">
-        <span class="badge">2ᵉ de liste</span>
-        <h3 style="margin:10px 0 4px;">Nom Prénom</h3>
-        <p class="sub" style="margin:0;"><b>Profession :</b> À compléter</p>
-        <p class="small" style="margin-top:8px;">
-          Petite phrase de présentation (facultatif).
-        </p>
-      </div>
-
-      <!-- Exemple 3 -->
-      <div class="candidate">
-        <span class="badge">3ᵉ de liste</span>
-        <h3 style="margin:10px 0 4px;">Nom Prénom</h3>
-        <p class="sub" style="margin:0;"><b>Profession :</b> À compléter</p>
-        <p class="small" style="margin-top:8px;">
-          Petite phrase de présentation (facultatif).
-        </p>
-      </div>
-
-      <!-- ✅ Tu dupliques ce bloc pour ajouter les autres candidats -->
-
+    <div class="card" style="background:#fff">
+      <h2 style="margin-top:0;">📌 Ajout rapide</h2>
+      <p class="sub" style="margin-bottom:0;">
+        Envoie-moi : <b>Nom + profession</b> (même en vrac), et je te renverrai la page complète avec les 49 personnes.
+        Pour les photos : mets-les dans <b>assets/candidats/</b> et on les relie aux bons candidats.
+      </p>
     </div>
-
-    <p class="small" style="margin-top:12px;">
-    </p>
 
   </div>
 </section>
@@ -102,4 +114,4 @@
 
 <script src="script.js"></script>
 </body>
-</html>
+  </html>
