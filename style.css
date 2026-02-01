@@ -473,3 +473,70 @@ textarea{
   *{ transition:none !important; }
   .btn:hover{ transform:none !important; }
 }
+/* ==========================
+   CANDIDATS (PHOTOS)
+   ========================== */
+
+.candidatesGrid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:14px;
+}
+
+@media (max-width: 980px){
+  .candidatesGrid{ grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px){
+  .candidatesGrid{ grid-template-columns: 1fr; }
+}
+
+.candidateCard{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 10px 24px rgba(16,24,40,.08);
+  overflow:hidden;
+}
+
+.candidatePhoto{
+  width:100%;
+  aspect-ratio: 4/3;
+  background:#eef0f4;
+  display:block;
+  object-fit:cover;
+}
+
+.candidateBody{
+  padding:14px 16px 16px;
+}
+
+.candidateName{
+  margin:10px 0 4px;
+  font-size:16px;
+  font-weight:900;
+}
+
+.candidateRole{
+  margin:0;
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.45;
+}
+
+.candidateTags{
+  margin-top:10px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+.tag{
+  display:inline-flex;
+  align-items:center;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  background: rgba(91,75,138,.08);
+  color: var(--purple);
+  font-weight:900;
+  font-size:12px;
+}
