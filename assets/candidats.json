@@ -1,0 +1,167 @@
+[
+  {
+    "prenom": "Samir",
+    "nom": "Alem",
+    "photo": "samir.jpg",
+    "role": "Conducteur de travaux",
+    "badge": "Tête de liste",
+    "tags": ["Terrain", "Proximité"]
+  },
+  {
+    "prenom": "Cécile",
+    "nom": "Martin",
+    "photo": "cecileM.jpg",
+    "role": "Enseignante",
+    "badge": "Candidate",
+    "tags": ["Éducation", "Jeunesse"]
+  },
+  {
+    "prenom": "Christian",
+    "nom": "Petit",
+    "photo": "christianP.jpg",
+    "role": "Chef d’entreprise",
+    "badge": "Candidat",
+    "tags": ["Économie", "Commerces"]
+  },
+  {
+    "prenom": "Rémi",
+    "nom": "Morel",
+    "photo": "remim.jpg",
+    "role": "Technicien",
+    "badge": "Candidat",
+    "tags": ["Transition", "Écologie"]
+  },
+
+  {
+    "prenom": "Prénom5",
+    "nom": "Nom5",
+    "photo": "photo5.jpg",
+    "role": "Profession",
+    "badge": "Candidat",
+    "tags": ["Engagement"]
+  },
+  {
+    "prenom": "Prénom6",
+    "nom": "Nom6",
+    "photo": "photo6.jpg",
+    "role": "Profession",
+    "badge": "Candidat",
+    "tags": ["Engagement"]
+  },
+  {
+    "prenom": "Prénom7",
+    "nom": "Nom7",
+    "photo": "photo7.jpg",
+    "role": "Profession",
+    "badge": "Candidat",
+    "tags": ["Engagement"]
+  },
+  {
+    "prenom": "Prénom8",
+    "nom": "Nom8",
+    "photo": "photo8.jpg",
+    "role": "Profession",
+    "badge": "Candidat",
+    "tags": ["Engagement"]
+  },
+  {
+    "prenom": "Prénom9",
+    "nom": "Nom9",
+    "photo": "photo9.jpg",
+    "role": "Profession",
+    "badge": "Candidat",
+    "tags": ["Engagement"]
+  },
+  {
+    "prenom": "Prénom10",
+    "nom": "Nom10",
+    "photo": "photo10.jpg",
+    "role": "Profession",
+    "badge": "Candidat",
+    "tags": ["Engagement"]
+  },
+
+  {
+    "prenom": "Prénom11",
+    "nom": "Nom11",
+    "photo": "photo11.jpg",
+    "role": "Profession",
+    "badge": "Candidat",
+    "tags": ["Engagement"]
+  },
+  {
+    "prenom": "Prénom12",
+    "nom": "Nom12",
+    "photo": "photo12.jpg",
+    "role": "Profession",
+    "badge": "Candidat",
+    "tags": ["Engagement"]
+  },
+  {
+    "prenom": "Prénom13",
+    "nom": "Nom13",
+    "photo": "photo13.jpg",
+    "role": "Profession",
+    "badge": "Candidat",
+    "tags": ["Engagement"]
+  },
+  {
+    "prenom": "Prénom14",
+    "nom": "Nom14",
+    "photo": "photo14.jpg",
+    "role": "Profession",
+    "badge": "Candidat",
+    "tags": ["Engagement"]
+  },
+  {
+    "prenom": "Prénom15",
+    "nom": "Nom15",
+    "photo": "photo15.jpg",
+    "role": "Profession",
+    "badge": "Candidat",
+    "tags": ["Engagement"]
+  },
+
+  {
+    "prenom": "Prénom16",
+    "nom": "Nom16",
+    "photo": "photo16.jpg",
+    "role": "Profession",
+    "badge": "Candidat",
+    "tags": ["Engagement"]
+  },
+  {
+    "prenom": "Prénom17",
+    "nom": "Nom17",
+    "photo": "photo17.jpg",
+    "role": "Profession",
+    "badge": "Candidat",
+    "tags": ["Engagement"]
+  },
+  {
+    "prenom": "Prénom18",
+    "nom": "Nom18",
+    "photo": "photo18.jpg",
+    "role": "Profession",
+    "badge": "Candidat",
+    "tags": ["Engagement"]
+  },
+  {
+    "prenom": "Prénom19",
+    "nom": "Nom19",
+    "photo": "photo19.jpg",
+    "role": "Profession",
+    "badge": "Candidat",
+    "tags": ["Engagement"]
+  },
+  {
+    "prenom": "Prénom20",
+    "nom": "Nom20",
+    "photo": "photo20.jpg",
+    "role": "Profession",
+    "badge": "Candidat",
+    "tags": ["Engagement"]
+  }
+
+  /* 👉 Continue jusqu’à 49 */
+]
