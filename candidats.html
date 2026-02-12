@@ -9,12 +9,13 @@
 
 <body>
 
+<!-- HEADER -->
 <div class="topbar">
   <div class="container">
     <div class="nav">
 
-      <!-- ✅ BRAND CLIQUABLE -->
-      <a class="brand" href="index.html" style="text-decoration:none;">
+      <!-- ✅ Logo + Titre cliquable -->
+      <a class="brand" href="index.html">
         <div class="brandLogo"></div>
         <div class="brandTitle">
           <small>#MONTAUBAN2026</small>
@@ -23,8 +24,8 @@
         </div>
       </a>
 
-      <!-- BOUTON HAMBURGER (mobile) -->
-      <button class="burger" id="burgerBtn" aria-label="Ouvrir le menu" onclick="toggleMenu()">☰</button>
+      <!-- Bouton burger -->
+      <button class="burger" aria-label="Menu" onclick="toggleMenu()">☰</button>
 
       <!-- MENU -->
       <div class="menu" id="mobileMenu">
@@ -40,76 +41,53 @@
   </div>
 </div>
 
+<!-- CONTENU -->
 <section class="section">
   <div class="container">
+
     <h1 class="h1">Nos candidats</h1>
-    <p class="sub">Une équipe engagée et représentative de la diversité montaubanaise.</p>
+    <p class="sub">
+      Une équipe engagée et représentative de la diversité montaubanaise.
+    </p>
 
-    <!-- ✅ Astuce : duplique une "candidateCard" pour ajouter une personne -->
-    <div class="candidatesGrid">
-
-      <!-- Candidat 1 -->
-      <article class="candidateCard">
-        <img class="candidatePhoto" src="assets/candidat-01.webp" alt="CHIKHI SAMIR">
-        <div class="candidateBody">
-          <div class="badge">Tête de liste</div>
-          <h3 class="candidateName">CHIKHI SAMIR</h3>
-          <p class="candidateRole">Profession / rôle (ex : Enseignante, engagée sur l’éducation et la jeunesse)</p>
-          <div class="candidateTags">
-            <span class="tag">Éducation</span>
-            <span class="tag">Justice sociale</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- Candidat 2 -->
-      <article class="candidateCard">
-        <img class="candidatePhoto" src="assets/candidats/candidat-02.webp" alt="Nom Prénom">
-        <div class="candidateBody">
-          <div class="badge">2ᵉ de liste</div>
-          <h3 class="candidateName">Nom Prénom</h3>
-          <p class="candidateRole">Profession / rôle (ex : Artisan, engagé sur le commerce et l’emploi local)</p>
-          <div class="candidateTags">
-            <span class="tag">Économie</span>
-            <span class="tag">Centre-ville</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- Candidat 3 -->
-      <article class="candidateCard">
-        <img class="candidatePhoto" src="assets/candidats/candidat-03.webp" alt="Nom Prénom">
-        <div class="candidateBody">
-          <div class="badge">3ᵉ de liste</div>
-          <h3 class="candidateName">Nom Prénom</h3>
-          <p class="candidateRole">Profession / rôle (ex : Infirmier, engagé sur la santé et la solidarité)</p>
-          <div class="candidateTags">
-            <span class="tag">Santé</span>
-            <span class="tag">Solidarité</span>
-          </div>
-        </div>
-      </article>
-
-      <!-- ✅ Ajoute autant de cartes que tu veux -->
-      <!-- Copie/colle un bloc "article candidateCard" et change photo/nom/profession -->
-
-    </div>
-
-    <div style="height:16px"></div>
-
-    <div class="card" style="background:#fff">
-      <h2 style="margin-top:0;">📌 Ajout rapide</h2>
-      <p class="sub" style="margin-bottom:0;">
-      </p>
-    </div>
+    <!-- ✅ Grille générée automatiquement -->
+    <div id="candidats-grid" class="candidats-grid"></div>
 
   </div>
 </section>
 
+<!-- FOOTER -->
 <div class="footer">
   <div class="container">© 2026 – Montauban 2026</div>
 </div>
 
 <script src="script.js"></script>
+
+<!-- ✅ Script affichage candidats -->
+<script>
+fetch("assets/candidats.json")
+  .then(response => response.json())
+  .then(data => {
+    const grid = document.getElementById("candidats-grid");
+
+    grid.innerHTML = data.map(c => `
+      <article class="candidateCard">
+        <img src="assets/candidats/${c.photo}" alt="${c.prenom} ${c.nom}">
+        <div class="candidateInfo">
+          <div class="badge">${c.badge || ""}</div>
+          <h3>${c.prenom} ${c.nom}</h3>
+          <p>${c.role || ""}</p>
+          <div class="tags">
+            ${(c.tags || []).map(t => `<span class="tag">${t}</span>`).join("")}
+          </div>
+        </div>
+      </article>
+    `).join("");
+  })
+  .catch(error => {
+    console.error("Erreur chargement JSON :", error);
+  });
+</script>
+
 </body>
-  </html>
+</html>
