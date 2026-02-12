@@ -1,167 +1,434 @@
 [
   {
-    "prenom": "Samir",
-    "nom": "Alem",
-    "photo": "samir.jpg",
-    "role": "Conducteur de travaux",
-    "badge": "Tête de liste",
-    "tags": ["Terrain", "Proximité"]
+    "name": "Jean-Michel ANSELMI",
+    "first_name": "Jean-Michel",
+    "last_name": "ANSELMI",
+    "age": 70.0,
+    "role": "Enseignant retraité",
+    "district": "Cours-Foucault",
+    "slug": "jean-michel-anselmi"
   },
   {
-    "prenom": "Cécile",
-    "nom": "Martin",
-    "photo": "cecileM.jpg",
-    "role": "Enseignante",
-    "badge": "Candidate",
-    "tags": ["Éducation", "Jeunesse"]
+    "name": "Pierre AUBIGNAC",
+    "first_name": "Pierre",
+    "last_name": "AUBIGNAC",
+    "age": 30.0,
+    "role": "Ingénieur Enseignant",
+    "district": "Centre Ville",
+    "slug": "pierre-aubignac"
   },
   {
-    "prenom": "Christian",
-    "nom": "Petit",
-    "photo": "christianP.jpg",
-    "role": "Chef d’entreprise",
-    "badge": "Candidat",
-    "tags": ["Économie", "Commerces"]
+    "name": "Rafael AVILES",
+    "first_name": "Rafael",
+    "last_name": "AVILES",
+    "age": 42.0,
+    "role": "Graphiste",
+    "district": "Centre Ville",
+    "slug": "rafael-aviles"
   },
   {
-    "prenom": "Rémi",
-    "nom": "Morel",
-    "photo": "remim.jpg",
+    "name": "Aline BAILLEUL",
+    "first_name": "Aline",
+    "last_name": "BAILLEUL",
+    "age": 52.0,
+    "role": "Professeure de lettres",
+    "district": "Villebourbon",
+    "slug": "aline-bailleul"
+  },
+  {
+    "name": "Remi BARTHES",
+    "first_name": "Remi",
+    "last_name": "BARTHES",
+    "age": 35.0,
     "role": "Technicien",
-    "badge": "Candidat",
-    "tags": ["Transition", "Écologie"]
-  },
-
-  {
-    "prenom": "Prénom5",
-    "nom": "Nom5",
-    "photo": "photo5.jpg",
-    "role": "Profession",
-    "badge": "Candidat",
-    "tags": ["Engagement"]
+    "district": "Sapiac",
+    "slug": "remi-barthes"
   },
   {
-    "prenom": "Prénom6",
-    "nom": "Nom6",
-    "photo": "photo6.jpg",
-    "role": "Profession",
-    "badge": "Candidat",
-    "tags": ["Engagement"]
+    "name": "Brahim BOUHOUT",
+    "first_name": "Brahim",
+    "last_name": "BOUHOUT",
+    "age": 49.0,
+    "role": "Chef d’entreprise",
+    "district": "Villebourbon",
+    "slug": "brahim-bouhout"
   },
   {
-    "prenom": "Prénom7",
-    "nom": "Nom7",
-    "photo": "photo7.jpg",
-    "role": "Profession",
-    "badge": "Candidat",
-    "tags": ["Engagement"]
+    "name": "Eliane BOUSQUET",
+    "first_name": "Eliane",
+    "last_name": "BOUSQUET",
+    "age": 70.0,
+    "role": "Infirmière retraitée",
+    "district": "Saint-Martial",
+    "slug": "eliane-bousquet"
   },
   {
-    "prenom": "Prénom8",
-    "nom": "Nom8",
-    "photo": "photo8.jpg",
-    "role": "Profession",
-    "badge": "Candidat",
-    "tags": ["Engagement"]
+    "name": "Laure CAILLAVET",
+    "first_name": "Laure",
+    "last_name": "CAILLAVET",
+    "age": 38.0,
+    "role": "Assistante sociale",
+    "district": "Centre Ville",
+    "slug": "laure-caillavet"
   },
   {
-    "prenom": "Prénom9",
-    "nom": "Nom9",
-    "photo": "photo9.jpg",
-    "role": "Profession",
-    "badge": "Candidat",
-    "tags": ["Engagement"]
+    "name": "Pauline CALMEJANE",
+    "first_name": "Pauline",
+    "last_name": "CALMEJANE",
+    "age": 43.0,
+    "role": "Professeure des écoles",
+    "district": "Cours-Foucault",
+    "slug": "pauline-calmejane"
   },
   {
-    "prenom": "Prénom10",
-    "nom": "Nom10",
-    "photo": "photo10.jpg",
-    "role": "Profession",
-    "badge": "Candidat",
-    "tags": ["Engagement"]
-  },
-
-  {
-    "prenom": "Prénom11",
-    "nom": "Nom11",
-    "photo": "photo11.jpg",
-    "role": "Profession",
-    "badge": "Candidat",
-    "tags": ["Engagement"]
+    "name": "Jean-Paul CAVALIE",
+    "first_name": "Jean-Paul",
+    "last_name": "CAVALIE",
+    "age": 66.0,
+    "role": "Cadre retraité",
+    "district": "Centre Ville",
+    "slug": "jean-paul-cavalie"
   },
   {
-    "prenom": "Prénom12",
-    "nom": "Nom12",
-    "photo": "photo12.jpg",
-    "role": "Profession",
-    "badge": "Candidat",
-    "tags": ["Engagement"]
+    "name": "Véronique CERNETTIG",
+    "first_name": "Véronique",
+    "last_name": "CERNETTIG",
+    "age": 49.0,
+    "role": "Conseillère en insertion",
+    "district": "Centre Ville",
+    "slug": "veronique-cernettig"
   },
   {
-    "prenom": "Prénom13",
-    "nom": "Nom13",
-    "photo": "photo13.jpg",
-    "role": "Profession",
-    "badge": "Candidat",
-    "tags": ["Engagement"]
+    "name": "Samir CHIKHI",
+    "first_name": "Samir",
+    "last_name": "CHIKHI",
+    "age": 40.0,
+    "role": "Responsable commercial",
+    "district": "Villebourbon",
+    "slug": "samir-chikhi"
   },
   {
-    "prenom": "Prénom14",
-    "nom": "Nom14",
-    "photo": "photo14.jpg",
-    "role": "Profession",
-    "badge": "Candidat",
-    "tags": ["Engagement"]
+    "name": "Christian PERSIN",
+    "first_name": "Christian",
+    "last_name": "PERSIN",
+    "age": 66.0,
+    "role": "Cadre retraité",
+    "district": "Centre Ville",
+    "slug": "christian-persin"
   },
   {
-    "prenom": "Prénom15",
-    "nom": "Nom15",
-    "photo": "photo15.jpg",
-    "role": "Profession",
-    "badge": "Candidat",
-    "tags": ["Engagement"]
-  },
-
-  {
-    "prenom": "Prénom16",
-    "nom": "Nom16",
-    "photo": "photo16.jpg",
-    "role": "Profession",
-    "badge": "Candidat",
-    "tags": ["Engagement"]
+    "name": "Cécile MALET",
+    "first_name": "Cécile",
+    "last_name": "MALET",
+    "age": 49.0,
+    "role": "Cadre de santé",
+    "district": "Centre Ville",
+    "slug": "cecile-malet"
   },
   {
-    "prenom": "Prénom17",
-    "nom": "Nom17",
-    "photo": "photo17.jpg",
-    "role": "Profession",
-    "badge": "Candidat",
-    "tags": ["Engagement"]
+    "name": "Nicole MARGOLL É",
+    "first_name": "Nicole",
+    "last_name": "MARGOLL É",
+    "age": 71.0,
+    "role": "Retraitée",
+    "district": "Cours-Foucault",
+    "slug": "nicole-margoll-e"
   },
   {
-    "prenom": "Prénom18",
-    "nom": "Nom18",
-    "photo": "photo18.jpg",
-    "role": "Profession",
-    "badge": "Candidat",
-    "tags": ["Engagement"]
+    "name": "Gaëtan DELTOUR",
+    "first_name": "Gaëtan",
+    "last_name": "DELTOUR",
+    "age": 46.0,
+    "role": "Technicien",
+    "district": "Centre Ville",
+    "slug": "gaetan-deltour"
   },
   {
-    "prenom": "Prénom19",
-    "nom": "Nom19",
-    "photo": "photo19.jpg",
-    "role": "Profession",
-    "badge": "Candidat",
-    "tags": ["Engagement"]
+    "name": "Adrien DEYMIER",
+    "first_name": "Adrien",
+    "last_name": "DEYMIER",
+    "age": 41.0,
+    "role": "Conseiller bancaire",
+    "district": "Villebourbon",
+    "slug": "adrien-deymier"
   },
   {
-    "prenom": "Prénom20",
-    "nom": "Nom20",
-    "photo": "photo20.jpg",
-    "role": "Profession",
-    "badge": "Candidat",
-    "tags": ["Engagement"]
+    "name": "Eric DUMONT",
+    "first_name": "Eric",
+    "last_name": "DUMONT",
+    "age": 61.0,
+    "role": "Technicien",
+    "district": "Cours-Foucault",
+    "slug": "eric-dumont"
+  },
+  {
+    "name": "Bénédicte DUPIN",
+    "first_name": "Bénédicte",
+    "last_name": "DUPIN",
+    "age": 53.0,
+    "role": "Enseignante",
+    "district": "Centre Ville",
+    "slug": "benedicte-dupin"
+  },
+  {
+    "name": "Sébastien DURAND",
+    "first_name": "Sébastien",
+    "last_name": "DURAND",
+    "age": 40.0,
+    "role": "Infirmier",
+    "district": "Villebourbon",
+    "slug": "sebastien-durand"
+  },
+  {
+    "name": "Aurélie ESPASA",
+    "first_name": "Aurélie",
+    "last_name": "ESPASA",
+    "age": 36.0,
+    "role": "Professeure des écoles",
+    "district": "Cours-Foucault",
+    "slug": "aurelie-espasa"
+  },
+  {
+    "name": "Isabelle FAURE",
+    "first_name": "Isabelle",
+    "last_name": "FAURE",
+    "age": 51.0,
+    "role": "Employée",
+    "district": "Centre Ville",
+    "slug": "isabelle-faure"
+  },
+  {
+    "name": "Lydie FRAYSSINET",
+    "first_name": "Lydie",
+    "last_name": "FRAYSSINET",
+    "age": 57.0,
+    "role": "Fonctionnaire",
+    "district": "Villebourbon",
+    "slug": "lydie-frayssinet"
+  },
+  {
+    "name": "Bernard GARCES",
+    "first_name": "Bernard",
+    "last_name": "GARCES",
+    "age": 67.0,
+    "role": "Retraité",
+    "district": "Centre Ville",
+    "slug": "bernard-garces"
+  },
+  {
+    "name": "Hélène GIL",
+    "first_name": "Hélène",
+    "last_name": "GIL",
+    "age": 55.0,
+    "role": "Responsable associatif",
+    "district": "Cours-Foucault",
+    "slug": "helene-gil"
+  },
+  {
+    "name": "Nadia GUERIN",
+    "first_name": "Nadia",
+    "last_name": "GUERIN",
+    "age": 44.0,
+    "role": "Professeure",
+    "district": "Centre Ville",
+    "slug": "nadia-guerin"
+  },
+  {
+    "name": "Manon HENRY",
+    "first_name": "Manon",
+    "last_name": "HENRY",
+    "age": 26.0,
+    "role": "Étudiante",
+    "district": "Villebourbon",
+    "slug": "manon-henry"
+  },
+  {
+    "name": "Mourad EL HOUARI",
+    "first_name": "Mourad",
+    "last_name": "EL HOUARI",
+    "age": 43.0,
+    "role": "Entrepreneur",
+    "district": "Centre Ville",
+    "slug": "mourad-el-houari"
+  },
+  {
+    "name": "Sophie LACROIX",
+    "first_name": "Sophie",
+    "last_name": "LACROIX",
+    "age": 47.0,
+    "role": "Cadre",
+    "district": "Cours-Foucault",
+    "slug": "sophie-lacroix"
+  },
+  {
+    "name": "Yann LAGARDE",
+    "first_name": "Yann",
+    "last_name": "LAGARDE",
+    "age": 39.0,
+    "role": "Artisan",
+    "district": "Centre Ville",
+    "slug": "yann-lagarde"
+  },
+  {
+    "name": "Nicolas LASSERRE",
+    "first_name": "Nicolas",
+    "last_name": "LASSERRE",
+    "age": 36.0,
+    "role": "Technicien",
+    "district": "Villebourbon",
+    "slug": "nicolas-lasserre"
+  },
+  {
+    "name": "Carole LAVAL",
+    "first_name": "Carole",
+    "last_name": "LAVAL",
+    "age": 52.0,
+    "role": "Assistante",
+    "district": "Cours-Foucault",
+    "slug": "carole-laval"
+  },
+  {
+    "name": "Louise LECHEVALIER",
+    "first_name": "Louise",
+    "last_name": "LECHEVALIER",
+    "age": 31.0,
+    "role": "Infirmière",
+    "district": "Centre Ville",
+    "slug": "louise-lechevalier"
+  },
+  {
+    "name": "Thomas LEMAIRE",
+    "first_name": "Thomas",
+    "last_name": "LEMAIRE",
+    "age": 33.0,
+    "role": "Ingénieur",
+    "district": "Villebourbon",
+    "slug": "thomas-lemaire"
+  },
+  {
+    "name": "Nathalie LEROY",
+    "first_name": "Nathalie",
+    "last_name": "LEROY",
+    "age": 50.0,
+    "role": "Professeure",
+    "district": "Centre Ville",
+    "slug": "nathalie-leroy"
+  },
+  {
+    "name": "Julien MARTIN",
+    "first_name": "Julien",
+    "last_name": "MARTIN",
+    "age": 34.0,
+    "role": "Employé",
+    "district": "Cours-Foucault",
+    "slug": "julien-martin"
+  },
+  {
+    "name": "Aïcha MEZIANE",
+    "first_name": "Aïcha",
+    "last_name": "MEZIANE",
+    "age": 41.0,
+    "role": "Responsable RH",
+    "district": "Villebourbon",
+    "slug": "aicha-meziane"
+  },
+  {
+    "name": "Paul MOREL",
+    "first_name": "Paul",
+    "last_name": "MOREL",
+    "age": 45.0,
+    "role": "Commerçant",
+    "district": "Centre Ville",
+    "slug": "paul-morel"
+  },
+  {
+    "name": "Hugo PELISSIER",
+    "first_name": "Hugo",
+    "last_name": "PELISSIER",
+    "age": 29.0,
+    "role": "Technicien",
+    "district": "Cours-Foucault",
+    "slug": "hugo-pelissier"
+  },
+  {
+    "name": "Sarah PEREZ",
+    "first_name": "Sarah",
+    "last_name": "PEREZ",
+    "age": 37.0,
+    "role": "Chargée de projet",
+    "district": "Villebourbon",
+    "slug": "sarah-perez"
+  },
+  {
+    "name": "Damien PETIT",
+    "first_name": "Damien",
+    "last_name": "PETIT",
+    "age": 40.0,
+    "role": "Agent public",
+    "district": "Centre Ville",
+    "slug": "damien-petit"
+  },
+  {
+    "name": "Anaïs RAYMOND",
+    "first_name": "Anaïs",
+    "last_name": "RAYMOND",
+    "age": 28.0,
+    "role": "Étudiante",
+    "district": "Cours-Foucault",
+    "slug": "anais-raymond"
+  },
+  {
+    "name": "Karim RENAUD",
+    "first_name": "Karim",
+    "last_name": "RENAUD",
+    "age": 47.0,
+    "role": "Chef de projet",
+    "district": "Villebourbon",
+    "slug": "karim-renaud"
+  },
+  {
+    "name": "Lucie RIVIERE",
+    "first_name": "Lucie",
+    "last_name": "RIVIERE",
+    "age": 35.0,
+    "role": "Enseignante",
+    "district": "Centre Ville",
+    "slug": "lucie-riviere"
+  },
+  {
+    "name": "Éric ROUX",
+    "first_name": "Éric",
+    "last_name": "ROUX",
+    "age": 54.0,
+    "role": "Technicien",
+    "district": "Cours-Foucault",
+    "slug": "eric-roux"
+  },
+  {
+    "name": "Mathilde SABATIER",
+    "first_name": "Mathilde",
+    "last_name": "SABATIER",
+    "age": 32.0,
+    "role": "Chargée de communication",
+    "district": "Villebourbon",
+    "slug": "mathilde-sabatier"
+  },
+  {
+    "name": "Olivier THOMAS",
+    "first_name": "Olivier",
+    "last_name": "THOMAS",
+    "age": 58.0,
+    "role": "Cadre",
+    "district": "Centre Ville",
+    "slug": "olivier-thomas"
+  },
+  {
+    "name": "Claire VINCENT",
+    "first_name": "Claire",
+    "last_name": "VINCENT",
+    "age": 46.0,
+    "role": "Professeure",
+    "district": "Cours-Foucault",
+    "slug": "claire-vincent"
   }
-
-  /* 👉 Continue jusqu’à 49 */
-]
+    ]
