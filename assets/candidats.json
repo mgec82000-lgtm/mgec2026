@@ -8,18 +8,18 @@
     "tags": ["Villebourbon"]
   },
   {
-    "prenom": "Jean-Michel",
-    "nom": "ANSELMI",
-    "photo": "jeanmichel.jpg",
-    "role": "70 ans - Enseignant retraité",
+    "prenom": "Catherine",
+    "nom": "PHILIPPE",
+    "photo": "catherine.jpg",
+    "role": "61 ans - Formatrice"
     "badge": "Candidat",
-    "tags": ["Cours-Foucault"]
+    "tags": ["Villebourbon"]
   },
   {
-    "prenom": "Pierre",
-    "nom": "AUBIGNAC",
-    "photo": "pierre.jpg",
-    "role": "Ingénieur Enseignant",
+    "prenom": "Gaëtan",
+    "nom": "DELTOUR",
+    "photo": "gaetan.jpg",
+    "role": "Technicien",
     "badge": "Candidat",
     "tags": ["Centre Ville"]
   },
@@ -31,25 +31,38 @@
     "badge": "Candidat",
     "tags": ["Centre Ville"]
   },
-  
   {
-    "prenom": "Remi",
-    "nom": "BARTHES",
-    "photo": "remi.jpg",
-    "role": "Technicien",
-    "badge": "Candidat",
-    "tags": ["Sapiac"]
-  },
-
-  {
-    "prenom": "Gaëtan",
-    "nom": "DELTOUR",
-    "photo": "gaetan.jpg",
-    "role": "Technicien",
+    "prenom": "Pierre",
+    "nom": "AUBIGNAC",
+    "photo": "pierre.jpg",
+    "role": "Ingénieur Enseignant",
     "badge": "Candidat",
     "tags": ["Centre Ville"]
   },
-  
+  {
+    "prenom": "Remi",
+    "nom": "LAGASSE",
+    "photo": "remi.jpg",
+    "role": "32 ans - Enseignant",
+    "badge": "Candidat",
+    "tags": ["Falguières"]
+  },
+  {
+    "prenom": "Jean-Michel",
+    "nom": "ANSELMI",
+    "photo": "jeanmichel.jpg",
+    "role": "70 ans - Enseignant retraité",
+    "badge": "Candidat",
+    "tags": ["Cours-Foucault"]
+  },
+   {
+    "prenom": "Claire",
+    "nom": "VINCENT",
+    "photo": "claire.jpg",
+    "role": "Professeure",
+    "badge": "Candidat",
+    "tags": ["Cours-Foucault"]
+  }
   {
     "prenom": "Bernard",
     "nom": "GARCES",
@@ -58,13 +71,4 @@
     "badge": "Candidat",
     "tags": ["Centre Ville"]
   },
-  
-  {
-    "prenom": "Claire",
-    "nom": "VINCENT",
-    "photo": "claire.jpg",
-    "role": "Professeure",
-    "badge": "Candidat",
-    "tags": ["Cours-Foucault"]
-  }
 ]
