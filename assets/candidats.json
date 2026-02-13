@@ -16,12 +16,44 @@
     "tags": ["Villebourbon"]
   },
   {
+    "prenom": "Roméo",
+    "nom": "CHARRIERE",
+    "photo": "ROMEO.jpg",
+    "role": "43 ans - Salarié de Banque",
+    "badge": "Candidat",
+    "tags": ["Villebourbon"]
+  },
+    {
+    "prenom": "Marcelle",
+    "nom": "NAANY",
+    "photo": "marcelle.jpg",
+    "role": "50 ans - Assistante qualité",
+    "badge": "Candidat",
+    "tags": ["Villenouvelle"]
+  },
+      {
+    "prenom": "Guillaume",
+    "nom": "MANGENOT",
+    "photo": "guillaume.jpg",
+    "role": "42 ans - Enseignant",
+    "badge": "Candidat",
+    "tags": ["Falguière"]
+  },
+   {
+    "prenom": "Paloma",
+    "nom": "PAVAN",
+    "photo": "paloma.jpg",
+    "role": "28 ans - Psychologue clinicienne",
+    "badge": "Candidat",
+    "tags": ["Falguière"]
+  },
+  {
     "prenom": "Gaëtan",
     "nom": "DELTOUR",
     "photo": "gaetan.jpg",
-    "role": "Technicien",
+    "role": "31 ans - Responsable associatif",
     "badge": "Candidat",
-    "tags": ["Centre Ville"]
+    "tags": ["Villebourbon"]
   },
   {
     "prenom": "Rafael",
