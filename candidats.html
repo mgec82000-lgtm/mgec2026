@@ -3,7 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+
   <title>Candidats – Montauban 2026</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,7 +16,6 @@
   <div class="container">
     <div class="nav">
 
-      <!-- Logo + Titre -->
       <a class="brand" href="index.html">
         <div class="brandLogo"></div>
         <div class="brandTitle">
@@ -24,10 +25,8 @@
         </div>
       </a>
 
-      <!-- Bouton burger -->
       <button class="burger" aria-label="Menu" onclick="toggleMenu()">☰</button>
 
-      <!-- MENU -->
       <div class="menu" id="mobileMenu">
         <a href="index.html">ACCUEIL</a>
         <a href="agenda.html">AGENDA</a>
@@ -50,7 +49,6 @@
       Une équipe engagée et représentative de la diversité montaubanaise.
     </p>
 
-    <!-- Grille candidats -->
     <div id="candidats-grid" class="candidats-grid"></div>
 
   </div>
@@ -61,29 +59,48 @@
   <div class="container">© 2026 – Montauban 2026</div>
 </div>
 
-<!-- Script global -->
 <script src="script.js"></script>
 
-<!-- Script affichage candidats -->
+<!-- ✅ Script affichage candidats -->
 <script>
 fetch("assets/candidats.json")
   .then(response => response.json())
   .then(data => {
+
     const grid = document.getElementById("candidats-grid");
 
-    grid.innerHTML = data.map(c => `
-      <article class="candidateCard">
-        <img src="assets/candidats/${c.photo}" alt="${c.first_name} ${c.last_name}">
-        <div class="candidateInfo">
-          <div class="badge">Candidat</div>
-          <h3>${c.first_name} ${c.last_name}</h3>
-          <p>${c.role || ""}</p>
-          <div class="tags">
-            <span class="tag">${c.district || ""}</span>
+    function photoFromFirstName(firstName) {
+      return firstName
+        .normalize("NFD")                   // enlève accents
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/[^a-zA-Z0-9]/g, "")       // enlève espaces / tirets
+        .toLowerCase() + ".jpg";
+    }
+
+    grid.innerHTML = data.map(c => {
+
+      const photo = photoFromFirstName(c.first_name);
+
+      return `
+        <article class="candidateCard">
+          <img 
+            src="assets/candidats/${photo}" 
+            alt="${c.first_name} ${c.last_name}"
+            onerror="this.src='assets/candidats/default.jpg'">
+
+          <div class="candidateInfo">
+            <div class="badge">Candidat</div>
+            <h3>${c.first_name} ${c.last_name}</h3>
+            <p>${c.role || ""}</p>
+
+            <div class="tags">
+              <span class="tag">${c.district || ""}</span>
+            </div>
           </div>
-        </div>
-      </article>
-    `).join("");
+        </article>
+      `;
+    }).join("");
+
   })
   .catch(error => {
     console.error("Erreur chargement JSON :", error);
@@ -91,4 +108,4 @@ fetch("assets/candidats.json")
 </script>
 
 </body>
-  </html>
+    </html>
