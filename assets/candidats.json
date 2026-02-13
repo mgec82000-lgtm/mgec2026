@@ -47,14 +47,6 @@
     "badge": "Candidat",
     "tags": ["Sapiac"]
   },
-  {
-    "prenom": "",
-    "nom": "",
-    "photo": ".jpg",
-    "role": "Chef d’entreprise",
-    "badge": "Candidat",
-    "tags": ["Villebourbon"]
-  },
 
   {
     "prenom": "Gaëtan",
@@ -63,15 +55,6 @@
     "role": "Technicien",
     "badge": "Candidat",
     "tags": ["Centre Ville"]
-  },
-  
-  {
-    "prenom": "",
-    "nom": "",
-    "photo": ".jpg",
-    "role": "Technicien",
-    "badge": "Candidat",
-    "tags": ["Cours-Foucault"]
   },
   
   {
