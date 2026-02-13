@@ -55,46 +55,7 @@
     "badge": "Candidat",
     "tags": ["Villebourbon"]
   },
-  {
-    "prenom": "",
-    "nom": "",
-    "photo": ".jpg",
-    "role": "Infirmière retraitée",
-    "badge": "Candidat",
-    "tags": ["Saint-Martial"]
-  },
-  {
-    "prenom": "",
-    "nom": "",
-    "photo": .jpg",
-    "role": "Assistante sociale",
-    "badge": "Candidat",
-    "tags": ["Centre Ville"]
-  },
-  {
-    "prenom": "",
-    "nom": "",
-    "photo": ".jpg",
-    "role": "Professeure des écoles",
-    "badge": "Candidat",
-    "tags": ["Cours-Foucault"]
-  },
-  {
-    "prenom": "Christian",
-    "nom": "PERSIN",
-    "photo": "christian.jpg",
-    "role": "Cadre retraité",
-    "badge": "Candidat",
-    "tags": ["Centre Ville"]
-  },
-  {
-    "prenom": "Cécile",
-    "nom": "MALET",
-    "photo": "cecile.jpg",
-    "role": "Cadre de santé",
-    "badge": "Candidat",
-    "tags": ["Centre Ville"]
-  },
+
   {
     "prenom": "Gaëtan",
     "nom": "DELTOUR",
@@ -103,14 +64,7 @@
     "badge": "Candidat",
     "tags": ["Centre Ville"]
   },
-  {
-    "prenom": "",
-    "nom": "",
-    "photo": ".jpg",
-    "role": "Conseiller bancaire",
-    "badge": "Candidat",
-    "tags": ["Villebourbon"]
-  },
+  
   {
     "prenom": "",
     "nom": "",
@@ -119,46 +73,7 @@
     "badge": "Candidat",
     "tags": ["Cours-Foucault"]
   },
-  {
-    "prenom": "",
-    "nom": "",
-    "photo": ".jpg",
-    "role": "Enseignante",
-    "badge": "Candidat",
-    "tags": ["Centre Ville"]
-  },
-  {
-    "prenom": "Sébastien",
-    "nom": "DURAND",
-    "photo": "sebastien.jpg",
-    "role": "Infirmier",
-    "badge": "Candidat",
-    "tags": ["Villebourbon"]
-  },
-  {
-    "prenom": "",
-    "nom": "",
-    "photo": ".jpg",
-    "role": "Professeure des écoles",
-    "badge": "Candidat",
-    "tags": ["Cours-Foucault"]
-  },
-  {
-    "prenom": "",
-    "nom": "",
-    "photo": ".jpg",
-    "role": "Employée",
-    "badge": "Candidat",
-    "tags": ["Centre Ville"]
-  },
-  {
-    "prenom": "",
-    "nom": "",
-    "photo": ".jpg",
-    "role": "Fonctionnaire",
-    "badge": "Candidat",
-    "tags": ["Villebourbon"]
-  },
+  
   {
     "prenom": "Bernard",
     "nom": "GARCES",
@@ -167,38 +82,7 @@
     "badge": "Candidat",
     "tags": ["Centre Ville"]
   },
-  {
-    "prenom": "",
-    "nom": "",
-    "photo": ".jpg",
-    "role": "Responsable associatif",
-    "badge": "Candidat",
-    "tags": ["Cours-Foucault"]
-  },
-  {
-    "prenom": "",
-    "nom": "",
-    "photo": ".jpg",
-    "role": "Professeure",
-    "badge": "Candidat",
-    "tags": ["Centre Ville"]
-  },
-  {
-    "prenom": "",
-    "nom": "",
-    "photo": ".jpg",
-    "role": "Étudiante",
-    "badge": "Candidat",
-    "tags": ["Villebourbon"]
-  },
-  {
-    "prenom": "",
-    "nom": "",
-    "photo": ".jpg",
-    "role": "Entrepreneur",
-    "badge": "Candidat",
-    "tags": ["Centre Ville"]
-  },
+  
   {
     "prenom": "Claire",
     "nom": "VINCENT",
