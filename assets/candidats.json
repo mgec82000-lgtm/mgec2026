@@ -1,58 +1,210 @@
 [
-  { "prenom": "Samir", "nom": "CHIKHI", "photo": "samir.jpg", "role": "", "badge": "Candidat", "tags": [] },
-  { "prenom": "Catherine", "nom": "PHILIPPE", "photo": "catherine.jpg", "role": "", "badge": "Candidat", "tags": [] },
-  { "prenom": "Roméo", "nom": "CHARRIERE", "photo": "romeo.jpg", "role": "", "badge": "Candidat", "tags": [] },
-  { "prenom": "Marcelle", "nom": "NAANY", "photo": "marcelle.jpg", "role": "", "badge": "Candidat", "tags": [] },
-  { "prenom": "Guillaume", "nom": "MANGENOT", "photo": "guillaume.jpg", "role": "", "badge": "Candidat", "tags": [] },
-
-  { "prenom": "Céline", "nom": "VIGUIÉ", "photo": "celine.jpg", "role": "", "badge": "Candidat", "tags": [] },
-  { "prenom": "Paloma", "nom": "PAVAN", "photo": "paloma.jpg", "role": "", "badge": "Candidat", "tags": [] },
-  { "prenom": "Gaëtan", "nom": "DELTOUR", "photo": "gaetan.jpg", "role": "", "badge": "Candidat", "tags": [] },
-  { "prenom": "Rachid", "nom": "EL HOUARI", "photo": "rachid.jpg", "role": "", "badge": "Candidat", "tags": [] },
-  { "prenom": "Cécile", "nom": "LAFITTE", "photo": "cecile.jpg", "role": "", "badge": "Candidat", "tags": [] },
-
-  { "prenom": "Adrien", "nom": "DEYMIER", "photo": "adrien.jpg", "role": "", "badge": "Candidat", "tags": [] },
-  { "prenom": "Manuelita", "nom": "VINTAR", "photo": "manuelita.jpg", "role": "", "badge": "Candidat", "tags": [] },
-  { "prenom": "Ghislain", "nom": "DESCAZEAUX", "photo": "ghislain.jpg", "role": "", "badge": "Candidat", "tags": [] },
-  { "prenom": "Corinne", "nom": "LAVAL", "photo": "corinne.jpg", "role": "", "badge": "Candidat", "tags": [] },
-  { "prenom": "Fabrice", "nom": "CATON", "photo": "fabrice.jpg", "role": "", "badge": "Candidat", "tags": [] },
-
-  { "prenom": "Aloïs", "nom": "BOYER", "photo": "alois.jpg", "role": "", "badge": "Candidat", "tags": [] },
-  { "prenom": "Christian", "nom": "BONNEVILLE", "photo": "christian.jpg", "role": "", "badge": "Candidat", "tags": [] },
-  { "prenom": "Sylvie", "nom": "PRALONG", "photo": "sylvie.jpg", "role": "", "badge": "Candidat", "tags": [] },
-  { "prenom": "Bruno", "nom": "VALETTE", "photo": "bruno.jpg", "role": "", "badge": "Candidat", "tags": [] },
-  { "prenom": "Cynthia", "nom": "CORDIER", "photo": "cynthia.jpg", "role": "", "badge": "Candidat", "tags": [] },
-
-  { "prenom": "Grégory", "nom": "SHELLEY", "photo": "gregory.jpg", "role": "", "badge": "Candidat", "tags": [] },
-  { "prenom": "Rafael", "nom": "AVILES", "photo": "rafael.jpg", "role": "", "badge": "Candidat", "tags": [] },
-  { "prenom": "Karine", "nom": "MARAZEL", "photo": "karine.jpg", "role": "", "badge": "Candidat", "tags": [] },
-  { "prenom": "Kévin", "nom": "BILLIERES", "photo": "kevin.jpg", "role": "", "badge": "Candidat", "tags": [] },
-  { "prenom": "Mélanie", "nom": "COUMONT", "photo": "melanie.jpg", "role": "", "badge": "Candidat", "tags": [] },
-
-  { "prenom": "Cécile", "nom": "MALET", "photo": "cecileM.jpg", "role": "", "badge": "Candidat", "tags": [] },
-  { "prenom": "Christian", "nom": "PERSIN", "photo": "christianP.jpg", "role": "", "badge": "Candidat", "tags": [] },
-  { "prenom": "Véronique", "nom": "CERNETTIG", "photo": "veronique.jpg", "role": "", "badge": "Candidat", "tags": [] },
-  { "prenom": "Pierre", "nom": "AUBIGNAC", "photo": "pierre.jpg", "role": "", "badge": "Candidat", "tags": [] },
-  { "prenom": "Nicole", "nom": "MARGOLL É", "photo": "nicole.jpg", "role": "", "badge": "Candidat", "tags": [] },
-
-  { "prenom": "Julien", "nom": "MICHAUDON", "photo": "julien.jpg", "role": "", "badge": "Candidat", "tags": [] },
-  { "prenom": "Marion", "nom": "LEON", "photo": "marion.jpg", "role": "", "badge": "Candidat", "tags": [] },
-  { "prenom": "Rémi", "nom": "LAGASSE", "photo": "remi.jpg", "role": "", "badge": "Candidat", "tags": [] },
-  { "prenom": "Martine", "nom": "CASTEL", "photo": "martine.jpg", "role": "", "badge": "Candidat", "tags": [] },
-  { "prenom": "Frédéric", "nom": "PONS", "photo": "frederic.jpg", "role": "", "badge": "Candidat", "tags": [] },
-
-  { "prenom": "Emilie", "nom": "MENASPA", "photo": "emilie.jpg", "role": "", "badge": "Candidat", "tags": [] },
-  { "prenom": "Jean-Michel", "nom": "ANSELMI", "photo": "jeanmichel.jpg", "role": "", "badge": "Candidat", "tags": [] },
-  { "prenom": "Claire", "nom": "REGNY", "photo": "claire.jpg", "role": "", "badge": "Candidat", "tags": [] },
-  { "prenom": "Joëlle", "nom": "GREDER", "photo": "joelle.jpg", "role": "", "badge": "Candidat", "tags": [] },
-  { "prenom": "Mohammed", "nom": "El Majdoub", "photo": "mohammed.jpg", "role": "", "badge": "Candidat", "tags": [] },
-
-  { "prenom": "Jean-Marie", "nom": "SELVA", "photo": "jeanmarie.jpg", "role": "", "badge": "Candidat", "tags": [] },
-  { "prenom": "Jocelyne", "nom": "SEGARRA", "photo": "jocelyne.jpg", "role": "", "badge": "Candidat", "tags": [] },
-  { "prenom": "Rémi", "nom": "MONFORT", "photo": "remiM.jpg", "role": "", "badge": "Candidat", "tags": [] },
-  { "prenom": "Andréa", "nom": "CARRO-GOMEZ", "photo": "andrea.jpg", "role": "", "badge": "Candidat", "tags": [] },
-  { "prenom": "Jacques", "nom": "FAURE", "photo": "jacques.jpg", "role": "", "badge": "Candidat", "tags": [] },
-
-  { "prenom": "Philippe", "nom": "JOYEUX", "photo": "philippe.jpg", "role": "", "badge": "Candidat", "tags": [] },
-  { "prenom": "Bernard", "nom": "GARCES", "photo": "bernard.jpg", "role": "", "badge": "Candidat", "tags": [] }
-    ]
+  {
+    "prenom": "Samir",
+    "nom": "CHIKHI",
+    "photo": "samir.jpg",
+    "role": "Responsable commercial",
+    "badge": "Candidat",
+    "tags": ["Villebourbon"]
+  },
+  {
+    "prenom": "Jean-Michel",
+    "nom": "ANSELMI",
+    "photo": "jeanmichel.jpg",
+    "role": "Enseignant retraité",
+    "badge": "Candidat",
+    "tags": ["Cours-Foucault"]
+  },
+  {
+    "prenom": "Pierre",
+    "nom": "AUBIGNAC",
+    "photo": "pierre.jpg",
+    "role": "Ingénieur Enseignant",
+    "badge": "Candidat",
+    "tags": ["Centre Ville"]
+  },
+  {
+    "prenom": "Rafael",
+    "nom": "AVILES",
+    "photo": "rafael.jpg",
+    "role": "Graphiste",
+    "badge": "Candidat",
+    "tags": ["Centre Ville"]
+  },
+  {
+    "prenom": "Aline",
+    "nom": "BAILLEUL",
+    "photo": "aline.jpg",
+    "role": "Professeure de lettres",
+    "badge": "Candidat",
+    "tags": ["Villebourbon"]
+  },
+  {
+    "prenom": "Remi",
+    "nom": "BARTHES",
+    "photo": "remi.jpg",
+    "role": "Technicien",
+    "badge": "Candidat",
+    "tags": ["Sapiac"]
+  },
+  {
+    "prenom": "Brahim",
+    "nom": "BOUHOUT",
+    "photo": "brahim.jpg",
+    "role": "Chef d’entreprise",
+    "badge": "Candidat",
+    "tags": ["Villebourbon"]
+  },
+  {
+    "prenom": "Eliane",
+    "nom": "BOUSQUET",
+    "photo": "eliane.jpg",
+    "role": "Infirmière retraitée",
+    "badge": "Candidat",
+    "tags": ["Saint-Martial"]
+  },
+  {
+    "prenom": "Laure",
+    "nom": "CAILLAVET",
+    "photo": "laure.jpg",
+    "role": "Assistante sociale",
+    "badge": "Candidat",
+    "tags": ["Centre Ville"]
+  },
+  {
+    "prenom": "Pauline",
+    "nom": "CALMEJANE",
+    "photo": "pauline.jpg",
+    "role": "Professeure des écoles",
+    "badge": "Candidat",
+    "tags": ["Cours-Foucault"]
+  },
+  {
+    "prenom": "Christian",
+    "nom": "PERSIN",
+    "photo": "christian.jpg",
+    "role": "Cadre retraité",
+    "badge": "Candidat",
+    "tags": ["Centre Ville"]
+  },
+  {
+    "prenom": "Cécile",
+    "nom": "MALET",
+    "photo": "cecile.jpg",
+    "role": "Cadre de santé",
+    "badge": "Candidat",
+    "tags": ["Centre Ville"]
+  },
+  {
+    "prenom": "Gaëtan",
+    "nom": "DELTOUR",
+    "photo": "gaetan.jpg",
+    "role": "Technicien",
+    "badge": "Candidat",
+    "tags": ["Centre Ville"]
+  },
+  {
+    "prenom": "Adrien",
+    "nom": "DEYMIER",
+    "photo": "adrien.jpg",
+    "role": "Conseiller bancaire",
+    "badge": "Candidat",
+    "tags": ["Villebourbon"]
+  },
+  {
+    "prenom": "Eric",
+    "nom": "DUMONT",
+    "photo": "eric.jpg",
+    "role": "Technicien",
+    "badge": "Candidat",
+    "tags": ["Cours-Foucault"]
+  },
+  {
+    "prenom": "Bénédicte",
+    "nom": "DUPIN",
+    "photo": "benedicte.jpg",
+    "role": "Enseignante",
+    "badge": "Candidat",
+    "tags": ["Centre Ville"]
+  },
+  {
+    "prenom": "Sébastien",
+    "nom": "DURAND",
+    "photo": "sebastien.jpg",
+    "role": "Infirmier",
+    "badge": "Candidat",
+    "tags": ["Villebourbon"]
+  },
+  {
+    "prenom": "Aurélie",
+    "nom": "ESPASA",
+    "photo": "aurelie.jpg",
+    "role": "Professeure des écoles",
+    "badge": "Candidat",
+    "tags": ["Cours-Foucault"]
+  },
+  {
+    "prenom": "Isabelle",
+    "nom": "FAURE",
+    "photo": "isabelle.jpg",
+    "role": "Employée",
+    "badge": "Candidat",
+    "tags": ["Centre Ville"]
+  },
+  {
+    "prenom": "Lydie",
+    "nom": "FRAYSSINET",
+    "photo": "lydie.jpg",
+    "role": "Fonctionnaire",
+    "badge": "Candidat",
+    "tags": ["Villebourbon"]
+  },
+  {
+    "prenom": "Bernard",
+    "nom": "GARCES",
+    "photo": "bernard.jpg",
+    "role": "Retraité",
+    "badge": "Candidat",
+    "tags": ["Centre Ville"]
+  },
+  {
+    "prenom": "Hélène",
+    "nom": "GIL",
+    "photo": "helene.jpg",
+    "role": "Responsable associatif",
+    "badge": "Candidat",
+    "tags": ["Cours-Foucault"]
+  },
+  {
+    "prenom": "Nadia",
+    "nom": "GUERIN",
+    "photo": "nadia.jpg",
+    "role": "Professeure",
+    "badge": "Candidat",
+    "tags": ["Centre Ville"]
+  },
+  {
+    "prenom": "Manon",
+    "nom": "HENRY",
+    "photo": "manon.jpg",
+    "role": "Étudiante",
+    "badge": "Candidat",
+    "tags": ["Villebourbon"]
+  },
+  {
+    "prenom": "Mourad",
+    "nom": "EL HOUARI",
+    "photo": "mourad.jpg",
+    "role": "Entrepreneur",
+    "badge": "Candidat",
+    "tags": ["Centre Ville"]
+  },
+  {
+    "prenom": "Claire",
+    "nom": "VINCENT",
+    "photo": "claire.jpg",
+    "role": "Professeure",
+    "badge": "Candidat",
+    "tags": ["Cours-Foucault"]
+  }
+]
