@@ -31,14 +31,7 @@
     "badge": "Candidat",
     "tags": ["Centre Ville"]
   },
-  {
-    "prenom": "Aline",
-    "nom": "BAILLEUL",
-    "photo": "aline.jpg",
-    "role": "Professeure de lettres",
-    "badge": "Candidat",
-    "tags": ["Villebourbon"]
-  },
+  
   {
     "prenom": "Remi",
     "nom": "BARTHES",
