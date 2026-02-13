@@ -18,12 +18,12 @@
   {
     "prenom": "Roméo",
     "nom": "CHARRIERE",
-    "photo": "ROMEO.jpg",
+    "photo": "romeo.jpg",
     "role": "43 ans - Salarié de Banque",
     "badge": "Candidat",
     "tags": ["Villebourbon"]
   },
-    {
+  {
     "prenom": "Marcelle",
     "nom": "NAANY",
     "photo": "marcelle.jpg",
@@ -31,7 +31,7 @@
     "badge": "Candidat",
     "tags": ["Villenouvelle"]
   },
-      {
+  {
     "prenom": "Guillaume",
     "nom": "MANGENOT",
     "photo": "guillaume.jpg",
