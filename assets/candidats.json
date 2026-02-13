@@ -74,7 +74,7 @@
   {
     "prenom": "Cécile",
     "nom": "LAFITTE",
-    "photo": "cecile_lafitte.jpg",
+    "photo": "cecile.jpg",
     "role": "46 ans - Enseignante",
     "badge": "Candidat",
     "tags": ["Lalande"]
@@ -130,7 +130,7 @@
   {
     "prenom": "Christian",
     "nom": "BONNEVILLE",
-    "photo": "christian_bonneville.jpg",
+    "photo": "christian.jpg",
     "role": "71 ans - Paysan retraité",
     "badge": "Candidat",
     "tags": ["Ramier"]
@@ -202,7 +202,7 @@
   {
     "prenom": "Cécile",
     "nom": "MALET",
-    "photo": "cecile_malet.jpg",
+    "photo": "cecilem.jpg",
     "role": "56 ans - Travailleuse sociale",
     "badge": "Candidat",
     "tags": ["Beausoleil"]
@@ -210,7 +210,7 @@
   {
     "prenom": "Christian",
     "nom": "PERSIN",
-    "photo": "persin.jpg",
+    "photo": "christianp.jpg",
     "role": "67 ans - Ingénieur retraité",
     "badge": "Candidat",
     "tags": ["Pouy"]
@@ -290,7 +290,7 @@
   {
     "prenom": "Jean-Michel",
     "nom": "ANSELMI",
-    "photo": "anselmi.jpg",
+    "photo": "jeanmichel.jpg",
     "role": "70 ans - Enseignant retraité",
     "badge": "Candidat",
     "tags": ["Cours-Foucault"]
@@ -298,7 +298,7 @@
   {
     "prenom": "Claire",
     "nom": "REGNY",
-    "photo": "claire_regny.jpg",
+    "photo": "claire.jpg",
     "role": "67 ans - Enseignante retraitée",
     "badge": "Candidat",
     "tags": ["Pouy"]
@@ -322,7 +322,7 @@
   {
     "prenom": "Jean-Marie",
     "nom": "SELVA",
-    "photo": "selva.jpg",
+    "photo": "jeanmarie.jpg",
     "role": "65 ans - Retraité",
     "badge": "Candidat",
     "tags": ["Gasseras"]
@@ -330,7 +330,7 @@
   {
     "prenom": "Jocelyne",
     "nom": "SEGARRA",
-    "photo": "segara.jpg",
+    "photo": "jocelyne.jpg",
     "role": "73 ans - Secrétaire retraitée",
     "badge": "Candidat",
     "tags": ["Monplaisir"]
@@ -338,7 +338,7 @@
   {
     "prenom": "Rémi",
     "nom": "MONFORT",
-    "photo": "monfort.jpg",
+    "photo": "remim.jpg",
     "role": "42 ans - Mcab boy anciens",
     "badge": "Candidat",
     "tags": ["Cours Foucault"]
@@ -354,7 +354,7 @@
   {
     "prenom": "Jacques",
     "nom": "FAURE",
-    "photo": "faure.jpg",
+    "photo": "jacques.jpg",
     "role": "65 ans - Enseignant retraité",
     "badge": "Candidat",
     "tags": ["Centre Ville"]
@@ -362,7 +362,7 @@
   {
     "prenom": "Philippe",
     "nom": "JOYEUX",
-    "photo": "joyeux.jpg",
+    "photo": "philippe.jpg",
     "role": "68 ans - Ouvrier retraité métallurgie",
     "badge": "Candidat",
     "tags": ["Saint Martial"]
@@ -370,7 +370,7 @@
   {
     "prenom": "Bernard",
     "nom": "GARCES",
-    "photo": "garces.jpg",
+    "photo": "bernard.jpg",
     "role": "70 ans - Formateur retraité",
     "badge": "Candidat",
     "tags": ["Les Chaumes"]
