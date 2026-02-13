@@ -39,7 +39,7 @@
     "badge": "Candidat",
     "tags": ["Falguière"]
   },
-   {
+  {
     "prenom": "Paloma",
     "nom": "PAVAN",
     "photo": "paloma.jpg",
@@ -87,7 +87,7 @@
     "badge": "Candidat",
     "tags": ["Cours-Foucault"]
   },
-   {
+  {
     "prenom": "Claire",
     "nom": "VINCENT",
     "photo": "claire.jpg",
@@ -102,5 +102,5 @@
     "role": "Retraité",
     "badge": "Candidat",
     "tags": ["Centre Ville"]
-  },
-]
+  }
+    ]
