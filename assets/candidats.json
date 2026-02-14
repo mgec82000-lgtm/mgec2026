@@ -59,7 +59,7 @@
     "prenom": "Céline",
     "nom": "VIGUIÉ",
     "photo": "celine.jpg",
-    "role": "42 ans - Fonctionnaire CDIP",
+    "role": "42 ans - Fonctionnaire CPIP",
     "badge": "Candidat",
     "tags": ["Marché Gare"]
   },
@@ -97,11 +97,11 @@
   },
   {
     "prenom": "Ghislain",
-    "nom": "DESCAEUX",
+    "nom": "DESCAZEAUX",
     "photo": "ghislain.jpg",
-    "role": "85 ans - Enseignant retraité",
+    "role": "65 ans - Enseignant retraité",
     "badge": "Candidat",
-    "tags": ["Pouy"]
+    "tags": ["Pouty"]
   },
   {
     "prenom": "Corinne",
@@ -171,7 +171,7 @@
     "prenom": "Mélanie",
     "nom": "COUMONT",
     "photo": "melanie.jpg",
-    "role": "45 ans - Fonctionnaire CDIP",
+    "role": "45 ans - Fonctionnaire CPIP",
     "badge": "Candidat",
     "tags": ["Marché Gare"]
   },
@@ -187,13 +187,13 @@
     "prenom": "Karine",
     "nom": "MARAZEL",
     "photo": "karine.jpg",
-    "role": "45 ans - Artiste peintre",
+    "role": "54 ans - Artiste peintre",
     "badge": "Candidat",
     "tags": ["Centre Ville"]
   },
   {
     "prenom": "Kévin",
-    "nom": "BILLIÈRES",
+    "nom": "BILLIERES",
     "photo": "kevin.jpg",
     "role": "34 ans - Responsable magasin",
     "badge": "Candidat",
@@ -213,7 +213,7 @@
     "photo": "christianP.jpg",
     "role": "67 ans - Ingénieur retraité",
     "badge": "Candidat",
-    "tags": ["Pouy"]
+    "tags": ["Pouty"]
   },
   {
     "prenom": "Véronique",
@@ -243,7 +243,7 @@
     "prenom": "Julien",
     "nom": "MICHAUDON",
     "photo": "julien.jpg",
-    "role": "42 ans - Conseiller restauration associative",
+    "role": "42 ans - Cuisinier restauration associatif",
     "badge": "Candidat",
     "tags": ["Gasseras"]
   },
@@ -253,7 +253,7 @@
     "photo": "marion.jpg",
     "role": "41 ans - Cadre administratif",
     "badge": "Candidat",
-    "tags": ["Montaudou"]
+    "tags": ["Mandoune"]
   },
   {
     "prenom": "Rémi",
@@ -269,7 +269,7 @@
     "photo": "martine.jpg",
     "role": "65 ans - Enseignante",
     "badge": "Candidat",
-    "tags": ["Pouy"]
+    "tags": ["Pouty"]
   },
   {
     "prenom": "Frédéric",
@@ -277,15 +277,15 @@
     "photo": "frederic.jpg",
     "role": "37 ans - Médecin",
     "badge": "Candidat",
-    "tags": ["Pouy"]
+    "tags": ["Pouty"]
   },
   {
     "prenom": "Émilie",
-    "nom": "MENESPA",
+    "nom": "MENASPA",
     "photo": "emilie.jpg",
     "role": "45 ans - Enseignante",
     "badge": "Candidat",
-    "tags": ["Les Chaumes"]
+    "tags": ["Les Chênes"]
   },
   {
     "prenom": "Jean-Michel",
@@ -301,19 +301,19 @@
     "photo": "claire.jpg",
     "role": "67 ans - Enseignante retraitée",
     "badge": "Candidat",
-    "tags": ["Pouy"]
+    "tags": ["Pouty"]
   },
   {
     "prenom": "Mohammed",
     "nom": "EL MAJDOUB",
     "photo": "mohammed.jpg",
-    "role": "48 ans - Psychologue",
+    "role": "48 ans - Employé logistique",
     "badge": "Candidat",
     "tags": ["Bas-Pays"]
   },
   {
     "prenom": "Joëlle",
-    "nom": "GRENDER",
+    "nom": "GREDER",
     "photo": "joelle.jpg",
     "role": "76 ans - Enseignante retraitée",
     "badge": "Candidat",
@@ -323,7 +323,7 @@
     "prenom": "Jean-Marie",
     "nom": "SELVA",
     "photo": "jeanmarie.jpg",
-    "role": "65 ans - Retraité",
+    "role": "65 ans - Retraité de l'énergie",
     "badge": "Candidat",
     "tags": ["Gasseras"]
   },
@@ -347,7 +347,7 @@
     "prenom": "Andrea",
     "nom": "CARRO-GOMEZ",
     "photo": "andrea.jpg",
-    "role": "43 ans - Cheffe de projets culturels",
+    "role": "48 ans - Cheffe de projets culturels",
     "badge": "Candidat",
     "tags": ["Villebourbon"]
   },
@@ -363,7 +363,7 @@
     "prenom": "Philippe",
     "nom": "JOYEUX",
     "photo": "philippe.jpg",
-    "role": "68 ans - Ouvrier retraité métallurgie",
+    "role": "66 ans - Ouvrier retraité métallurgie",
     "badge": "Candidat",
     "tags": ["Saint Martial"]
   },
@@ -373,6 +373,6 @@
     "photo": "bernard.jpg",
     "role": "70 ans - Formateur retraité",
     "badge": "Candidat",
-    "tags": ["Les Chaumes"]
+    "tags": ["Les Chênes"]
   }
 ]
