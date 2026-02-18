@@ -239,3 +239,42 @@ body{
     object-position:center top;    /* ✅ évite tête coupée */
   }
 }
+/* =========================================
+   ✅ FIX FINAL CANDIDATS (PC + MOBILE)
+   A COLLER TOUT EN BAS DU style.css
+========================================= */
+
+.candidats-grid{
+  display:grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 22px !important;
+}
+
+.candidateCard{
+  overflow:hidden !important;
+  border-radius:18px !important;
+}
+
+/* ✅ STOP au découpage des têtes : on affiche l’image entière */
+.candidateCard img{
+  width:100% !important;
+  height:auto !important;
+  display:block !important;
+  object-fit:contain !important;   /* ✅ ne coupe jamais */
+  background:#fff !important;      /* propre si bandes */
+}
+
+/* TABLETTE */
+@media (max-width: 900px){
+  .candidats-grid{
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px){
+  .candidats-grid{
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+   }
