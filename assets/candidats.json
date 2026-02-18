@@ -1,378 +1,52 @@
 [
-  {
-    "prenom": "Samir",
-    "nom": "CHIKHI",
-    "photo": "samir.jpg",
-    "role": "52 ans - Responsable tiers lieu",
-    "badge": "Candidat",
-    "tags": ["Villebourbon"]
-  },
-  {
-    "prenom": "Catherine",
-    "nom": "PHILIPPE",
-    "photo": "catherine.jpg",
-    "role": "61 ans - Formatrice",
-    "badge": "Candidat",
-    "tags": ["Villebourbon"]
-  },
-  {
-    "prenom": "Roméo",
-    "nom": "CHARRIERE",
-    "photo": "romeo.jpg",
-    "role": "43 ans - Salarié de Banque",
-    "badge": "Candidat",
-    "tags": ["Villebourbon"]
-  },
-  {
-    "prenom": "Marcelle",
-    "nom": "NAANY",
-    "photo": "marcelle.jpg",
-    "role": "50 ans - Assistante qualité",
-    "badge": "Candidat",
-    "tags": ["Villenouvelle"]
-  },
-  {
-    "prenom": "Guillaume",
-    "nom": "MANGENOT",
-    "photo": "guillaume.jpg",
-    "role": "42 ans - Enseignant",
-    "badge": "Candidat",
-    "tags": ["Falguières"]
-  },
-  {
-    "prenom": "Paloma",
-    "nom": "PAVAN",
-    "photo": "paloma.jpg",
-    "role": "28 ans - Psychologue clinicienne",
-    "badge": "Candidat",
-    "tags": ["Centre Ville"]
-  },
-  {
-    "prenom": "Gaëtan",
-    "nom": "DELTOUR",
-    "photo": "gaetan.jpg",
-    "role": "31 ans - Responsable associatif",
-    "badge": "Candidat",
-    "tags": ["Villebourbon"]
-  },
-  {
-    "prenom": "Céline",
-    "nom": "VIGUIÉ",
-    "photo": "celine.jpg",
-    "role": "42 ans - Fonctionnaire CPIP",
-    "badge": "Candidat",
-    "tags": ["Marché Gare"]
-  },
-  {
-    "prenom": "Rachid",
-    "nom": "EL HOUARI",
-    "photo": "rachid.jpg",
-    "role": "47 ans - Éducateur",
-    "badge": "Candidat",
-    "tags": ["Issanchou"]
-  },
-  {
-    "prenom": "Cécile",
-    "nom": "LAFITTE",
-    "photo": "cecile.jpg",
-    "role": "46 ans - Enseignante",
-    "badge": "Candidat",
-    "tags": ["Lalande"]
-  },
-  {
-    "prenom": "Adrien",
-    "nom": "DEYMIER",
-    "photo": "adrien.jpg",
-    "role": "30 ans - Consultant",
-    "badge": "Candidat",
-    "tags": ["Centre Ville"]
-  },
-  {
-    "prenom": "Manuelita",
-    "nom": "VINTAR",
-    "photo": "manuelita.jpg",
-    "role": "48 ans - Infirmière",
-    "badge": "Candidat",
-    "tags": ["Bas-Pays"]
-  },
-  {
-    "prenom": "Ghislain",
-    "nom": "DESCAZEAUX",
-    "photo": "ghislain.jpg",
-    "role": "65 ans - Enseignant retraité",
-    "badge": "Candidat",
-    "tags": ["Pouty"]
-  },
-  {
-    "prenom": "Corinne",
-    "nom": "LAVAL",
-    "photo": "corinne.jpg",
-    "role": "56 ans - Enseignante",
-    "badge": "Candidat",
-    "tags": ["Villebourbon"]
-  },
-  {
-    "prenom": "Fabrice",
-    "nom": "CATON",
-    "photo": "fabrice.jpg",
-    "role": "53 ans - Directeur établissement santé",
-    "badge": "Candidat",
-    "tags": ["Centre Ville"]
-  },
-  {
-    "prenom": "Aloïs",
-    "nom": "BOYER",
-    "photo": "alois.jpg",
-    "role": "20 ans - Artiste de cirque",
-    "badge": "Candidat",
-    "tags": ["Pomponne"]
-  },
-  {
-    "prenom": "Christian",
-    "nom": "BONNEVILLE",
-    "photo": "christian.jpg",
-    "role": "71 ans - Paysan retraité",
-    "badge": "Candidat",
-    "tags": ["Ramier"]
-  },
-  {
-    "prenom": "Sylvie",
-    "nom": "PRALONG",
-    "photo": "sylvie.jpg",
-    "role": "64 ans - Enseignante retraitée",
-    "badge": "Candidat",
-    "tags": ["Monplaisir"]
-  },
-  {
-    "prenom": "Bruno",
-    "nom": "VALETTE",
-    "photo": "bruno.jpg",
-    "role": "38 ans - Enseignant",
-    "badge": "Candidat",
-    "tags": ["Saint Martial"]
-  },
-  {
-    "prenom": "Cynthia",
-    "nom": "CORDIER",
-    "photo": "cynthia.jpg",
-    "role": "39 ans - Éducatrice spécialisée",
-    "badge": "Candidat",
-    "tags": ["Gasseras"]
-  },
-  {
-    "prenom": "Grégory",
-    "nom": "SHELLEY",
-    "photo": "gregory.jpg",
-    "role": "50 ans - Enseignant",
-    "badge": "Candidat",
-    "tags": ["Sapiac"]
-  },
-  {
-    "prenom": "Mélanie",
-    "nom": "COUMONT",
-    "photo": "melanie.jpg",
-    "role": "45 ans - Fonctionnaire CPIP",
-    "badge": "Candidat",
-    "tags": ["Marché Gare"]
-  },
-  {
-    "prenom": "Rafael",
-    "nom": "AVILES",
-    "photo": "rafael.jpg",
-    "role": "48 ans - Agent administratif",
-    "badge": "Candidat",
-    "tags": ["Beausoleil"]
-  },
-  {
-    "prenom": "Karine",
-    "nom": "MARAZEL",
-    "photo": "karine.jpg",
-    "role": "54 ans - Artiste peintre",
-    "badge": "Candidat",
-    "tags": ["Centre Ville"]
-  },
-  {
-    "prenom": "Kévin",
-    "nom": "BILLIERES",
-    "photo": "kevin.jpg",
-    "role": "34 ans - Responsable magasin",
-    "badge": "Candidat",
-    "tags": ["Les Chaumes"]
-  },
-  {
-    "prenom": "Cécile",
-    "nom": "MALET",
-    "photo": "cecileM.jpg",
-    "role": "56 ans - Travailleuse sociale",
-    "badge": "Candidat",
-    "tags": ["Beausoleil"]
-  },
-  {
-    "prenom": "Christian",
-    "nom": "PERSIN",
-    "photo": "christianP.jpg",
-    "role": "67 ans - Ingénieur retraité",
-    "badge": "Candidat",
-    "tags": ["Pouty"]
-  },
-  {
-    "prenom": "Véronique",
-    "nom": "CERNETTIG",
-    "photo": "veronique.jpg",
-    "role": "65 ans - Retraitée enseignante",
-    "badge": "Candidat",
-    "tags": ["Lalande"]
-  },
-  {
-    "prenom": "Pierre",
-    "nom": "AUBIGNAC",
-    "photo": "pierre.jpg",
-    "role": "30 ans - Ingénieur Enseignant",
-    "badge": "Candidat",
-    "tags": ["Centre Ville"]
-  },
-  {
-    "prenom": "Nicole",
-    "nom": "MARGOLLÉ",
-    "photo": "nicole.jpg",
-    "role": "69 ans - Enseignante retraitée",
-    "badge": "Candidat",
-    "tags": ["Pomponne"]
-  },
-  {
-    "prenom": "Julien",
-    "nom": "MICHAUDON",
-    "photo": "julien.jpg",
-    "role": "42 ans - Cuisinier restauration associatif",
-    "badge": "Candidat",
-    "tags": ["Gasseras"]
-  },
-  {
-    "prenom": "Marion",
-    "nom": "LEON",
-    "photo": "marion.jpg",
-    "role": "41 ans - Cadre administratif",
-    "badge": "Candidat",
-    "tags": ["Mandoune"]
-  },
-  {
-    "prenom": "Rémi",
-    "nom": "LAGASSE",
-    "photo": "remi.jpg",
-    "role": "32 ans - Enseignant",
-    "badge": "Candidat",
-    "tags": ["Falguières"]
-  },
-  {
-    "prenom": "Martine",
-    "nom": "CASTEL",
-    "photo": "martine.jpg",
-    "role": "65 ans - Enseignante",
-    "badge": "Candidat",
-    "tags": ["Pouty"]
-  },
-  {
-    "prenom": "Frédéric",
-    "nom": "PONS",
-    "photo": "frederic.jpg",
-    "role": "37 ans - Médecin",
-    "badge": "Candidat",
-    "tags": ["Pouty"]
-  },
-  {
-    "prenom": "Émilie",
-    "nom": "MENASPA",
-    "photo": "emilie.jpg",
-    "role": "45 ans - Enseignante",
-    "badge": "Candidat",
-    "tags": ["Les Chênes"]
-  },
-  {
-    "prenom": "Jean-Michel",
-    "nom": "ANSELMI",
-    "photo": "jeanmichel.jpg",
-    "role": "70 ans - Enseignant retraité",
-    "badge": "Candidat",
-    "tags": ["Cours-Foucault"]
-  },
-  {
-    "prenom": "Claire",
-    "nom": "REGNY",
-    "photo": "claire.jpg",
-    "role": "67 ans - Enseignante retraitée",
-    "badge": "Candidat",
-    "tags": ["Pouty"]
-  },
-  {
-    "prenom": "Mohammed",
-    "nom": "EL MAJDOUB",
-    "photo": "mohammed.jpg",
-    "role": "48 ans - Employé logistique",
-    "badge": "Candidat",
-    "tags": ["Bas-Pays"]
-  },
-  {
-    "prenom": "Joëlle",
-    "nom": "GREDER",
-    "photo": "joelle.jpg",
-    "role": "76 ans - Enseignante retraitée",
-    "badge": "Candidat",
-    "tags": ["Issanchou"]
-  },
-  {
-    "prenom": "Jean-Marie",
-    "nom": "SELVA",
-    "photo": "jeanmarie.jpg",
-    "role": "65 ans - Retraité de l'énergie",
-    "badge": "Candidat",
-    "tags": ["Gasseras"]
-  },
-  {
-    "prenom": "Jocelyne",
-    "nom": "SEGARRA",
-    "photo": "jocelyne.jpg",
-    "role": "73 ans - Secrétaire retraitée",
-    "badge": "Candidat",
-    "tags": ["Monplaisir"]
-  },
-  {
-    "prenom": "Rémi",
-    "nom": "MONFORT",
-    "photo": "remiM.jpg",
-    "role": "42 ans - Maçon bâtiment anciens",
-    "badge": "Candidat",
-    "tags": ["Cours Foucault"]
-  },
-  {
-    "prenom": "Andrea",
-    "nom": "CARRO-GOMEZ",
-    "photo": "andrea.jpg",
-    "role": "48 ans - Cheffe de projets culturels",
-    "badge": "Candidat",
-    "tags": ["Villebourbon"]
-  },
-  {
-    "prenom": "Jacques",
-    "nom": "FAURE",
-    "photo": "jacques.jpg",
-    "role": "65 ans - Enseignant retraité",
-    "badge": "Candidat",
-    "tags": ["Centre Ville"]
-  },
-  {
-    "prenom": "Philippe",
-    "nom": "JOYEUX",
-    "photo": "philippe.jpg",
-    "role": "66 ans - Ouvrier retraité métallurgie",
-    "badge": "Candidat",
-    "tags": ["Saint Martial"]
-  },
-  {
-    "prenom": "Bernard",
-    "nom": "GARCES",
-    "photo": "bernard.jpg",
-    "role": "70 ans - Formateur retraité",
-    "badge": "Candidat",
-    "tags": ["Les Chênes"]
-  }
-]
+  { "photo": "1.jpg" },
+  { "photo": "2.jpg" },
+  { "photo": "3.jpg" },
+  { "photo": "4.jpg" },
+  { "photo": "5.jpg" },
+  { "photo": "6.jpg" },
+  { "photo": "7.jpg" },
+  { "photo": "8.jpg" },
+  { "photo": "9.jpg" },
+  { "photo": "10.jpg" },
+  { "photo": "11.jpg" },
+  { "photo": "12.jpg" },
+  { "photo": "13.jpg" },
+  { "photo": "14.jpg" },
+  { "photo": "15.jpg" },
+  { "photo": "16.jpg" },
+  { "photo": "17.jpg" },
+  { "photo": "18.jpg" },
+  { "photo": "19.jpg" },
+  { "photo": "20.jpg" },
+  { "photo": "21.jpg" },
+  { "photo": "22.jpg" },
+  { "photo": "23.jpg" },
+  { "photo": "24.jpg" },
+  { "photo": "25.jpg" },
+  { "photo": "26.jpg" },
+  { "photo": "27.jpg" },
+  { "photo": "28.jpg" },
+  { "photo": "29.jpg" },
+  { "photo": "30.jpg" },
+  { "photo": "31.jpg" },
+  { "photo": "32.jpg" },
+  { "photo": "33.jpg" },
+  { "photo": "34.jpg" },
+  { "photo": "35.jpg" },
+  { "photo": "36.jpg" },
+  { "photo": "37.jpg" },
+  { "photo": "38.jpg" },
+  { "photo": "39.jpg" },
+  { "photo": "40.jpg" },
+  { "photo": "41.jpg" },
+  { "photo": "42.jpg" },
+  { "photo": "43.jpg" },
+  { "photo": "44.jpg" },
+  { "photo": "45.jpg" },
+  { "photo": "46.jpg" },
+  { "photo": "47.jpg" },
+  { "photo": "48.jpg" },
+  { "photo": "49.jpg" },
+  { "photo": "50.jpg" }
+    ]
