@@ -238,4 +238,4 @@ body{
     aspect-ratio: 3 / 4;          /* ✅ portrait naturel mobile */
     object-position:center top;    /* ✅ évite tête coupée */
   }
-  }
+}
