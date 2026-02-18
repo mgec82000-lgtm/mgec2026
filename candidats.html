@@ -13,7 +13,6 @@
 <div class="topbar">
   <div class="container">
     <div class="nav">
-
       <a class="brand" href="index.html">
         <div class="brandLogo"></div>
         <div class="brandTitle">
@@ -33,7 +32,6 @@
         <a href="medias.html">MÉDIAS</a>
         <a href="contact.html">CONTACT</a>
       </div>
-
     </div>
   </div>
 </div>
@@ -41,18 +39,15 @@
 <!-- CONTENU -->
 <section class="section">
   <div class="container">
-
     <h1 class="h1">Nos candidats</h1>
     <p class="sub">Une équipe engagée et représentative de la diversité montaubanaise.</p>
 
-    <!-- DEBUG (pour voir si le JSON charge) -->
-    <p id="debug-json" style="font-size:12px;opacity:.7;margin:8px 0;"></p>
-
-    <div id="candidats-grid" class="candidats-grid"></div>
-
+    <!-- ✅ Grille photos uniquement -->
+    <div id="candidats-grid" class="candidats-grid photos-only"></div>
   </div>
 </section>
 
+<!-- FOOTER -->
 <div class="footer">
   <div class="container">© 2026 – Montauban 2026</div>
 </div>
@@ -60,48 +55,26 @@
 <script src="script.js"></script>
 
 <script>
-(async function () {
-  const debug = document.getElementById("debug-json");
+(function () {
   const grid = document.getElementById("candidats-grid");
+  const total = 50; // ✅ nombre de photos
 
-  // ✅ CHEMIN SÛR : candidats.html est à la racine, donc JSON = ./assets/candidats.json
-  const jsonUrl = "./assets/candidats.json";
-
-  try {
-    const res = await fetch(jsonUrl, { cache: "no-store" });
-    debug.textContent = "Fetch JSON: " + jsonUrl + " → status " + res.status;
-
-    if (!res.ok) throw new Error("HTTP " + res.status);
-
-    const data = await res.json();
-    debug.textContent += " | candidats: " + data.length;
-
-    grid.innerHTML = data.map(c => `
-      <article class="candidateCard">
+  let html = "";
+  for (let i = 1; i <= total; i++) {
+    html += `
+      <article class="candidateCard photoCard">
         <img
-          src="./assets/candidats/${c.photo}"
-          alt="${c.prenom} ${c.nom}"
+          src="./assets/candidats/${i}.jpg"
+          alt="Candidat ${i}"
           loading="lazy"
-          onerror="this.style.display='none';"
+          onerror="this.closest('.photoCard').style.display='none';"
         >
-        <div class="candidateInfo">
-          <div class="badge">${c.badge || ""}</div>
-          <h3>${c.prenom} ${c.nom}</h3>
-          <p>${c.role || ""}</p>
-          <div class="tags">
-            ${(c.tags || []).map(t => `<span class="tag">${t}</span>`).join("")}
-          </div>
-        </div>
       </article>
-    `).join("");
-
-  } catch (e) {
-    console.error(e);
-    debug.textContent = "ERREUR JSON: " + e.message + " (ouvre la console)";
-    grid.innerHTML = `<p style="color:red">Erreur chargement candidats.json</p>`;
+    `;
   }
+  grid.innerHTML = html;
 })();
 </script>
 
 </body>
-        </html>
+  </html>
