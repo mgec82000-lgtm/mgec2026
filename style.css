@@ -569,4 +569,15 @@ textarea{
 
 @media (max-width: 520px){
   .candidateCard img{ height:220px; }
+
+  /* 📱 Ajustement spécial téléphone */
+@media (max-width: 600px){
+
+  .candidateCard img{
+    height: 240px;              /* ✅ plus compact sur mobile */
+    object-fit: cover;
+    object-position: center bottom; /* ✅ garde le texte visible */
+  }
+
+                               }
 }
