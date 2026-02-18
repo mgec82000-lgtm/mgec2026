@@ -4,15 +4,18 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Candidats – Montauban 2026</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- Anti-cache -->
+  <link rel="stylesheet" href="style.css?v=2026">
 </head>
 
-<body>
+<body class="page-candidats">
 
 <!-- HEADER -->
 <div class="topbar">
   <div class="container">
     <div class="nav">
+
       <a class="brand" href="index.html">
         <div class="brandLogo"></div>
         <div class="brandTitle">
@@ -32,6 +35,7 @@
         <a href="medias.html">MÉDIAS</a>
         <a href="contact.html">CONTACT</a>
       </div>
+
     </div>
   </div>
 </div>
@@ -39,11 +43,15 @@
 <!-- CONTENU -->
 <section class="section">
   <div class="container">
-    <h1 class="h1">Nos candidats</h1>
-    <p class="sub">Une équipe engagée et représentative de la diversité montaubanaise.</p>
 
-    <!-- ✅ Grille photos uniquement -->
-    <div id="candidats-grid" class="candidats-grid photos-only"></div>
+    <h1 class="h1">Nos candidats</h1>
+    <p class="sub">
+      Une équipe engagée et représentative de la diversité montaubanaise.
+    </p>
+
+    <!-- Grille -->
+    <div id="candidats-grid" class="candidats-grid"></div>
+
   </div>
 </section>
 
@@ -54,27 +62,21 @@
 
 <script src="script.js"></script>
 
+<!-- Génération automatique -->
 <script>
-(function () {
-  const grid = document.getElementById("candidats-grid");
-  const total = 50; // ✅ nombre de photos
+fetch("assets/candidats.json?v=2026")
+  .then(r => r.json())
+  .then(data => {
+    const grid = document.getElementById("candidats-grid");
 
-  let html = "";
-  for (let i = 1; i <= total; i++) {
-    html += `
-      <article class="candidateCard photoCard">
-        <img
-          src="./assets/candidats/${i}.jpg"
-          alt="Candidat ${i}"
-          loading="lazy"
-          onerror="this.closest('.photoCard').style.display='none';"
-        >
+    grid.innerHTML = data.map(c => `
+      <article class="candidateCard">
+        <img src="assets/candidats/${c.photo}" alt="${c.prenom}">
       </article>
-    `;
-  }
-  grid.innerHTML = html;
-})();
+    `).join("");
+  })
+  .catch(err => console.error("Erreur JSON :", err));
 </script>
 
 </body>
-  </html>
+</html>
