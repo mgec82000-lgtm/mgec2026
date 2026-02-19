@@ -1,48 +1,27 @@
-function toggleMenu(){
+function toggleMenu() {
   const menu = document.getElementById("mobileMenu");
   if (!menu) return;
-
   menu.classList.toggle("open");
 }
 
-function closeMenu(){
-  const menu = document.getElementById("mobileMenu");
-  if (!menu) return;
-
-  menu.classList.remove("open");
-}
-
-/* Démo formulaire */
-function fakeSubmit(e){
-  e.preventDefault();
-  alert("✅ Message envoyé (démo). Prochaine étape : on connecte le formulaire à un vrai email.");
-  return false;
-}
-
-/* ✅ Fermer menu quand on clique sur un lien */
-document.addEventListener("click", (e) => {
-  const link = e.target.closest("#mobileMenu a");
-  if (link) closeMenu();
-});
-
-/* ✅ Fermer menu si clic en dehors */
+// Fermer le menu quand on clique sur un lien
 document.addEventListener("click", (e) => {
   const menu = document.getElementById("mobileMenu");
-  if (!menu) return;
+  const burger = document.querySelector(".burger");
+  if (!menu || !burger) return;
 
-  if (!menu.classList.contains("open")) return;
+  // Si on clique sur un lien du menu => on ferme
+  if (e.target.closest("#mobileMenu a")) {
+    menu.classList.remove("open");
+  }
 
-  const insideMenu = e.target.closest("#mobileMenu");
-  const insideBurger = e.target.closest(".burger");
-  if (!insideMenu && !insideBurger) closeMenu();
-});
+  // Si le menu est ouvert et qu'on clique en dehors => on ferme
+  if (menu.classList.contains("open")) {
+    const clickedInsideMenu = e.target.closest("#mobileMenu");
+    const clickedBurger = e.target.closest(".burger");
 
-/* ✅ IMPORTANT : fermer menu quand on revient en arrière (bfcache) */
-window.addEventListener("pageshow", function () {
-  closeMenu();
-});
-
-/* ✅ BONUS : fermer menu quand l’onglet redevient visible */
-document.addEventListener("visibilitychange", function () {
-  if (document.visibilityState === "visible") closeMenu();
+    if (!clickedInsideMenu && !clickedBurger) {
+      menu.classList.remove("open");
+    }
+  }
 });
