@@ -16,11 +16,7 @@
 /* =========================
    RESET
 ========================= */
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
+*{ margin:0; padding:0; box-sizing:border-box; }
 
 body{
   font-family: Arial, Helvetica, sans-serif;
@@ -28,10 +24,7 @@ body{
   color:var(--text);
 }
 
-a{
-  color:inherit;
-  text-decoration:none;
-}
+a{ color:inherit; }
 
 /* =========================
    CONTAINER
@@ -43,7 +36,7 @@ a{
 }
 
 /* =========================
-   TOPBAR / NAV
+   HEADER / NAV
 ========================= */
 .topbar{
   background:white;
@@ -59,12 +52,14 @@ a{
   align-items:center;
   justify-content:space-between;
   gap:14px;
-  position:relative;
+  position:relative; /* important pour menu mobile */
 }
 
 .brand{
   display:flex;
   align-items:center;
+  text-decoration:none;
+  color:var(--text);
 }
 
 .brandLogo{
@@ -94,20 +89,15 @@ a{
 }
 
 .menu a{
+  text-decoration:none;
   font-size:14px;
+  color:var(--text);
   font-weight:600;
-  padding:6px 10px;
+  padding:6px 8px;
   border-radius:10px;
-  transition:0.2s;
 }
 
-.menu a:hover{
-  background:#f3f4f6;
-}
-
-.menu a.active{
-  color:var(--purple);
-}
+.menu a.active{ color:var(--purple); }
 
 /* BURGER */
 .burger{
@@ -127,29 +117,11 @@ a{
 /* =========================
    BASE UI
 ========================= */
-.section{
-  padding:40px 0;
-}
+.section{ padding:40px 0; }
+.h1{ font-size:32px; margin-bottom:10px; }
+.sub{ color:var(--muted); margin-bottom:30px; }
+.small{ font-size:13px; color:var(--muted); }
 
-.h1{
-  font-size:32px;
-  margin-bottom:10px;
-}
-
-.sub{
-  color:var(--muted);
-  margin-bottom:30px;
-  line-height:1.6;
-}
-
-.small{
-  font-size:13px;
-  color:var(--muted);
-}
-
-/* =========================
-   CARD
-========================= */
 .card{
   background:var(--card);
   border-radius:18px;
@@ -158,9 +130,6 @@ a{
   border:1px solid var(--line);
 }
 
-/* =========================
-   BADGE
-========================= */
 .badge{
   display:inline-block;
   font-size:11px;
@@ -168,12 +137,10 @@ a{
   color:var(--purple);
   padding:4px 8px;
   border-radius:999px;
+  margin-bottom:6px;
   font-weight:bold;
 }
 
-/* =========================
-   BUTTONS
-========================= */
 .btn{
   display:inline-flex;
   align-items:center;
@@ -181,29 +148,21 @@ a{
   gap:8px;
   padding:10px 14px;
   border-radius:14px;
+  text-decoration:none;
   font-weight:800;
   font-size:14px;
   border:1px solid transparent;
   cursor:pointer;
-  transition:0.2s;
 }
 
 .btn.red{
   background:var(--red);
-  color:white;
-}
-
-.btn.red:hover{
-  transform:translateY(-1px);
+  color:#fff;
 }
 
 .btn.outline{
-  background:white;
+  background:#fff;
   border-color:var(--line);
-}
-
-.btn.outline:hover{
-  background:#f9fafb;
 }
 
 .actions{
@@ -214,16 +173,15 @@ a{
 }
 
 /* =========================
-   HERO
+   HERO HOME
 ========================= */
-.hero{
-  padding:26px 0;
-}
+.hero{ padding:26px 0; }
 
 .heroGrid{
   display:grid;
   grid-template-columns: 1.1fr .9fr;
   gap:18px;
+  align-items:start;
 }
 
 .heroTitle{
@@ -245,7 +203,6 @@ a{
   flex-wrap:wrap;
   margin-top:12px;
 }
-
 .social a{
   width:44px;
   height:44px;
@@ -263,6 +220,7 @@ a{
 ========================= */
 .prioritiesGrid{
   display:grid;
+  grid-template-columns: 1fr;
   gap:12px;
   margin-top:12px;
 }
@@ -286,32 +244,45 @@ a{
   justify-content:center;
   background:#f3f4ff;
   font-size:20px;
+  flex:0 0 auto;
 }
 
 .prio h3{
+  margin:0 0 4px;
   font-size:15px;
-  margin-bottom:4px;
 }
-
 .prio p{
-  font-size:13px;
+  margin:0;
   color:var(--muted);
+  font-size:13px;
   line-height:1.45;
 }
 
 /* =========================
-   GRIDS
+   GRIDS (programme/contact/medias)
 ========================= */
 .grid2{
   display:grid;
-  grid-template-columns:1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap:18px;
 }
 
 .mediaGrid{
   display:grid;
-  grid-template-columns:1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap:18px;
+}
+
+.mediaBox{
+  background:#fff;
+  border:1px dashed var(--line);
+  border-radius:18px;
+  padding:18px;
+  color:var(--muted);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:180px;
 }
 
 /* =========================
@@ -326,115 +297,50 @@ label{
 
 input, textarea{
   width:100%;
-  padding:12px;
+  padding:12px 12px;
   border-radius:14px;
   border:1px solid var(--line);
+  background:#fff;
+  outline:none;
   font-size:14px;
 }
 
-textarea{
-  min-height:120px;
-  resize:vertical;
-}
+textarea{ min-height:120px; resize:vertical; }
 
 /* =========================
-   CANDIDATS GRID
+   GRID CANDIDATS
 ========================= */
 .candidats-grid{
   display:grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap:22px;
 }
 
+/* =========================
+   CARD CANDIDAT
+========================= */
 .candidateCard{
   background:var(--card);
   border-radius:18px;
   overflow:hidden;
   box-shadow:var(--shadow);
-  border:1px solid var(--line);
   transition:0.25s;
+  border:1px solid var(--line);
 }
 
 .candidateCard:hover{
   transform:translateY(-4px);
+  box-shadow:0 10px 24px rgba(0,0,0,0.10);
 }
 
-/* ✅ bouton photo */
-.candidateBtn{
-  all:unset;
-  display:block;
-  cursor:zoom-in;
-}
-
-/* ✅ images NON coupées */
+/* ✅ FIX IMAGES : on n’en coupe AUCUNE */
 .candidateCard img{
   width:100%;
-  aspect-ratio:3/4;
-  object-fit:contain;
-  background:#fff;
+  aspect-ratio: 3 / 4;     /* cartes régulières */
+  height:auto;
+  object-fit:contain;      /* ✅ affiche l’image entière */
+  background:#fff;         /* fond propre si bandes */
   display:block;
-}
-
-.candidateName{
-  padding:12px 14px;
-  font-weight:900;
-  font-size:14px;
-}
-
-/* =========================
-   LIGHTBOX
-========================= */
-.noScroll{
-  overflow:hidden;
-}
-
-.lightbox{
-  position:fixed;
-  inset:0;
-  background:rgba(0,0,0,0.78);
-  display:none;
-  align-items:center;
-  justify-content:center;
-  padding:18px;
-  z-index:9999;
-}
-
-.lightbox.open{
-  display:flex;
-}
-
-.lightboxInner{
-  width:min(920px, 96vw);
-  max-height:92vh;
-  background:#fff;
-  border-radius:18px;
-  overflow:hidden;
-  position:relative;
-}
-
-.lightboxInner img{
-  width:100%;
-  height:calc(92vh - 64px);
-  object-fit:contain;
-}
-
-.lightboxCaption{
-  padding:12px 14px;
-  font-weight:900;
-  border-top:1px solid var(--line);
-}
-
-.lightboxClose{
-  position:absolute;
-  top:10px;
-  right:10px;
-  width:44px;
-  height:44px;
-  border-radius:14px;
-  border:1px solid var(--line);
-  background:#fff;
-  cursor:pointer;
-  font-size:18px;
 }
 
 /* =========================
@@ -453,14 +359,17 @@ textarea{
 /* =========================
    RESPONSIVE
 ========================= */
-@media (max-width:900px){
-  .heroGrid{ grid-template-columns:1fr; }
-  .grid2{ grid-template-columns:1fr; }
-  .mediaGrid{ grid-template-columns:1fr; }
-  .candidats-grid{ grid-template-columns:repeat(2,1fr); }
+@media (max-width: 900px){
+  .heroGrid{ grid-template-columns: 1fr; }
+  .grid2{ grid-template-columns: 1fr; }
+  .mediaGrid{ grid-template-columns: 1fr; }
+
+  .candidats-grid{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
-@media (max-width:600px){
+@media (max-width: 600px){
   .burger{ display:flex; }
 
   .menu{
@@ -476,12 +385,23 @@ textarea{
     width:min(280px, 92vw);
     flex-direction:column;
     gap:10px;
+    z-index:200;
   }
 
   .menu.open{ display:flex; }
 
-  .candidats-grid{ grid-template-columns:1fr; }
+  .menu a{
+    padding:10px 12px;
+    border-radius:12px;
+  }
+
+  .menu a:hover{ background:#f5f6fa; }
 
   .h1{ font-size:26px; }
-  .heroTitle{ font-size:32px; }
-   }
+  .sub{ font-size:14px; }
+
+  .candidats-grid{
+    grid-template-columns: 1fr;
+    gap:16px;
+  }
+     }
