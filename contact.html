@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Contact – Montauban 2026</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=2026">
 </head>
 
 <body>
@@ -13,7 +13,6 @@
   <div class="container">
     <div class="nav">
 
-      <!-- ✅ BRAND CLIQUABLE -->
       <a class="brand" href="index.html" style="text-decoration:none;">
         <div class="brandLogo"></div>
         <div class="brandTitle">
@@ -23,16 +22,16 @@
         </div>
       </a>
 
-      <!-- BOUTON HAMBURGER (mobile) -->
       <button class="burger" id="burgerBtn" aria-label="Ouvrir le menu" onclick="toggleMenu()">☰</button>
 
-      <!-- MENU -->
       <div class="menu" id="mobileMenu">
         <a href="index.html">ACCUEIL</a>
         <a href="agenda.html">AGENDA</a>
         <a href="candidats.html">CANDIDATS</a>
         <a href="programme.html">PROGRAMME</a>
         <a href="medias.html">MÉDIAS</a>
+        <a href="communiques.html">COMMUNIQUÉS</a>
+        <a href="blog.html">BLOG</a>
         <a class="active" href="contact.html">CONTACT</a>
       </div>
 
@@ -46,7 +45,6 @@
     <h1 class="h1">Contact & Engagement</h1>
     <p class="sub">Écrivez-nous ou rejoignez l’équipe de campagne. Nous vous recontactons rapidement.</p>
 
-    <!-- ✅ Message de confirmation (affiché seulement si ?sent=1) -->
     <div id="sentBox" class="card" style="display:none; border-left:6px solid var(--green); background:#fff; margin-bottom:16px;">
       <h2 style="margin:0 0 6px;">✅ Merci !</h2>
       <p class="sub" style="margin:0;">
@@ -56,7 +54,6 @@
 
     <div class="grid2">
 
-      <!-- INFOS -->
       <div class="card" style="background:#fff">
         <div class="badge">EMAIL</div>
         <p class="sub" style="margin-top:10px">
@@ -76,28 +73,24 @@
 
         <div class="badge">RÉSEAUX</div>
         <div class="social" style="margin-top:10px;">
-          <a href="https://www.facebook.com/montauban2026" target="_blank" rel="noopener" title="Facebook">f</a>
-          <a href="https://www.instagram.com/montauban2026?igsh=ZjQzbTY4MjhvbzJy&utm_source=qr" target="_blank" rel="noopener" title="Instagram">◎</a>
+          <a href="https://www.facebook.com/montauban.de.gauche/" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook">f</a>
+          <a href="https://www.instagram.com/montauban.de.gauche/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">◎</a>
+          <a href="https://www.tiktok.com/@montauban.de.gauche" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok">♪</a>
         </div>
 
         <p class="small" style="margin-top:10px;">
-          <a href="https://www.facebook.com/montauban2026" target="_blank" rel="noopener">→ Facebook officiel</a><br>
-          <a href="https://www.instagram.com/montauban2026?igsh=ZjQzbTY4MjhvbzJy&utm_source=qr" target="_blank" rel="noopener">→ Instagram officiel</a>
+          <a href="https://www.facebook.com/montauban.de.gauche/" target="_blank" rel="noopener">→ Facebook officiel</a><br>
+          <a href="https://www.instagram.com/montauban.de.gauche/" target="_blank" rel="noopener">→ Instagram officiel</a><br>
+          <a href="https://www.tiktok.com/@montauban.de.gauche" target="_blank" rel="noopener">→ TikTok officiel</a>
         </p>
 
-        <p class="small">
-          📌 Vous pouvez aussi proposer une action / un événement via le formulaire.
-        </p>
+        <p class="small">📌 Vous pouvez aussi proposer une action / un événement via le formulaire.</p>
       </div>
 
-      <!-- FORMULAIRE CONTACT -->
       <div class="card">
         <h2 style="margin:0 0 10px">Envoyez-nous un message</h2>
 
-        <!-- ✅ Formspree -->
         <form action="https://formspree.io/f/xykjyoyq" method="POST">
-
-          <!-- ✅ Sujet + redirection -->
           <input type="hidden" name="_subject" value="[Montauban 2026] Nouveau message depuis le site" />
           <input type="hidden" name="_next" value="contact.html?sent=1" />
 
@@ -127,12 +120,9 @@
 
     </div>
 
-    <!-- BENEVOLE -->
     <div class="card" style="margin-top:18px;">
       <h2 style="margin-top:0;">🤝 Devenir bénévole</h2>
-      <p class="sub" style="margin-top:-8px;">
-        Tractage, affichage, porte-à-porte, événements… Chaque aide compte !
-      </p>
+      <p class="sub" style="margin-top:-8px;">Tractage, affichage, porte-à-porte, événements… Chaque aide compte !</p>
 
       <form action="https://formspree.io/f/xykjyoyq" method="POST" style="margin-top:10px;">
         <input type="hidden" name="_subject" value="[Montauban 2026] Nouveau bénévole (site)" />
@@ -191,9 +181,8 @@
   <div class="container">© 2026 – Montauban 2026</div>
 </div>
 
-<script src="script.js"></script>
+<script src="script.js?v=2026"></script>
 
-<!-- ✅ affiche "merci" seulement après redirection -->
 <script>
   (function () {
     const params = new URLSearchParams(window.location.search);
@@ -206,4 +195,4 @@
 </script>
 
 </body>
-      </html>
+          </html>
