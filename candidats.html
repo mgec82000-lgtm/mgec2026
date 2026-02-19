@@ -41,21 +41,19 @@
 
 <section class="section">
   <div class="container">
-
     <h1 class="h1">Nos candidats</h1>
     <p class="sub">Une équipe engagée et représentative de la diversité montaubanaise.</p>
 
     <div id="candidats-grid" class="candidats-grid"></div>
-
   </div>
 </section>
 
-<!-- ✅ LIGHTBOX -->
+<!-- ✅ LIGHTBOX : mets-la juste avant </body> (overlay au-dessus de tout) -->
 <div class="lightbox" id="lightbox" aria-hidden="true">
-  <div class="lightboxInner" role="dialog" aria-modal="true" aria-label="Image en grand">
+  <div class="lightboxInner" role="dialog" aria-modal="true" aria-label="Photo en grand">
     <button class="lightboxClose" id="lightboxClose" aria-label="Fermer">✕</button>
-    <img id="lightboxImg" alt="">
-    <div class="lightboxCaption" id="lightboxCaption"></div>
+    <img id="lightboxImg" alt="Photo candidat">
+    <div class="lightboxCaption" id="lightboxCaption" style="display:none;"></div>
   </div>
 </div>
 
@@ -73,59 +71,51 @@ fetch("assets/candidats.json?v=2026")
 
     grid.innerHTML = data.map(c => {
       const src = `assets/candidats/${c.photo}`;
-      const name = (c.prenom || "Candidat").replaceAll('"', '&quot;');
       return `
         <article class="candidateCard">
-          <button class="candidateBtn" type="button"
-            data-src="${src}"
-            data-name="${name}"
-            aria-label="Ouvrir la photo de ${name}">
-            <img src="${src}" alt="${name}">
+          <button class="candidateBtn" type="button" data-src="${src}" aria-label="Ouvrir la photo">
+            <img src="${src}" alt="Photo candidat">
           </button>
         </article>
       `;
     }).join("");
 
-    // ✅ clic pour ouvrir en grand
     const lightbox = document.getElementById("lightbox");
     const lightboxImg = document.getElementById("lightboxImg");
-    const caption = document.getElementById("lightboxCaption");
     const closeBtn = document.getElementById("lightboxClose");
 
-    function openLightbox(src, name){
+    function openLightbox(src){
       lightboxImg.src = src;
-      lightboxImg.alt = name;
-      caption.textContent = name;
       lightbox.classList.add("open");
-      lightbox.setAttribute("aria-hidden", "false");
+      lightbox.setAttribute("aria-hidden","false");
       document.body.classList.add("noScroll");
       closeBtn.focus();
     }
 
     function closeLightbox(){
       lightbox.classList.remove("open");
-      lightbox.setAttribute("aria-hidden", "true");
+      lightbox.setAttribute("aria-hidden","true");
       document.body.classList.remove("noScroll");
-      // vider pour éviter flash sur prochaine image
       lightboxImg.src = "";
-      lightboxImg.alt = "";
-      caption.textContent = "";
     }
 
     grid.addEventListener("click", (e) => {
       const btn = e.target.closest(".candidateBtn");
       if (!btn) return;
-      openLightbox(btn.dataset.src, btn.dataset.name);
+      e.preventDefault();
+      e.stopPropagation();
+      openLightbox(btn.dataset.src);
     });
 
-    closeBtn.addEventListener("click", closeLightbox);
+    closeBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      closeLightbox();
+    });
 
-    // clic sur fond sombre => ferme
     lightbox.addEventListener("click", (e) => {
-      if (e.target.id === "lightbox") closeLightbox();
+      if (e.target === lightbox) closeLightbox();
     });
 
-    // Echap => ferme
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape" && lightbox.classList.contains("open")) closeLightbox();
     });
@@ -134,4 +124,4 @@ fetch("assets/candidats.json?v=2026")
 </script>
 
 </body>
-  </html>
+</html>
