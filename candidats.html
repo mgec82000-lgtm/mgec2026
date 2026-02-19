@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contact – Montauban 2026</title>
+  <title>Candidats – Montauban 2026</title>
   <link rel="stylesheet" href="style.css?v=2026">
 </head>
 
-<body>
+<body class="page-candidats">
 
 <div class="topbar">
   <div class="container">
@@ -22,17 +22,17 @@
         </div>
       </a>
 
-      <button class="burger" id="burgerBtn" aria-label="Ouvrir le menu" onclick="toggleMenu()">☰</button>
+      <button class="burger" aria-label="Menu" onclick="toggleMenu()">☰</button>
 
       <div class="menu" id="mobileMenu">
         <a href="index.html">ACCUEIL</a>
         <a href="agenda.html">AGENDA</a>
-        <a href="candidats.html">CANDIDATS</a>
+        <a class="active" href="candidats.html">CANDIDATS</a>
         <a href="programme.html">PROGRAMME</a>
         <a href="medias.html">MÉDIAS</a>
         <a href="communiques.html">COMMUNIQUÉS</a>
         <a href="blog.html">BLOG</a>
-        <a class="active" href="contact.html">CONTACT</a>
+        <a href="contact.html">CONTACT</a>
       </div>
 
     </div>
@@ -42,140 +42,22 @@
 <section class="section">
   <div class="container">
 
-    <h1 class="h1">Contact & Engagement</h1>
-    <p class="sub">Écrivez-nous ou rejoignez l’équipe de campagne. Nous vous recontactons rapidement.</p>
+    <h1 class="h1">Nos candidats</h1>
+    <p class="sub">Une équipe engagée et représentative de la diversité montaubanaise.</p>
 
-    <div id="sentBox" class="card" style="display:none; border-left:6px solid var(--green); background:#fff; margin-bottom:16px;">
-      <h2 style="margin:0 0 6px;">✅ Merci !</h2>
-      <p class="sub" style="margin:0;">
-        Votre message a bien été envoyé à l’équipe. Nous vous recontactons dès que possible.
-      </p>
-    </div>
-
-    <div class="grid2">
-
-      <div class="card" style="background:#fff">
-        <div class="badge">EMAIL</div>
-        <p class="sub" style="margin-top:10px">
-          <b>
-            <a href="mailto:gauche-ecolo-citoyenne@montauban26.fr" style="text-decoration:underline;">
-              gauche-ecolo-citoyenne@montauban26.fr
-            </a>
-          </b>
-        </p>
-
-        <div style="height:10px"></div>
-
-        <div class="badge">VILLE</div>
-        <p class="sub" style="margin-top:10px">Montauban, Tarn-et-Garonne</p>
-
-        <div style="height:10px"></div>
-
-        <div class="badge">RÉSEAUX</div>
-        <div class="social" style="margin-top:10px;">
-          <a href="https://www.facebook.com/montauban.de.gauche/" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook">f</a>
-          <a href="https://www.instagram.com/montauban.de.gauche/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">◎</a>
-          <a href="https://www.tiktok.com/@montauban.de.gauche" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok">♪</a>
-        </div>
-
-        <p class="small" style="margin-top:10px;">
-          <a href="https://www.facebook.com/montauban.de.gauche/" target="_blank" rel="noopener">→ Facebook officiel</a><br>
-          <a href="https://www.instagram.com/montauban.de.gauche/" target="_blank" rel="noopener">→ Instagram officiel</a><br>
-          <a href="https://www.tiktok.com/@montauban.de.gauche" target="_blank" rel="noopener">→ TikTok officiel</a>
-        </p>
-
-        <p class="small">📌 Vous pouvez aussi proposer une action / un événement via le formulaire.</p>
-      </div>
-
-      <div class="card">
-        <h2 style="margin:0 0 10px">Envoyez-nous un message</h2>
-
-        <form action="https://formspree.io/f/xykjyoyq" method="POST">
-          <input type="hidden" name="_subject" value="[Montauban 2026] Nouveau message depuis le site" />
-          <input type="hidden" name="_next" value="contact.html?sent=1" />
-
-          <label>Nom et prénom</label>
-          <input name="nom" required placeholder="Votre nom" />
-
-          <label>Email</label>
-          <input name="email" required type="email" placeholder="votre@email.com" />
-
-          <label>Objet</label>
-          <input name="objet" required placeholder="Ex : Question / Soutien / Proposition..." />
-
-          <label>Message</label>
-          <textarea name="message" required placeholder="Votre message..."></textarea>
-
-          <div class="small">
-            <label style="display:inline-flex; gap:8px; align-items:center; font-weight:800;">
-              <input type="checkbox" name="consentement" required>
-              J’accepte d’être recontacté dans le cadre de la campagne.
-            </label>
-          </div>
-
-          <div style="height:12px"></div>
-          <button class="btn red" type="submit">✉️ ENVOYER</button>
-        </form>
-      </div>
-
-    </div>
-
-    <div class="card" style="margin-top:18px;">
-      <h2 style="margin-top:0;">🤝 Devenir bénévole</h2>
-      <p class="sub" style="margin-top:-8px;">Tractage, affichage, porte-à-porte, événements… Chaque aide compte !</p>
-
-      <form action="https://formspree.io/f/xykjyoyq" method="POST" style="margin-top:10px;">
-        <input type="hidden" name="_subject" value="[Montauban 2026] Nouveau bénévole (site)" />
-        <input type="hidden" name="type" value="Bénévole" />
-        <input type="hidden" name="_next" value="contact.html?sent=1" />
-
-        <div class="grid2">
-          <div>
-            <label>Prénom</label>
-            <input name="prenom" required placeholder="Votre prénom" />
-          </div>
-          <div>
-            <label>Téléphone</label>
-            <input name="telephone" required placeholder="06..." />
-          </div>
-        </div>
-
-        <label>Quartier (facultatif)</label>
-        <input name="quartier" placeholder="Ex : Centre-ville, Villebourbon, Sapiac..." />
-
-        <label>Disponibilités</label>
-        <div class="small" style="margin:6px 0 10px;">
-          <label style="display:inline-flex; gap:8px; align-items:center; margin-right:14px; font-weight:800;">
-            <input type="checkbox" name="disponibilites[]" value="Semaine"> Semaine
-          </label>
-          <label style="display:inline-flex; gap:8px; align-items:center; margin-right:14px; font-weight:800;">
-            <input type="checkbox" name="disponibilites[]" value="Week-end"> Week-end
-          </label>
-          <label style="display:inline-flex; gap:8px; align-items:center; margin-right:14px; font-weight:800;">
-            <input type="checkbox" name="disponibilites[]" value="Matin"> Matin
-          </label>
-          <label style="display:inline-flex; gap:8px; align-items:center; margin-right:14px; font-weight:800;">
-            <input type="checkbox" name="disponibilites[]" value="Après-midi"> Après-midi
-          </label>
-        </div>
-
-        <label>Comment voulez-vous aider ?</label>
-        <textarea name="aide" placeholder="Tractage, porte-à-porte, communication, logistique, événements..."></textarea>
-
-        <div class="small">
-          <label style="display:inline-flex; gap:8px; align-items:center; font-weight:800;">
-            <input type="checkbox" name="consentement" required>
-            J’accepte d’être recontacté dans le cadre de la campagne.
-          </label>
-        </div>
-
-        <div style="height:12px"></div>
-        <button class="btn red" type="submit">✅ JE VEUX AIDER</button>
-      </form>
-    </div>
+    <div id="candidats-grid" class="candidats-grid"></div>
 
   </div>
 </section>
+
+<!-- ✅ LIGHTBOX -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <div class="lightboxInner" role="dialog" aria-modal="true" aria-label="Image en grand">
+    <button class="lightboxClose" id="lightboxClose" aria-label="Fermer">✕</button>
+    <img id="lightboxImg" alt="">
+    <div class="lightboxCaption" id="lightboxCaption"></div>
+  </div>
+</div>
 
 <div class="footer">
   <div class="container">© 2026 – Montauban 2026</div>
@@ -184,15 +66,73 @@
 <script src="script.js?v=2026"></script>
 
 <script>
-  (function () {
-    const params = new URLSearchParams(window.location.search);
-    if (params.get("sent") === "1") {
-      const box = document.getElementById("sentBox");
-      if (box) box.style.display = "block";
-      window.history.replaceState({}, document.title, window.location.pathname);
+fetch("assets/candidats.json?v=2026")
+  .then(r => r.json())
+  .then(data => {
+    const grid = document.getElementById("candidats-grid");
+
+    grid.innerHTML = data.map(c => {
+      const src = `assets/candidats/${c.photo}`;
+      const name = (c.prenom || "Candidat").replaceAll('"', '&quot;');
+      return `
+        <article class="candidateCard">
+          <button class="candidateBtn" type="button"
+            data-src="${src}"
+            data-name="${name}"
+            aria-label="Ouvrir la photo de ${name}">
+            <img src="${src}" alt="${name}">
+          </button>
+          <div class="candidateName">${name}</div>
+        </article>
+      `;
+    }).join("");
+
+    // ✅ clic pour ouvrir en grand
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightboxImg");
+    const caption = document.getElementById("lightboxCaption");
+    const closeBtn = document.getElementById("lightboxClose");
+
+    function openLightbox(src, name){
+      lightboxImg.src = src;
+      lightboxImg.alt = name;
+      caption.textContent = name;
+      lightbox.classList.add("open");
+      lightbox.setAttribute("aria-hidden", "false");
+      document.body.classList.add("noScroll");
+      closeBtn.focus();
     }
-  })();
+
+    function closeLightbox(){
+      lightbox.classList.remove("open");
+      lightbox.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("noScroll");
+      // vider pour éviter flash sur prochaine image
+      lightboxImg.src = "";
+      lightboxImg.alt = "";
+      caption.textContent = "";
+    }
+
+    grid.addEventListener("click", (e) => {
+      const btn = e.target.closest(".candidateBtn");
+      if (!btn) return;
+      openLightbox(btn.dataset.src, btn.dataset.name);
+    });
+
+    closeBtn.addEventListener("click", closeLightbox);
+
+    // clic sur fond sombre => ferme
+    lightbox.addEventListener("click", (e) => {
+      if (e.target.id === "lightbox") closeLightbox();
+    });
+
+    // Echap => ferme
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && lightbox.classList.contains("open")) closeLightbox();
+    });
+  })
+  .catch(err => console.error("Erreur JSON :", err));
 </script>
 
 </body>
-          </html>
+  </html>
