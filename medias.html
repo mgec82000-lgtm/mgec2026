@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Médias – Montauban 2026</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=2026">
 </head>
 
 <body>
@@ -13,7 +13,6 @@
   <div class="container">
     <div class="nav">
 
-      <!-- ✅ BRAND CLIQUABLE -->
       <a class="brand" href="index.html" style="text-decoration:none;">
         <div class="brandLogo"></div>
         <div class="brandTitle">
@@ -23,16 +22,16 @@
         </div>
       </a>
 
-      <!-- BOUTON HAMBURGER (mobile) -->
       <button class="burger" id="burgerBtn" aria-label="Ouvrir le menu" onclick="toggleMenu()">☰</button>
 
-      <!-- MENU -->
       <div class="menu" id="mobileMenu">
         <a href="index.html">ACCUEIL</a>
         <a href="agenda.html">AGENDA</a>
         <a href="candidats.html">CANDIDATS</a>
         <a href="programme.html">PROGRAMME</a>
         <a class="active" href="medias.html">MÉDIAS</a>
+        <a href="communiques.html">COMMUNIQUÉS</a>
+        <a href="blog.html">BLOG</a>
         <a href="contact.html">CONTACT</a>
       </div>
 
@@ -46,55 +45,52 @@
     <h1 class="h1">Médias</h1>
     <p class="sub">Suivez notre campagne en images et téléchargez nos documents officiels.</p>
 
-    <!-- RÉSEAUX -->
     <div class="card" style="margin-bottom:18px;">
       <h2 style="margin-top:0;">📣 Réseaux sociaux</h2>
       <p class="sub" style="margin-top:-8px;">Retrouvez-nous et partagez nos publications :</p>
 
-      <!-- ✅ LOGOS COULEURS -->
       <div class="social" aria-label="Réseaux sociaux">
-        <!-- Facebook -->
-        <a href="https://www.facebook.com/montauban.de.gauche" target="_blank" rel="noopener" aria-label="Facebook">
-          <svg width="22" height="22" viewBox="0 0 24 24"><path fill="#1877F2" d="M22 12a10..."></path></svg>
+        <a href="https://www.facebook.com/montauban.de.gauche/" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook">
+          <svg width="22" height="22" viewBox="0 0 24 24">
+            <path fill="#1877F2"
+              d="M22 12a10 10 0 1 0-11.56 9.87v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89
+              1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.88h-2.34v6.99A10 10 0 0 0 22 12z" />
+          </svg>
         </a>
 
-        <!-- Instagram -->
-        <a href="https://www.instagram.com/montauban.de.gauche?igsh=ZjQzbTY4MjhvbzJy&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram">
-          <svg width="22" height="22" viewBox="0 0 24 24"><defs><linearGradient id="igGradientMedias" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f58529"/><stop offset="35%" stop-color="#dd2a7b"/><stop offset="70%" stop-color="#8134af"/><stop offset="100%" stop-color="#515bd4"/></linearGradient></defs><path fill="url(#igGradientMedias)" d="M7 2h10a5..."></path></svg>
+        <a href="https://www.instagram.com/montauban.de.gauche/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">
+          <svg width="22" height="22" viewBox="0 0 24 24">
+            <defs>
+              <linearGradient id="igGradientMedias" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#f58529"/>
+                <stop offset="35%" stop-color="#dd2a7b"/>
+                <stop offset="70%" stop-color="#8134af"/>
+                <stop offset="100%" stop-color="#515bd4"/>
+              </linearGradient>
+            </defs>
+            <path fill="url(#igGradientMedias)" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5z"/>
+          </svg>
         </a>
 
-        <!-- TikTok -->
-        <a href="https://www.tiktok.com/@montauban.de.gauc?_r=1&_t=ZN-93LK3MII4xi"
-           target="_blank" rel="noopener" aria-label="TikTok">
-          <svg width="22" height="22" viewBox="0 0 24 24"><path fill="#25F4EE" d="M15.7 3c.6..."></path></svg>
+        <a href="https://www.tiktok.com/@montauban.de.gauche" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok">
+          <svg width="22" height="22" viewBox="0 0 24 24">
+            <path fill="#111111"
+              d="M16.5 3c.6 3.5 2.7 5.6 6 6.1v3.1c-2.2.1-4.1-.6-6-2v6.6c0 4-3.2 7.2-7.2 7.2S2 20.8 2 16.8
+              c0-3.9 3.1-7 7-7.2v3.4c-2.1.2-3.7 2-3.6 4.1.1 2.2 2 3.9 4.2 3.8 2.1-.1 3.8-1.8 3.8-4V3h3.1z"/>
+          </svg>
         </a>
-
-        <!-- X (Twitter) -->
-        <a href="https://x.com/montauban2026/status/2015186635650949430?s=48"
-           target="_blank" rel="noopener" aria-label="X (Twitter)">
-          <svg width="22" height="22" viewBox="0 0 24 24"><path fill="#111111" d="M18.9 2H22l-6.8..."></path></svg>
-        </a>
-
       </div>
 
-      <div class="small" style="margin-top:10px;">
-        <a href="https://www.facebook.com/montauban.de.gauche" target="_blank" rel="noopener">→ Facebook</a>
-        &nbsp;&nbsp;•&nbsp;&nbsp;
-        <a href="https://www.instagram.com/montauban.de.gauche?igsh=ZjQzbTY4MjhvbzJy&utm_source=qr" target="_blank" rel="noopener">→ Instagram</a>
-        &nbsp;&nbsp;•&nbsp;&nbsp;
-        <a href="https://www.tiktok.com/@montauban.de.gauc?_r=1&_t=ZN-93LK3MII4xi" target="_blank" rel="noopener">→ TikTok</a>
-        &nbsp;&nbsp;•&nbsp;&nbsp;
-        <a href="https://x.com/montauban2026/status/2015186635650949430?s=48" target="_blank" rel="noopener">→ X (Twitter)</a>
-      </div>
+      <p class="small" style="margin-top:10px;">
+        → Facebook / Instagram / TikTok (liens officiels)
+      </p>
     </div>
 
-    <!-- VIDÉOS -->
     <h2 style="margin:0 0 8px;">🎥 Nos vidéos</h2>
     <p class="sub">Retrouvez ici nos vidéos intégrées :</p>
 
     <div class="mediaGrid">
 
-      <!-- VIDEO 1 : TikTok -->
       <div class="card" style="padding:14px;">
         <div class="badge">TikTok</div>
 
@@ -112,7 +108,6 @@
         </a>
       </div>
 
-      <!-- VIDEO 2 : YouTube Live -->
       <div class="card" style="padding:14px;">
         <div class="badge">YouTube Live</div>
         <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:18px; box-shadow:var(--shadow);">
@@ -127,22 +122,17 @@
         </div>
 
         <a class="btn outline"
-           href="https://www.youtube.com/live/NLhnWidZJF4?si=Pm8JxWaDm5fvy3EY"
+           href="https://www.youtube.com/live/NLhnWidZJF4"
            target="_blank" rel="noopener"
            style="margin-top:10px;">
           ▶️ Ouvrir sur YouTube
         </a>
       </div>
 
-      <!-- Placeholder Video 3 -->
-      <div class="mediaBox">Vidéo 3 (lien à intégrer)</div>
-
     </div>
 
-    <!-- PRESSE / RADIO -->
     <div class="card" style="margin-top:18px;">
       <h2 style="margin-top:0;">📻 Presse / Radio</h2>
-      <p class="sub" style="margin-top:-8px;">Retombées presse, interventions et liens officiels.</p>
 
       <a href="https://www.radiototem.net/preview/eP4azJViNH/published"
          target="_blank" rel="noopener"
@@ -161,10 +151,8 @@
       </a>
     </div>
 
-    <!-- DOCUMENTS -->
     <div class="card" style="margin-top:18px;">
       <h2 style="margin-top:0;">📄 Documents à télécharger</h2>
-      <p class="sub" style="margin-top:-8px;">Retrouvez ici nos tracts et documents officiels de campagne.</p>
 
       <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:14px;">
         <a class="btn red" href="assets/Programme%20MGEC_V2.pdf" target="_blank" rel="noopener">
@@ -184,9 +172,7 @@
   <div class="container">© 2026 – Montauban 2026</div>
 </div>
 
-<!-- Script nécessaire pour TikTok -->
 <script async src="https://www.tiktok.com/embed.js"></script>
-
-<script src="script.js"></script>
+<script src="script.js?v=2026"></script>
 </body>
   </html>
