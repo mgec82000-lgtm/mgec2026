@@ -4,19 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Candidats – Montauban 2026</title>
-
-  <!-- Anti-cache -->
   <link rel="stylesheet" href="style.css?v=2026">
 </head>
 
 <body class="page-candidats">
 
-<!-- HEADER -->
 <div class="topbar">
   <div class="container">
     <div class="nav">
 
-      <a class="brand" href="index.html">
+      <a class="brand" href="index.html" style="text-decoration:none;">
         <div class="brandLogo"></div>
         <div class="brandTitle">
           <small>#MONTAUBAN2026</small>
@@ -33,6 +30,8 @@
         <a class="active" href="candidats.html">CANDIDATS</a>
         <a href="programme.html">PROGRAMME</a>
         <a href="medias.html">MÉDIAS</a>
+        <a href="communiques.html">COMMUNIQUÉS</a>
+        <a href="blog.html">BLOG</a>
         <a href="contact.html">CONTACT</a>
       </div>
 
@@ -40,40 +39,97 @@
   </div>
 </div>
 
-<!-- CONTENU -->
 <section class="section">
   <div class="container">
 
     <h1 class="h1">Nos candidats</h1>
-    <p class="sub">
-      Une équipe engagée et représentative de la diversité montaubanaise.
-    </p>
+    <p class="sub">Une équipe engagée et représentative de la diversité montaubanaise.</p>
 
-    <!-- Grille -->
     <div id="candidats-grid" class="candidats-grid"></div>
 
   </div>
 </section>
 
-<!-- FOOTER -->
+<!-- ✅ LIGHTBOX -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <div class="lightboxInner" role="dialog" aria-modal="true" aria-label="Image en grand">
+    <button class="lightboxClose" id="lightboxClose" aria-label="Fermer">✕</button>
+    <img id="lightboxImg" alt="">
+    <div class="lightboxCaption" id="lightboxCaption"></div>
+  </div>
+</div>
+
 <div class="footer">
   <div class="container">© 2026 – Montauban 2026</div>
 </div>
 
-<script src="script.js"></script>
+<script src="script.js?v=2026"></script>
 
-<!-- Génération automatique -->
 <script>
 fetch("assets/candidats.json?v=2026")
   .then(r => r.json())
   .then(data => {
     const grid = document.getElementById("candidats-grid");
 
-    grid.innerHTML = data.map(c => `
-      <article class="candidateCard">
-        <img src="assets/candidats/${c.photo}" alt="${c.prenom}">
-      </article>
-    `).join("");
+    grid.innerHTML = data.map(c => {
+      const src = `assets/candidats/${c.photo}`;
+      const name = (c.prenom || "Candidat").replaceAll('"', '&quot;');
+      return `
+        <article class="candidateCard">
+          <button class="candidateBtn" type="button"
+            data-src="${src}"
+            data-name="${name}"
+            aria-label="Ouvrir la photo de ${name}">
+            <img src="${src}" alt="${name}">
+          </button>
+          <div class="candidateName">${name}</div>
+        </article>
+      `;
+    }).join("");
+
+    // ✅ clic pour ouvrir en grand
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightboxImg");
+    const caption = document.getElementById("lightboxCaption");
+    const closeBtn = document.getElementById("lightboxClose");
+
+    function openLightbox(src, name){
+      lightboxImg.src = src;
+      lightboxImg.alt = name;
+      caption.textContent = name;
+      lightbox.classList.add("open");
+      lightbox.setAttribute("aria-hidden", "false");
+      document.body.classList.add("noScroll");
+      closeBtn.focus();
+    }
+
+    function closeLightbox(){
+      lightbox.classList.remove("open");
+      lightbox.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("noScroll");
+      // vider pour éviter flash sur prochaine image
+      lightboxImg.src = "";
+      lightboxImg.alt = "";
+      caption.textContent = "";
+    }
+
+    grid.addEventListener("click", (e) => {
+      const btn = e.target.closest(".candidateBtn");
+      if (!btn) return;
+      openLightbox(btn.dataset.src, btn.dataset.name);
+    });
+
+    closeBtn.addEventListener("click", closeLightbox);
+
+    // clic sur fond sombre => ferme
+    lightbox.addEventListener("click", (e) => {
+      if (e.target.id === "lightbox") closeLightbox();
+    });
+
+    // Echap => ferme
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && lightbox.classList.contains("open")) closeLightbox();
+    });
   })
   .catch(err => console.error("Erreur JSON :", err));
 </script>
